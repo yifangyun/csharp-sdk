@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4AADF336-FB7E-4EF6-BC3F-511F1EF73BFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Yfy.Api</RootNamespace>
+    <AssemblyName>Yfy.Api</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Yfy.Api.xml</DocumentationFile>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <LangVersion>6</LangVersion>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collab\CollabRouter.cs" />
+    <Compile Include="Collab\InviteCollab.cs" />
+    <Compile Include="Collab\UpdateCollab.cs" />
+    <Compile Include="Collab\YfyCollab.cs" />
+    <Compile Include="Comment\CreateComment.cs" />
+    <Compile Include="Comment\YfyComment.cs" />
+    <Compile Include="Comment\CommentRouter.cs" />
+    <Compile Include="Exception\InternalServerException.cs" />
+    <Compile Include="Exception\YfyApiException.cs" />
+    <Compile Include="IYfyRegister.cs" />
+    <Compile Include="OAuth\YfyAuthtoken.cs" />
+    <Compile Include="Items\ItemRouter.cs" />
+    <Compile Include="Items\Search.cs" />
+    <Compile Include="Exception\BadInputException.cs" />
+    <Compile Include="Exception\BadResponseException.cs" />
+    <Compile Include="Exception\YfyHttpException.cs" />
+    <Compile Include="Exception\RateLimitException.cs" />
+    <Compile Include="Exception\RefreshTokenExpiredException.cs" />
+    <Compile Include="Exception\RetryException.cs" />
+    <Compile Include="Exception\TokenRefreshedException.cs" />
+    <Compile Include="Exception\UnauthorizedException.cs" />
+    <Compile Include="Exception\YfyError.cs" />
+    <Compile Include="Exception\YfySuccess.cs" />
+    <Compile Include="Files\CopyFile.cs" />
+    <Compile Include="Files\DownloadFile.cs" />
+    <Compile Include="Files\MoveFile.cs" />
+    <Compile Include="Files\UpdateFile.cs" />
+    <Compile Include="Files\UploadFile.cs" />
+    <Compile Include="Folders\CreateFolder.cs" />
+    <Compile Include="Folders\GetChildren.cs" />
+    <Compile Include="Folders\MoveFolder.cs" />
+    <Compile Include="Folders\UpdateFolder.cs" />
+    <Compile Include="Folders\YfyPathFolder.cs" />
+    <Compile Include="Args.cs" />
+    <Compile Include="Items\YfyItem.cs" />
+    <Compile Include="Exception\YfyException.cs" />
+    <Compile Include="YfyObject.cs" />
+    <Compile Include="ShareLink\YfyShareLink.cs" />
+    <Compile Include="ShareLink\CreateShareLink.cs" />
+    <Compile Include="ShareLink\ShareLinkRouter.cs" />
+    <Compile Include="ShareLink\UpdateShareLink.cs" />
+    <Compile Include="Trash\ClearTrash.cs" />
+    <Compile Include="Trash\RestoreFromTrash.cs" />
+    <Compile Include="Trash\TrashRouter.cs" />
+    <Compile Include="Users\UpdateUser.cs" />
+    <Compile Include="OAuth\OAuthHelper.cs" />
+    <Compile Include="Utils\StreamHelper.cs" />
+    <Compile Include="YfyClient.common.cs" />
+    <Compile Include="YfyClient.cs" />
+    <Compile Include="YfyClientFactory.cs" />
+    <Compile Include="YfyRequestHandler.cs" />
+    <Compile Include="YfyClientInfo.cs" />
+    <Compile Include="Files\YfyFile.cs" />
+    <Compile Include="Files\FileRouter.cs" />
+    <Compile Include="Folders\YfyFolder.cs" />
+    <Compile Include="Folders\FolderRouter.cs" />
+    <Compile Include="ITransport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\YfyUser.cs" />
+    <Compile Include="Users\UserRouter.cs" />
+    <Compile Include="Users\YfyMiniUser.cs" />
+    <Compile Include="Utils\UriHelper.cs" />
+    <Compile Include="YfySystem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
