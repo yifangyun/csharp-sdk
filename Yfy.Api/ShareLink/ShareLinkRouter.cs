@@ -1,7 +1,7 @@
 ﻿namespace Yfy.Api.ShareLink
 {
     using System;
-    using Yfy.Api.Exception;
+    using Yfy.Api.Exceptions;
     using Yfy.Api.Items;
 
     /// <summary>

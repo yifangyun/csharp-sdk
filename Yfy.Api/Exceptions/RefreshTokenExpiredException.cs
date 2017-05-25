@@ -1,4 +1,4 @@
-﻿namespace Yfy.Api.Exception
+﻿namespace Yfy.Api.Exceptions
 {
     /// <summary>
     /// refresh token过期

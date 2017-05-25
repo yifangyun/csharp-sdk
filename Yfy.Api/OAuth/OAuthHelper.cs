@@ -6,7 +6,7 @@
     using System.Net;
     using Newtonsoft.Json;
     using System.IO;
-    using Yfy.Api.Exception;
+    using Yfy.Api.Exceptions;
 
     /// <summary>
     /// Oauth相关的帮助类

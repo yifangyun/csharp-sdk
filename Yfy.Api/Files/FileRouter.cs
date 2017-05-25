@@ -4,7 +4,7 @@
     using System.IO;
     using Yfy.Api.ShareLink;
     using Yfy.Api.Comment;
-    using Yfy.Api.Exception;
+    using Yfy.Api.Exceptions;
 
     /// <summary>
     /// 文件相关api列表

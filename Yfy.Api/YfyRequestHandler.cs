@@ -5,12 +5,11 @@
     using System.IO;
     using System.Threading;
     using System.Net;
-    using Yfy.Api.Exception;
+    using Yfy.Api.Exceptions;
 
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
     using Yfy.Api.Oauth;
-    using System.Security.Cryptography;
 
     internal sealed class YfyRequestHandler : ITransport
     {
@@ -183,8 +182,6 @@
                         var boundary = YfyRequestHandler._Boundary + DateTime.Now.Ticks.ToString("x");
                         request.ContentType = "multipart/form-data; boundary=" + boundary;
                         request.SendChunked = true;
-                        //上传时timeout设置为无限，防止上传大文件时出现问题
-                        request.Timeout = Timeout.Infinite;
                         //重要，在上传大文件时该参数应该为false
                         request.AllowWriteStreamBuffering = false;
 
@@ -206,7 +203,6 @@
                     }
                     break;
                 case RouteStyle.Download:
-                    request.Timeout = Timeout.Infinite;
                     request.ContentType = null;
                     break;
                 default:

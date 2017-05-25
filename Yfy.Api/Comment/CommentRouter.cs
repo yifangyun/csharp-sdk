@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Yfy.Api.Exception;
+    using Yfy.Api.Exceptions;
 
     /// <summary>
     /// 评论相关api列表

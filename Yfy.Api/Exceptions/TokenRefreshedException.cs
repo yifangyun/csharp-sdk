@@ -1,4 +1,4 @@
-﻿namespace Yfy.Api.Exception
+﻿namespace Yfy.Api.Exceptions
 {
     /// <summary>
     /// 标记刷新token的操作

@@ -2,7 +2,7 @@
 {
     using Yfy.Api.ShareLink;
     using Yfy.Api.Collab;
-    using Yfy.Api.Exception;
+    using Yfy.Api.Exceptions;
     using Yfy.Api.Items;
 
     /// <summary>

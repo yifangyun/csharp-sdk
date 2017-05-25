@@ -1,6 +1,6 @@
 ﻿namespace Yfy.Api.Collab
 {
-    using Yfy.Api.Exception;
+    using Yfy.Api.Exceptions;
 
     /// <summary>
     /// 协作相关api

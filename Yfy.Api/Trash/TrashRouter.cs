@@ -1,6 +1,6 @@
 ﻿namespace Yfy.Api.Trash
 {
-    using Yfy.Api.Exception;
+    using Yfy.Api.Exceptions;
     using Yfy.Api.Items;
 
     /// <summary>
