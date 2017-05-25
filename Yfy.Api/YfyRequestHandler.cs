@@ -206,6 +206,7 @@
                     }
                     break;
                 case RouteStyle.Download:
+                    request.Timeout = Timeout.Infinite;
                     request.ContentType = null;
                     break;
                 default:
