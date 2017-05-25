@@ -121,9 +121,8 @@
         /// <returns>通用文件对象</returns>
         public YfyFile Upload(long parentId, string name, string uploadFilePath)
         {
-            var uploadUrl = GetUploadUrl(parentId, name);
             var stream = File.OpenRead(uploadFilePath);
-            var file = this._transport.SendUploadRequest<string, YfyFile>(name, new Uri(uploadUrl), stream);
+            var file = this.Upload(parentId, name, stream);
             stream.Close();
             return file;
         }

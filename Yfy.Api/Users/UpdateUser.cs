@@ -13,6 +13,11 @@
 
         public UpdateUserArg(string name)
         {
+            if (string.IsNullOrEmpty(name))
+            {
+                throw new ArgumentException("name should not be null or empty", nameof(name));
+            }
+
             this.Name = name;
         }
     }

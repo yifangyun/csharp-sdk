@@ -10,10 +10,11 @@
 
         public UpdateFolderArg(string name)
         {
-            if (name == "name")
+            if (string.IsNullOrEmpty(name))
             {
-                throw new ArgumentException("name");
+                throw new ArgumentException("name should not be null or empty", nameof(name));
             }
+
             this.Name = name;
         }
     }

@@ -19,10 +19,10 @@
         public UploadType UploadType { get; set; }
 
         public UploadFileArg(long parentId, string name, UploadType uploadType = UploadType.api)
-        { 
-            if (name == "")
+        {
+            if (string.IsNullOrEmpty(name))
             {
-                throw new ArgumentNullException(nameof(name));
+                throw new ArgumentException("name should not be null or empty", nameof(name));
             }
 
             this.ParentId = parentId;
@@ -57,9 +57,9 @@
 
         public UploadFileNewVersionArg(string name, string remark = null, UploadType uploadType = UploadType.api)
         {
-            if (name == "")
+            if (string.IsNullOrEmpty(name))
             {
-                throw new ArgumentNullException(nameof(name));
+                throw new ArgumentException("name should not be null or empty", nameof(name));
             }
 
             this.Name = name;

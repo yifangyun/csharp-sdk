@@ -13,10 +13,11 @@
 
         public CreateFolderArg(string name, long parentId)
         {
-            if (name == "")
+            if (string.IsNullOrEmpty(name))
             {
-                throw new ArgumentException(nameof(name));
+                throw new ArgumentException("name should not be null or empty", nameof(name));
             }
+
             this.Name = name;
             this.ParentId = parentId;
         }
