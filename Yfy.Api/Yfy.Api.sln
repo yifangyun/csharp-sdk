@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.0
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yfy.Api", "Yfy.Api.csproj", "{4AADF336-FB7E-4EF6-BC3F-511F1EF73BFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestDemo", "..\RequestDemo\RequestDemo.csproj", "{B65E5CDD-68A5-49BA-B1BC-14B520BE054A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDemo", "..\WebDemo\WebDemo.csproj", "{7FD72040-3864-46EE-8173-2CAA92E08678}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yfy.Api.Tests", "..\Yfy.Api.Test\Yfy.Api.Tests.csproj", "{CFD6E2EF-62C8-401C-A91E-7577E98C5F32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{7FD72040-3864-46EE-8173-2CAA92E08678}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FD72040-3864-46EE-8173-2CAA92E08678}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FD72040-3864-46EE-8173-2CAA92E08678}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CFD6E2EF-62C8-401C-A91E-7577E98C5F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CFD6E2EF-62C8-401C-A91E-7577E98C5F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CFD6E2EF-62C8-401C-A91E-7577E98C5F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CFD6E2EF-62C8-401C-A91E-7577E98C5F32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

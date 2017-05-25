@@ -51,7 +51,7 @@
         /// <param name="profilePicKey">下载头像所需的key</param>
         /// <param name="userId">用户id</param>
         /// <returns>是否成功</returns>
-        public bool ProfilePicDownload(string savePath, string profilePicKey, long userId = 0)
+        public bool ProfilePicDownload(string savePath, string profilePicKey, long userId)
         {
             this._transport.SendDownloadRequest(savePath, UriHelper.GetProfilePicDownloadUri(profilePicKey, userId));
             return true;

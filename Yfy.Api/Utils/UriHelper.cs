@@ -60,11 +60,9 @@
             return new Uri(ApiHost + "api/v2/user/update");
         }
 
-        public static Uri GetProfilePicDownloadUri(string profilePicKey, long userId = 0)
+        public static Uri GetProfilePicDownloadUri(string profilePicKey, long userId)
         {
-            return Convert.ToBoolean(userId)
-                ? new Uri(ApiHost + $"api/v2/user/{userId}/profile_pic_download?profile_pic_key={profilePicKey}")
-                : new Uri(ApiHost + $"api/v2/user/profile_pic_download?profile_pic_key={profilePicKey}");
+            return new Uri(ApiHost + $"api/v2/user/{userId}/profile_pic_download?profile_pic_key={profilePicKey}");
         }
 
         public static Uri GetUserSearch(string queryWords = "", int pageId = 0)
