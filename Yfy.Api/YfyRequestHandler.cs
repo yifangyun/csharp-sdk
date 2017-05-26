@@ -150,6 +150,7 @@
             request.Timeout = YfyClientConfig.HttpConfig.Timeout;
 
             request.Headers.Add(HttpRequestHeader.Authorization, $"Bearer {YfyClientConfig.Oauth2AccessToken}");
+            request.Headers.Add("X-ImageRuntimeVersion", YfySystem.CallerImageRuntimeVersion);
             request.UserAgent = YfyRequestHandler.UserAgent;
             if (YfyClientConfig.HttpConfig.Proxy != null)
             {

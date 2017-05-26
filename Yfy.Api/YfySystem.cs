@@ -8,6 +8,8 @@
     /// </summary>
     public class YfySystem
     {
+        internal static string CallerImageRuntimeVersion;
+
         /// <summary>
         /// SDK初始化
         /// </summary>
@@ -22,6 +24,10 @@
             //Init User Agent
             Assembly assembly = Assembly.GetExecutingAssembly();
             YfyRequestHandler.UserAgent = string.Format(YfyClientInfo.ClientId + "OfficialFangcloudCSharpSDK/{0}", assembly.GetName().Version.ToString());
+
+            //Get Caller ImageRuntimeVersion
+            Assembly callerAssemble = Assembly.GetCallingAssembly();
+            YfySystem.CallerImageRuntimeVersion = callerAssemble.ImageRuntimeVersion;
 
             //Init Test Environment
             var IsTestEnvironment = Environment.GetEnvironmentVariable("FangcloudTest");
