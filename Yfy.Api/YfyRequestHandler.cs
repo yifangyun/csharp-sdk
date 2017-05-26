@@ -420,8 +420,9 @@
     {
         /// <summary>
         /// HttpWebRequest TimeOut
+        /// 默认时间为infinite。可以使用YfyClient中的SetTimeout来改变这个值
         /// </summary>
-        public int Timeout { get; set; } = 100000;
+        public int Timeout { get; set; } = System.Threading.Timeout.Infinite;
 
         /// <summary>
         /// 最大重试次数

@@ -92,10 +92,10 @@
         /// <summary>
         /// 设置SDK中Http请求的time out
         /// </summary>
-        /// <param name="timeOut">time out</param>
-        public void SetTimeOut(int timeOut)
+        /// <param name="timeout">time out</param>
+        public void SetTimeout(int timeout)
         {
-            GetYfyClientConfig().HttpConfig.Timeout = timeOut;
+            GetYfyClientConfig().HttpConfig.Timeout = timeout;
         }
 
         /// <summary>
