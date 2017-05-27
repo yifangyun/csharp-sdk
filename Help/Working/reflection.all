@@ -137,7 +137,7 @@
         <element api="M:Yfy.Api.YfyClient.#ctor(System.String,System.String)" />
         <element api="M:Yfy.Api.YfyClient.#ctor(Yfy.Api.Oauth.YfyAuthtoken)" />
         <element api="M:Yfy.Api.YfyClient.SetTokenRegister(Yfy.Api.IYfyTokenRegister)" />
-        <element api="M:Yfy.Api.YfyClient.SetTimeOut(System.Int32)" />
+        <element api="M:Yfy.Api.YfyClient.SetTimeout(System.Int32)" />
         <element api="M:Yfy.Api.YfyClient.SetMaxRetries(System.Int32)" />
         <element api="M:Yfy.Api.YfyClient.SetProxy(System.Net.WebProxy)" />
         <element api="M:Yfy.Api.YfyClient.SetOauth2AccessToken(System.String)" />
@@ -444,12 +444,12 @@
         <type api="T:Yfy.Api.YfyClient" ref="true" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.YfyClient.SetTimeOut(System.Int32)">
-      <apidata name="SetTimeOut" group="member" subgroup="method" />
+    <api id="M:Yfy.Api.YfyClient.SetTimeout(System.Int32)">
+      <apidata name="SetTimeout" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
       <parameters>
-        <parameter name="timeOut">
+        <parameter name="timeout">
           <type api="T:System.Int32" ref="false" />
         </parameter>
       </parameters>
@@ -2612,36 +2612,36 @@
         </attribute>
       </attributes>
     </api>
-    <api id="N:Yfy.Api.Exception">
-      <apidata name="Yfy.Api.Exception" group="namespace" />
+    <api id="N:Yfy.Api.Exceptions">
+      <apidata name="Yfy.Api.Exceptions" group="namespace" />
       <elements>
-        <element api="T:Yfy.Api.Exception.InternalServerException" />
-        <element api="T:Yfy.Api.Exception.YfyApiException" />
-        <element api="T:Yfy.Api.Exception.BadInputException" />
-        <element api="T:Yfy.Api.Exception.BadResponseException" />
-        <element api="T:Yfy.Api.Exception.YfyHttpException" />
-        <element api="T:Yfy.Api.Exception.RateLimitException" />
-        <element api="T:Yfy.Api.Exception.RefreshTokenExpiredException" />
-        <element api="T:Yfy.Api.Exception.UnAuthorizedException" />
-        <element api="T:Yfy.Api.Exception.YfyException" />
+        <element api="T:Yfy.Api.Exceptions.InternalServerException" />
+        <element api="T:Yfy.Api.Exceptions.YfyApiException" />
+        <element api="T:Yfy.Api.Exceptions.BadInputException" />
+        <element api="T:Yfy.Api.Exceptions.BadResponseException" />
+        <element api="T:Yfy.Api.Exceptions.YfyHttpException" />
+        <element api="T:Yfy.Api.Exceptions.RateLimitException" />
+        <element api="T:Yfy.Api.Exceptions.RefreshTokenExpiredException" />
+        <element api="T:Yfy.Api.Exceptions.UnAuthorizedException" />
+        <element api="T:Yfy.Api.Exceptions.YfyException" />
       </elements>
     </api>
-    <api id="T:Yfy.Api.Exception.BadInputException">
+    <api id="T:Yfy.Api.Exceptions.BadInputException">
       <apidata name="BadInputException" group="type" subgroup="class" />
       <typedata visibility="public" serializable="false" />
       <family>
         <ancestors>
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
-          <type api="T:Yfy.Api.Exception.YfyException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyException" ref="true" />
           <type api="T:System.Exception" ref="true" />
           <type api="T:System.Object" ref="true" />
         </ancestors>
       </family>
       <elements>
-        <element api="M:Yfy.Api.Exception.BadInputException.ToString" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.StatusCode" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.RequestUri" />
-        <element api="P:Yfy.Api.Exception.YfyException.RequestId" />
+        <element api="M:Yfy.Api.Exceptions.BadInputException.ToString" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri" />
+        <element api="P:Yfy.Api.Exceptions.YfyException.RequestId" />
         <element api="M:System.Exception.GetBaseException">
           <apidata name="GetBaseException" group="member" subgroup="method" />
           <memberdata visibility="public" />
@@ -2914,16 +2914,16 @@
       </elements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
+        <namespace api="N:Yfy.Api.Exceptions" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Exception.BadInputException.ToString">
+    <api id="M:Yfy.Api.Exceptions.BadInputException.ToString">
       <apidata name="ToString" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="true" />
       <overrides>
-        <member api="M:Yfy.Api.Exception.YfyHttpException.ToString">
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
+        <member api="M:Yfy.Api.Exceptions.YfyHttpException.ToString">
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
         </member>
       </overrides>
       <returns>
@@ -2936,26 +2936,26 @@
       </implements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.BadInputException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.BadInputException" ref="true" />
       </containers>
     </api>
-    <api id="T:Yfy.Api.Exception.BadResponseException">
+    <api id="T:Yfy.Api.Exceptions.BadResponseException">
       <apidata name="BadResponseException" group="type" subgroup="class" />
       <typedata visibility="public" serializable="false" />
       <family>
         <ancestors>
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
-          <type api="T:Yfy.Api.Exception.YfyException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyException" ref="true" />
           <type api="T:System.Exception" ref="true" />
           <type api="T:System.Object" ref="true" />
         </ancestors>
       </family>
       <elements>
-        <element api="M:Yfy.Api.Exception.BadResponseException.ToString" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.StatusCode" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.RequestUri" />
-        <element api="P:Yfy.Api.Exception.YfyException.RequestId" />
+        <element api="M:Yfy.Api.Exceptions.BadResponseException.ToString" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri" />
+        <element api="P:Yfy.Api.Exceptions.YfyException.RequestId" />
         <element api="M:System.Exception.GetBaseException">
           <apidata name="GetBaseException" group="member" subgroup="method" />
           <memberdata visibility="public" />
@@ -3228,16 +3228,16 @@
       </elements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
+        <namespace api="N:Yfy.Api.Exceptions" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Exception.BadResponseException.ToString">
+    <api id="M:Yfy.Api.Exceptions.BadResponseException.ToString">
       <apidata name="ToString" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="true" />
       <overrides>
-        <member api="M:Yfy.Api.Exception.YfyHttpException.ToString">
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
+        <member api="M:Yfy.Api.Exceptions.YfyHttpException.ToString">
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
         </member>
       </overrides>
       <returns>
@@ -3250,26 +3250,26 @@
       </implements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.BadResponseException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.BadResponseException" ref="true" />
       </containers>
     </api>
-    <api id="T:Yfy.Api.Exception.InternalServerException">
+    <api id="T:Yfy.Api.Exceptions.InternalServerException">
       <apidata name="InternalServerException" group="type" subgroup="class" />
       <typedata visibility="public" serializable="false" />
       <family>
         <ancestors>
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
-          <type api="T:Yfy.Api.Exception.YfyException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyException" ref="true" />
           <type api="T:System.Exception" ref="true" />
           <type api="T:System.Object" ref="true" />
         </ancestors>
       </family>
       <elements>
-        <element api="M:Yfy.Api.Exception.InternalServerException.ToString" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.StatusCode" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.RequestUri" />
-        <element api="P:Yfy.Api.Exception.YfyException.RequestId" />
+        <element api="M:Yfy.Api.Exceptions.InternalServerException.ToString" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri" />
+        <element api="P:Yfy.Api.Exceptions.YfyException.RequestId" />
         <element api="M:System.Exception.GetBaseException">
           <apidata name="GetBaseException" group="member" subgroup="method" />
           <memberdata visibility="public" />
@@ -3542,16 +3542,16 @@
       </elements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
+        <namespace api="N:Yfy.Api.Exceptions" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Exception.InternalServerException.ToString">
+    <api id="M:Yfy.Api.Exceptions.InternalServerException.ToString">
       <apidata name="ToString" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="true" />
       <overrides>
-        <member api="M:Yfy.Api.Exception.YfyHttpException.ToString">
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
+        <member api="M:Yfy.Api.Exceptions.YfyHttpException.ToString">
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
         </member>
       </overrides>
       <returns>
@@ -3564,28 +3564,28 @@
       </implements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.InternalServerException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.InternalServerException" ref="true" />
       </containers>
     </api>
-    <api id="T:Yfy.Api.Exception.RateLimitException">
+    <api id="T:Yfy.Api.Exceptions.RateLimitException">
       <apidata name="RateLimitException" group="type" subgroup="class" />
       <typedata visibility="public" serializable="false" />
       <family>
         <ancestors>
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
-          <type api="T:Yfy.Api.Exception.YfyException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyException" ref="true" />
           <type api="T:System.Exception" ref="true" />
           <type api="T:System.Object" ref="true" />
         </ancestors>
       </family>
       <elements>
-        <element api="F:Yfy.Api.Exception.RateLimitException.RateLimitStatusCode" />
-        <element api="M:Yfy.Api.Exception.RateLimitException.ToString" />
-        <element api="P:Yfy.Api.Exception.RateLimitException.RetryAfterTime" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.StatusCode" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.RequestUri" />
-        <element api="P:Yfy.Api.Exception.YfyException.RequestId" />
+        <element api="F:Yfy.Api.Exceptions.RateLimitException.RateLimitStatusCode" />
+        <element api="M:Yfy.Api.Exceptions.RateLimitException.ToString" />
+        <element api="P:Yfy.Api.Exceptions.RateLimitException.RetryAfterTime" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri" />
+        <element api="P:Yfy.Api.Exceptions.YfyException.RequestId" />
         <element api="M:System.Exception.GetBaseException">
           <apidata name="GetBaseException" group="member" subgroup="method" />
           <memberdata visibility="public" />
@@ -3858,10 +3858,10 @@
       </elements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
+        <namespace api="N:Yfy.Api.Exceptions" />
       </containers>
     </api>
-    <api id="F:Yfy.Api.Exception.RateLimitException.RateLimitStatusCode">
+    <api id="F:Yfy.Api.Exceptions.RateLimitException.RateLimitStatusCode">
       <apidata name="RateLimitStatusCode" group="member" subgroup="field" />
       <memberdata visibility="public" static="true" />
       <fielddata literal="true" initonly="false" serialized="true" />
@@ -3871,11 +3871,11 @@
       <value>429</value>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.RateLimitException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.RateLimitException" ref="true" />
       </containers>
     </api>
-    <api id="P:Yfy.Api.Exception.RateLimitException.RetryAfterTime">
+    <api id="P:Yfy.Api.Exceptions.RateLimitException.RetryAfterTime">
       <apidata name="RetryAfterTime" group="member" subgroup="property" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
@@ -3886,17 +3886,17 @@
       </returns>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.RateLimitException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.RateLimitException" ref="true" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Exception.RateLimitException.ToString">
+    <api id="M:Yfy.Api.Exceptions.RateLimitException.ToString">
       <apidata name="ToString" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="true" />
       <overrides>
-        <member api="M:Yfy.Api.Exception.YfyHttpException.ToString">
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
+        <member api="M:Yfy.Api.Exceptions.YfyHttpException.ToString">
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
         </member>
       </overrides>
       <returns>
@@ -3909,11 +3909,11 @@
       </implements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.RateLimitException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.RateLimitException" ref="true" />
       </containers>
     </api>
-    <api id="T:Yfy.Api.Exception.RefreshTokenExpiredException">
+    <api id="T:Yfy.Api.Exceptions.RefreshTokenExpiredException">
       <apidata name="RefreshTokenExpiredException" group="type" subgroup="class" />
       <typedata visibility="public" serializable="false" />
       <family>
@@ -3923,8 +3923,8 @@
         </ancestors>
       </family>
       <elements>
-        <element api="M:Yfy.Api.Exception.RefreshTokenExpiredException.ToString" />
-        <element api="P:Yfy.Api.Exception.RefreshTokenExpiredException.RefreshToken" />
+        <element api="M:Yfy.Api.Exceptions.RefreshTokenExpiredException.ToString" />
+        <element api="P:Yfy.Api.Exceptions.RefreshTokenExpiredException.RefreshToken" />
         <element api="M:System.Exception.GetBaseException">
           <apidata name="GetBaseException" group="member" subgroup="method" />
           <memberdata visibility="public" />
@@ -4197,10 +4197,10 @@
       </elements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
+        <namespace api="N:Yfy.Api.Exceptions" />
       </containers>
     </api>
-    <api id="P:Yfy.Api.Exception.RefreshTokenExpiredException.RefreshToken">
+    <api id="P:Yfy.Api.Exceptions.RefreshTokenExpiredException.RefreshToken">
       <apidata name="RefreshToken" group="member" subgroup="property" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
@@ -4211,11 +4211,11 @@
       </returns>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.RefreshTokenExpiredException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.RefreshTokenExpiredException" ref="true" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Exception.RefreshTokenExpiredException.ToString">
+    <api id="M:Yfy.Api.Exceptions.RefreshTokenExpiredException.ToString">
       <apidata name="ToString" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="true" />
@@ -4234,26 +4234,26 @@
       </implements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.RefreshTokenExpiredException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.RefreshTokenExpiredException" ref="true" />
       </containers>
     </api>
-    <api id="T:Yfy.Api.Exception.UnAuthorizedException">
+    <api id="T:Yfy.Api.Exceptions.UnAuthorizedException">
       <apidata name="UnAuthorizedException" group="type" subgroup="class" />
       <typedata visibility="public" serializable="false" />
       <family>
         <ancestors>
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
-          <type api="T:Yfy.Api.Exception.YfyException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyException" ref="true" />
           <type api="T:System.Exception" ref="true" />
           <type api="T:System.Object" ref="true" />
         </ancestors>
       </family>
       <elements>
-        <element api="M:Yfy.Api.Exception.UnAuthorizedException.ToString" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.StatusCode" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.RequestUri" />
-        <element api="P:Yfy.Api.Exception.YfyException.RequestId" />
+        <element api="M:Yfy.Api.Exceptions.UnAuthorizedException.ToString" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri" />
+        <element api="P:Yfy.Api.Exceptions.YfyException.RequestId" />
         <element api="M:System.Exception.GetBaseException">
           <apidata name="GetBaseException" group="member" subgroup="method" />
           <memberdata visibility="public" />
@@ -4526,16 +4526,16 @@
       </elements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
+        <namespace api="N:Yfy.Api.Exceptions" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Exception.UnAuthorizedException.ToString">
+    <api id="M:Yfy.Api.Exceptions.UnAuthorizedException.ToString">
       <apidata name="ToString" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="true" />
       <overrides>
-        <member api="M:Yfy.Api.Exception.YfyHttpException.ToString">
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
+        <member api="M:Yfy.Api.Exceptions.YfyHttpException.ToString">
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
         </member>
       </overrides>
       <returns>
@@ -4548,28 +4548,28 @@
       </implements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.UnAuthorizedException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.UnAuthorizedException" ref="true" />
       </containers>
     </api>
-    <api id="T:Yfy.Api.Exception.YfyApiException">
+    <api id="T:Yfy.Api.Exceptions.YfyApiException">
       <apidata name="YfyApiException" group="type" subgroup="class" />
       <typedata visibility="public" serializable="false" />
       <family>
         <ancestors>
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
-          <type api="T:Yfy.Api.Exception.YfyException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyException" ref="true" />
           <type api="T:System.Exception" ref="true" />
           <type api="T:System.Object" ref="true" />
         </ancestors>
       </family>
       <elements>
-        <element api="M:Yfy.Api.Exception.YfyApiException.ToString" />
-        <element api="P:Yfy.Api.Exception.YfyApiException.ErrorCode" />
-        <element api="P:Yfy.Api.Exception.YfyApiException.ErrorMsg" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.StatusCode" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.RequestUri" />
-        <element api="P:Yfy.Api.Exception.YfyException.RequestId" />
+        <element api="M:Yfy.Api.Exceptions.YfyApiException.ToString" />
+        <element api="P:Yfy.Api.Exceptions.YfyApiException.ErrorCode" />
+        <element api="P:Yfy.Api.Exceptions.YfyApiException.ErrorMsg" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri" />
+        <element api="P:Yfy.Api.Exceptions.YfyException.RequestId" />
         <element api="M:System.Exception.GetBaseException">
           <apidata name="GetBaseException" group="member" subgroup="method" />
           <memberdata visibility="public" />
@@ -4842,10 +4842,10 @@
       </elements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
+        <namespace api="N:Yfy.Api.Exceptions" />
       </containers>
     </api>
-    <api id="P:Yfy.Api.Exception.YfyApiException.ErrorCode">
+    <api id="P:Yfy.Api.Exceptions.YfyApiException.ErrorCode">
       <apidata name="ErrorCode" group="member" subgroup="property" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
@@ -4856,11 +4856,11 @@
       </returns>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.YfyApiException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.YfyApiException" ref="true" />
       </containers>
     </api>
-    <api id="P:Yfy.Api.Exception.YfyApiException.ErrorMsg">
+    <api id="P:Yfy.Api.Exceptions.YfyApiException.ErrorMsg">
       <apidata name="ErrorMsg" group="member" subgroup="property" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
@@ -4871,17 +4871,17 @@
       </returns>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.YfyApiException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.YfyApiException" ref="true" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Exception.YfyApiException.ToString">
+    <api id="M:Yfy.Api.Exceptions.YfyApiException.ToString">
       <apidata name="ToString" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="true" />
       <overrides>
-        <member api="M:Yfy.Api.Exception.YfyHttpException.ToString">
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
+        <member api="M:Yfy.Api.Exceptions.YfyHttpException.ToString">
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
         </member>
       </overrides>
       <returns>
@@ -4894,11 +4894,11 @@
       </implements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.YfyApiException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.YfyApiException" ref="true" />
       </containers>
     </api>
-    <api id="T:Yfy.Api.Exception.YfyException">
+    <api id="T:Yfy.Api.Exceptions.YfyException">
       <apidata name="YfyException" group="type" subgroup="class" />
       <typedata visibility="public" serializable="false" />
       <family>
@@ -4907,12 +4907,12 @@
           <type api="T:System.Object" ref="true" />
         </ancestors>
         <descendents>
-          <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
         </descendents>
       </family>
       <elements>
-        <element api="M:Yfy.Api.Exception.YfyException.ToString" />
-        <element api="P:Yfy.Api.Exception.YfyException.RequestId" />
+        <element api="M:Yfy.Api.Exceptions.YfyException.ToString" />
+        <element api="P:Yfy.Api.Exceptions.YfyException.RequestId" />
         <element api="M:System.Exception.GetBaseException">
           <apidata name="GetBaseException" group="member" subgroup="method" />
           <memberdata visibility="public" />
@@ -5185,10 +5185,10 @@
       </elements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
+        <namespace api="N:Yfy.Api.Exceptions" />
       </containers>
     </api>
-    <api id="P:Yfy.Api.Exception.YfyException.RequestId">
+    <api id="P:Yfy.Api.Exceptions.YfyException.RequestId">
       <apidata name="RequestId" group="member" subgroup="property" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
@@ -5199,11 +5199,11 @@
       </returns>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.YfyException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.YfyException" ref="true" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Exception.YfyException.ToString">
+    <api id="M:Yfy.Api.Exceptions.YfyException.ToString">
       <apidata name="ToString" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="true" />
@@ -5222,33 +5222,33 @@
       </implements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.YfyException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.YfyException" ref="true" />
       </containers>
     </api>
-    <api id="T:Yfy.Api.Exception.YfyHttpException">
+    <api id="T:Yfy.Api.Exceptions.YfyHttpException">
       <apidata name="YfyHttpException" group="type" subgroup="class" />
       <typedata visibility="public" serializable="false" />
       <family>
         <ancestors>
-          <type api="T:Yfy.Api.Exception.YfyException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyException" ref="true" />
           <type api="T:System.Exception" ref="true" />
           <type api="T:System.Object" ref="true" />
         </ancestors>
         <descendents>
-          <type api="T:Yfy.Api.Exception.InternalServerException" ref="true" />
-          <type api="T:Yfy.Api.Exception.YfyApiException" ref="true" />
-          <type api="T:Yfy.Api.Exception.BadInputException" ref="true" />
-          <type api="T:Yfy.Api.Exception.BadResponseException" ref="true" />
-          <type api="T:Yfy.Api.Exception.RateLimitException" ref="true" />
-          <type api="T:Yfy.Api.Exception.UnAuthorizedException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.InternalServerException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.YfyApiException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.BadInputException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.BadResponseException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.RateLimitException" ref="true" />
+          <type api="T:Yfy.Api.Exceptions.UnAuthorizedException" ref="true" />
         </descendents>
       </family>
       <elements>
-        <element api="M:Yfy.Api.Exception.YfyHttpException.ToString" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.StatusCode" />
-        <element api="P:Yfy.Api.Exception.YfyHttpException.RequestUri" />
-        <element api="P:Yfy.Api.Exception.YfyException.RequestId" />
+        <element api="M:Yfy.Api.Exceptions.YfyHttpException.ToString" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode" />
+        <element api="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri" />
+        <element api="P:Yfy.Api.Exceptions.YfyException.RequestId" />
         <element api="M:System.Exception.GetBaseException">
           <apidata name="GetBaseException" group="member" subgroup="method" />
           <memberdata visibility="public" />
@@ -5521,10 +5521,10 @@
       </elements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
+        <namespace api="N:Yfy.Api.Exceptions" />
       </containers>
     </api>
-    <api id="P:Yfy.Api.Exception.YfyHttpException.RequestUri">
+    <api id="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri">
       <apidata name="RequestUri" group="member" subgroup="property" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
@@ -5535,11 +5535,11 @@
       </returns>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
       </containers>
     </api>
-    <api id="P:Yfy.Api.Exception.YfyHttpException.StatusCode">
+    <api id="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode">
       <apidata name="StatusCode" group="member" subgroup="property" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
@@ -5550,17 +5550,17 @@
       </returns>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Exception.YfyHttpException.ToString">
+    <api id="M:Yfy.Api.Exceptions.YfyHttpException.ToString">
       <apidata name="ToString" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="true" />
       <overrides>
-        <member api="M:Yfy.Api.Exception.YfyException.ToString">
-          <type api="T:Yfy.Api.Exception.YfyException" ref="true" />
+        <member api="M:Yfy.Api.Exceptions.YfyException.ToString">
+          <type api="T:Yfy.Api.Exceptions.YfyException" ref="true" />
         </member>
       </overrides>
       <returns>
@@ -5573,8 +5573,8 @@
       </implements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
-        <namespace api="N:Yfy.Api.Exception" />
-        <type api="T:Yfy.Api.Exception.YfyHttpException" ref="true" />
+        <namespace api="N:Yfy.Api.Exceptions" />
+        <type api="T:Yfy.Api.Exceptions.YfyHttpException" ref="true" />
       </containers>
     </api>
     <api id="N:Yfy.Api.Files">
@@ -9349,12 +9349,8 @@
         <parameter name="profilePicKey">
           <type api="T:System.String" ref="true" />
         </parameter>
-        <parameter name="userId" optional="true">
+        <parameter name="userId">
           <type api="T:System.Int64" ref="false" />
-          <argument>
-            <type api="T:System.Int64" ref="false" />
-            <value>0</value>
-          </argument>
         </parameter>
       </parameters>
       <returns>

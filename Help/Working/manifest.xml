@@ -22,7 +22,7 @@
   <topic id="M:Yfy.Api.YfyClient.SetOauth2AccessToken(System.String)" type="API" />
   <topic id="M:Yfy.Api.YfyClient.SetOauth2RefreshToken(System.String)" type="API" />
   <topic id="M:Yfy.Api.YfyClient.SetProxy(System.Net.WebProxy)" type="API" />
-  <topic id="M:Yfy.Api.YfyClient.SetTimeOut(System.Int32)" type="API" />
+  <topic id="M:Yfy.Api.YfyClient.SetTimeout(System.Int32)" type="API" />
   <topic id="M:Yfy.Api.YfyClient.SetTokenRegister(Yfy.Api.IYfyTokenRegister)" type="API" />
   <topic id="P:Yfy.Api.YfyClient.ShareLink" type="API" />
   <topic id="P:Yfy.Api.YfyClient.Trash" type="API" />
@@ -109,52 +109,52 @@
   <topic id="Properties.T:Yfy.Api.Comment.YfyCommentCollection" type="API" />
   <topic id="M:Yfy.Api.Comment.YfyCommentCollection.#ctor" type="API" />
   <topic id="P:Yfy.Api.Comment.YfyCommentCollection.Comments" type="API" />
-  <topic id="N:Yfy.Api.Exception" type="API" />
-  <topic id="T:Yfy.Api.Exception.BadInputException" type="API" />
-  <topic id="Methods.T:Yfy.Api.Exception.BadInputException" type="API" />
-  <topic id="Properties.T:Yfy.Api.Exception.BadInputException" type="API" />
-  <topic id="M:Yfy.Api.Exception.BadInputException.ToString" type="API" />
-  <topic id="T:Yfy.Api.Exception.BadResponseException" type="API" />
-  <topic id="Methods.T:Yfy.Api.Exception.BadResponseException" type="API" />
-  <topic id="Properties.T:Yfy.Api.Exception.BadResponseException" type="API" />
-  <topic id="M:Yfy.Api.Exception.BadResponseException.ToString" type="API" />
-  <topic id="T:Yfy.Api.Exception.InternalServerException" type="API" />
-  <topic id="Methods.T:Yfy.Api.Exception.InternalServerException" type="API" />
-  <topic id="Properties.T:Yfy.Api.Exception.InternalServerException" type="API" />
-  <topic id="M:Yfy.Api.Exception.InternalServerException.ToString" type="API" />
-  <topic id="T:Yfy.Api.Exception.RateLimitException" type="API" />
-  <topic id="Methods.T:Yfy.Api.Exception.RateLimitException" type="API" />
-  <topic id="Properties.T:Yfy.Api.Exception.RateLimitException" type="API" />
-  <topic id="Fields.T:Yfy.Api.Exception.RateLimitException" type="API" />
-  <topic id="F:Yfy.Api.Exception.RateLimitException.RateLimitStatusCode" type="API" />
-  <topic id="P:Yfy.Api.Exception.RateLimitException.RetryAfterTime" type="API" />
-  <topic id="M:Yfy.Api.Exception.RateLimitException.ToString" type="API" />
-  <topic id="T:Yfy.Api.Exception.RefreshTokenExpiredException" type="API" />
-  <topic id="Methods.T:Yfy.Api.Exception.RefreshTokenExpiredException" type="API" />
-  <topic id="Properties.T:Yfy.Api.Exception.RefreshTokenExpiredException" type="API" />
-  <topic id="P:Yfy.Api.Exception.RefreshTokenExpiredException.RefreshToken" type="API" />
-  <topic id="M:Yfy.Api.Exception.RefreshTokenExpiredException.ToString" type="API" />
-  <topic id="T:Yfy.Api.Exception.UnAuthorizedException" type="API" />
-  <topic id="Methods.T:Yfy.Api.Exception.UnAuthorizedException" type="API" />
-  <topic id="Properties.T:Yfy.Api.Exception.UnAuthorizedException" type="API" />
-  <topic id="M:Yfy.Api.Exception.UnAuthorizedException.ToString" type="API" />
-  <topic id="T:Yfy.Api.Exception.YfyApiException" type="API" />
-  <topic id="Methods.T:Yfy.Api.Exception.YfyApiException" type="API" />
-  <topic id="Properties.T:Yfy.Api.Exception.YfyApiException" type="API" />
-  <topic id="P:Yfy.Api.Exception.YfyApiException.ErrorCode" type="API" />
-  <topic id="P:Yfy.Api.Exception.YfyApiException.ErrorMsg" type="API" />
-  <topic id="M:Yfy.Api.Exception.YfyApiException.ToString" type="API" />
-  <topic id="T:Yfy.Api.Exception.YfyException" type="API" />
-  <topic id="Methods.T:Yfy.Api.Exception.YfyException" type="API" />
-  <topic id="Properties.T:Yfy.Api.Exception.YfyException" type="API" />
-  <topic id="P:Yfy.Api.Exception.YfyException.RequestId" type="API" />
-  <topic id="M:Yfy.Api.Exception.YfyException.ToString" type="API" />
-  <topic id="T:Yfy.Api.Exception.YfyHttpException" type="API" />
-  <topic id="Methods.T:Yfy.Api.Exception.YfyHttpException" type="API" />
-  <topic id="Properties.T:Yfy.Api.Exception.YfyHttpException" type="API" />
-  <topic id="P:Yfy.Api.Exception.YfyHttpException.RequestUri" type="API" />
-  <topic id="P:Yfy.Api.Exception.YfyHttpException.StatusCode" type="API" />
-  <topic id="M:Yfy.Api.Exception.YfyHttpException.ToString" type="API" />
+  <topic id="N:Yfy.Api.Exceptions" type="API" />
+  <topic id="T:Yfy.Api.Exceptions.BadInputException" type="API" />
+  <topic id="Methods.T:Yfy.Api.Exceptions.BadInputException" type="API" />
+  <topic id="Properties.T:Yfy.Api.Exceptions.BadInputException" type="API" />
+  <topic id="M:Yfy.Api.Exceptions.BadInputException.ToString" type="API" />
+  <topic id="T:Yfy.Api.Exceptions.BadResponseException" type="API" />
+  <topic id="Methods.T:Yfy.Api.Exceptions.BadResponseException" type="API" />
+  <topic id="Properties.T:Yfy.Api.Exceptions.BadResponseException" type="API" />
+  <topic id="M:Yfy.Api.Exceptions.BadResponseException.ToString" type="API" />
+  <topic id="T:Yfy.Api.Exceptions.InternalServerException" type="API" />
+  <topic id="Methods.T:Yfy.Api.Exceptions.InternalServerException" type="API" />
+  <topic id="Properties.T:Yfy.Api.Exceptions.InternalServerException" type="API" />
+  <topic id="M:Yfy.Api.Exceptions.InternalServerException.ToString" type="API" />
+  <topic id="T:Yfy.Api.Exceptions.RateLimitException" type="API" />
+  <topic id="Methods.T:Yfy.Api.Exceptions.RateLimitException" type="API" />
+  <topic id="Properties.T:Yfy.Api.Exceptions.RateLimitException" type="API" />
+  <topic id="Fields.T:Yfy.Api.Exceptions.RateLimitException" type="API" />
+  <topic id="F:Yfy.Api.Exceptions.RateLimitException.RateLimitStatusCode" type="API" />
+  <topic id="P:Yfy.Api.Exceptions.RateLimitException.RetryAfterTime" type="API" />
+  <topic id="M:Yfy.Api.Exceptions.RateLimitException.ToString" type="API" />
+  <topic id="T:Yfy.Api.Exceptions.RefreshTokenExpiredException" type="API" />
+  <topic id="Methods.T:Yfy.Api.Exceptions.RefreshTokenExpiredException" type="API" />
+  <topic id="Properties.T:Yfy.Api.Exceptions.RefreshTokenExpiredException" type="API" />
+  <topic id="P:Yfy.Api.Exceptions.RefreshTokenExpiredException.RefreshToken" type="API" />
+  <topic id="M:Yfy.Api.Exceptions.RefreshTokenExpiredException.ToString" type="API" />
+  <topic id="T:Yfy.Api.Exceptions.UnAuthorizedException" type="API" />
+  <topic id="Methods.T:Yfy.Api.Exceptions.UnAuthorizedException" type="API" />
+  <topic id="Properties.T:Yfy.Api.Exceptions.UnAuthorizedException" type="API" />
+  <topic id="M:Yfy.Api.Exceptions.UnAuthorizedException.ToString" type="API" />
+  <topic id="T:Yfy.Api.Exceptions.YfyApiException" type="API" />
+  <topic id="Methods.T:Yfy.Api.Exceptions.YfyApiException" type="API" />
+  <topic id="Properties.T:Yfy.Api.Exceptions.YfyApiException" type="API" />
+  <topic id="P:Yfy.Api.Exceptions.YfyApiException.ErrorCode" type="API" />
+  <topic id="P:Yfy.Api.Exceptions.YfyApiException.ErrorMsg" type="API" />
+  <topic id="M:Yfy.Api.Exceptions.YfyApiException.ToString" type="API" />
+  <topic id="T:Yfy.Api.Exceptions.YfyException" type="API" />
+  <topic id="Methods.T:Yfy.Api.Exceptions.YfyException" type="API" />
+  <topic id="Properties.T:Yfy.Api.Exceptions.YfyException" type="API" />
+  <topic id="P:Yfy.Api.Exceptions.YfyException.RequestId" type="API" />
+  <topic id="M:Yfy.Api.Exceptions.YfyException.ToString" type="API" />
+  <topic id="T:Yfy.Api.Exceptions.YfyHttpException" type="API" />
+  <topic id="Methods.T:Yfy.Api.Exceptions.YfyHttpException" type="API" />
+  <topic id="Properties.T:Yfy.Api.Exceptions.YfyHttpException" type="API" />
+  <topic id="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri" type="API" />
+  <topic id="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode" type="API" />
+  <topic id="M:Yfy.Api.Exceptions.YfyHttpException.ToString" type="API" />
   <topic id="N:Yfy.Api.Files" type="API" />
   <topic id="T:Yfy.Api.Files.FileRouter" type="API" />
   <topic id="Methods.T:Yfy.Api.Files.FileRouter" type="API" />

@@ -30,7 +30,7 @@
           <topic id="M:Yfy.Api.YfyClient.SetOauth2AccessToken(System.String)" project="Yfy.Api" file="66bf1500-2b0a-0ad7-7a35-30ec3d809635" />
           <topic id="M:Yfy.Api.YfyClient.SetOauth2RefreshToken(System.String)" project="Yfy.Api" file="0bd4382c-b6c8-40ac-7e46-d7cb13a246b4" />
           <topic id="M:Yfy.Api.YfyClient.SetProxy(System.Net.WebProxy)" project="Yfy.Api" file="23ca8382-6115-cabe-e137-7227fe958221" />
-          <topic id="M:Yfy.Api.YfyClient.SetTimeOut(System.Int32)" project="Yfy.Api" file="6d8ae76f-6d08-ad5b-838b-5191c5d0ed09" />
+          <topic id="M:Yfy.Api.YfyClient.SetTimeout(System.Int32)" project="Yfy.Api" file="f17850ed-540c-fe7d-693e-5f5c1bb4b34e" />
           <topic id="M:Yfy.Api.YfyClient.SetTokenRegister(Yfy.Api.IYfyTokenRegister)" project="Yfy.Api" file="042216d7-5adb-1d2c-2932-3d51c6badd80" />
         </topic>
       </topic>
@@ -145,74 +145,74 @@
         <topic id="Methods.T:Yfy.Api.Comment.YfyCommentCollection" project="Yfy.Api" file="9893e818-65ee-bd71-a7af-46cd48afb81f" />
       </topic>
     </topic>
-    <topic id="N:Yfy.Api.Exception" project="_Namespaces" file="138306e0-1395-3452-c614-3ce034ded07e">
-      <topic id="T:Yfy.Api.Exception.BadInputException" project="Yfy.Api" file="efbede8c-300c-ba20-fab0-956eb52ae5f1">
-        <topic id="Properties.T:Yfy.Api.Exception.BadInputException" project="Yfy.Api" file="25185e24-78c9-78ea-bcd0-ae54e21d8824" />
-        <topic id="Methods.T:Yfy.Api.Exception.BadInputException" project="Yfy.Api" file="f11d77ec-23df-1ff9-d2b6-c2fd299eb1af">
-          <topic id="M:Yfy.Api.Exception.BadInputException.ToString" project="Yfy.Api" file="172efca1-236b-fc25-76ec-c0500244d0df" />
+    <topic id="N:Yfy.Api.Exceptions" project="_Namespaces" file="0957bac8-b44a-27af-eab1-6a3232f83a27">
+      <topic id="T:Yfy.Api.Exceptions.BadInputException" project="Yfy.Api" file="6861c285-89f3-405b-5ae0-f28ea471f609">
+        <topic id="Properties.T:Yfy.Api.Exceptions.BadInputException" project="Yfy.Api" file="b299a5d8-169b-9db4-2c5c-9c5a5efb19b4" />
+        <topic id="Methods.T:Yfy.Api.Exceptions.BadInputException" project="Yfy.Api" file="cc6af66c-1f8e-e62e-087f-a5dd59fdaf96">
+          <topic id="M:Yfy.Api.Exceptions.BadInputException.ToString" project="Yfy.Api" file="0c7150ef-6f44-51dc-7616-a6cfeedeb593" />
         </topic>
       </topic>
-      <topic id="T:Yfy.Api.Exception.BadResponseException" project="Yfy.Api" file="11f1ee13-ae42-f430-4f9b-d7962c1bf4d1">
-        <topic id="Properties.T:Yfy.Api.Exception.BadResponseException" project="Yfy.Api" file="8013bc24-a27a-d4f1-9b1f-0f5451c97e8f" />
-        <topic id="Methods.T:Yfy.Api.Exception.BadResponseException" project="Yfy.Api" file="383f0c51-0521-9cdb-4e9c-1c0fe672ea80">
-          <topic id="M:Yfy.Api.Exception.BadResponseException.ToString" project="Yfy.Api" file="f31091aa-8290-7337-9df7-66babe09cbab" />
+      <topic id="T:Yfy.Api.Exceptions.BadResponseException" project="Yfy.Api" file="23aacb60-20ca-22e1-ca5d-df45184753ec">
+        <topic id="Properties.T:Yfy.Api.Exceptions.BadResponseException" project="Yfy.Api" file="a6f85681-5d0d-6dd5-c8ce-d8a4d4ea8ab7" />
+        <topic id="Methods.T:Yfy.Api.Exceptions.BadResponseException" project="Yfy.Api" file="eff46ab5-8cde-853d-016f-5d2db1859f09">
+          <topic id="M:Yfy.Api.Exceptions.BadResponseException.ToString" project="Yfy.Api" file="61ba150f-4622-3b36-2303-e14e01ceb0dd" />
         </topic>
       </topic>
-      <topic id="T:Yfy.Api.Exception.InternalServerException" project="Yfy.Api" file="b44a9e41-225f-0eaa-7474-e3294e0285b1">
-        <topic id="Properties.T:Yfy.Api.Exception.InternalServerException" project="Yfy.Api" file="57ee1336-dc20-6b7e-a103-85fb2f0bee86" />
-        <topic id="Methods.T:Yfy.Api.Exception.InternalServerException" project="Yfy.Api" file="70c4e38d-7fa7-895d-89d6-138b93bfcbfa">
-          <topic id="M:Yfy.Api.Exception.InternalServerException.ToString" project="Yfy.Api" file="e34d8814-1e55-2e8c-5760-2239d205815f" />
+      <topic id="T:Yfy.Api.Exceptions.InternalServerException" project="Yfy.Api" file="013d6003-52d4-e3bb-c282-e3aca5b547f6">
+        <topic id="Properties.T:Yfy.Api.Exceptions.InternalServerException" project="Yfy.Api" file="9336b822-48eb-7dec-c1fc-9f9a2922e784" />
+        <topic id="Methods.T:Yfy.Api.Exceptions.InternalServerException" project="Yfy.Api" file="8f19bb08-7369-42c8-c83b-0b8b84badf4d">
+          <topic id="M:Yfy.Api.Exceptions.InternalServerException.ToString" project="Yfy.Api" file="8226e46e-1c2c-2e07-9fa2-42c24c47d121" />
         </topic>
       </topic>
-      <topic id="T:Yfy.Api.Exception.RateLimitException" project="Yfy.Api" file="f2014825-2f95-9363-fb03-db70f68f6b60">
-        <topic id="Properties.T:Yfy.Api.Exception.RateLimitException" project="Yfy.Api" file="d15f0a48-246e-0e37-7533-6fa4f67a0160">
-          <topic id="P:Yfy.Api.Exception.RateLimitException.RetryAfterTime" project="Yfy.Api" file="f38cba3a-8132-06ea-0b01-46f22addc093" />
+      <topic id="T:Yfy.Api.Exceptions.RateLimitException" project="Yfy.Api" file="a7fd2b5b-d459-f80a-a1a4-4d5635a97da0">
+        <topic id="Properties.T:Yfy.Api.Exceptions.RateLimitException" project="Yfy.Api" file="ba9989be-d1bc-8cbf-5926-0c9171fe652b">
+          <topic id="P:Yfy.Api.Exceptions.RateLimitException.RetryAfterTime" project="Yfy.Api" file="d04c8644-0331-70bf-bf2c-554d3fc2e421" />
         </topic>
-        <topic id="Methods.T:Yfy.Api.Exception.RateLimitException" project="Yfy.Api" file="9f088eff-bfbf-b965-ff78-10e4f408f1c4">
-          <topic id="M:Yfy.Api.Exception.RateLimitException.ToString" project="Yfy.Api" file="f9bffce7-fd1c-61ea-0013-45b86ed2d4ac" />
+        <topic id="Methods.T:Yfy.Api.Exceptions.RateLimitException" project="Yfy.Api" file="5ab37772-0439-90c7-a0a6-85c015d72d16">
+          <topic id="M:Yfy.Api.Exceptions.RateLimitException.ToString" project="Yfy.Api" file="75e36563-1ea3-448c-3e54-c675cce20abc" />
         </topic>
-        <topic id="Fields.T:Yfy.Api.Exception.RateLimitException" project="Yfy.Api" file="14efe977-5b4a-6846-d5a8-39c1aab4fea8">
-          <topic id="F:Yfy.Api.Exception.RateLimitException.RateLimitStatusCode" project="Yfy.Api" file="55e4acf5-160f-ecef-2791-c45eb3a23f5a" />
-        </topic>
-      </topic>
-      <topic id="T:Yfy.Api.Exception.RefreshTokenExpiredException" project="Yfy.Api" file="7622a659-d741-d18c-1686-09fb0f63be73">
-        <topic id="Properties.T:Yfy.Api.Exception.RefreshTokenExpiredException" project="Yfy.Api" file="cff86c96-346b-cbf0-c273-6c560c40b2cb">
-          <topic id="P:Yfy.Api.Exception.RefreshTokenExpiredException.RefreshToken" project="Yfy.Api" file="4312d564-1749-9637-a669-626846c98cb4" />
-        </topic>
-        <topic id="Methods.T:Yfy.Api.Exception.RefreshTokenExpiredException" project="Yfy.Api" file="e8ffd009-bbd7-df63-3b45-d6d44a7c1ba4">
-          <topic id="M:Yfy.Api.Exception.RefreshTokenExpiredException.ToString" project="Yfy.Api" file="280354e4-2695-6816-e8a5-7e3b18bd321a" />
+        <topic id="Fields.T:Yfy.Api.Exceptions.RateLimitException" project="Yfy.Api" file="044e3bb6-37d8-281d-124c-f4eb2478bfa5">
+          <topic id="F:Yfy.Api.Exceptions.RateLimitException.RateLimitStatusCode" project="Yfy.Api" file="2a7ad323-ffdb-a6fe-4b3f-f77f3736cf66" />
         </topic>
       </topic>
-      <topic id="T:Yfy.Api.Exception.UnAuthorizedException" project="Yfy.Api" file="3c202113-9baf-d76c-456a-30291b3cdc35">
-        <topic id="Properties.T:Yfy.Api.Exception.UnAuthorizedException" project="Yfy.Api" file="1ba1399f-58fe-60ca-c8bc-94b517aadf8b" />
-        <topic id="Methods.T:Yfy.Api.Exception.UnAuthorizedException" project="Yfy.Api" file="3d371cd0-2335-8a61-94a1-b4ac155c8eec">
-          <topic id="M:Yfy.Api.Exception.UnAuthorizedException.ToString" project="Yfy.Api" file="909aa6f0-99e6-7192-d0e3-09223798b359" />
+      <topic id="T:Yfy.Api.Exceptions.RefreshTokenExpiredException" project="Yfy.Api" file="72917611-38ec-9ea9-01f5-434b19e68e92">
+        <topic id="Properties.T:Yfy.Api.Exceptions.RefreshTokenExpiredException" project="Yfy.Api" file="9a63c22f-7a16-7198-cdc1-cb4bdf86443e">
+          <topic id="P:Yfy.Api.Exceptions.RefreshTokenExpiredException.RefreshToken" project="Yfy.Api" file="e1a4a1d6-4e8d-7627-473b-93f397d65d82" />
+        </topic>
+        <topic id="Methods.T:Yfy.Api.Exceptions.RefreshTokenExpiredException" project="Yfy.Api" file="3bbaf984-16b5-f1ed-fe2a-e45349986551">
+          <topic id="M:Yfy.Api.Exceptions.RefreshTokenExpiredException.ToString" project="Yfy.Api" file="897fdc6f-05d0-0d28-1704-b6b3a13d9e39" />
         </topic>
       </topic>
-      <topic id="T:Yfy.Api.Exception.YfyApiException" project="Yfy.Api" file="c5472502-3d45-3ed4-0cee-03dc8009dee6">
-        <topic id="Properties.T:Yfy.Api.Exception.YfyApiException" project="Yfy.Api" file="6522258e-0a71-d2f0-7c27-ed6e72c0a475">
-          <topic id="P:Yfy.Api.Exception.YfyApiException.ErrorCode" project="Yfy.Api" file="f9894423-0990-077b-b476-bd55747372c4" />
-          <topic id="P:Yfy.Api.Exception.YfyApiException.ErrorMsg" project="Yfy.Api" file="787fb3f3-713a-c8c3-bc61-e433c29ab876" />
-        </topic>
-        <topic id="Methods.T:Yfy.Api.Exception.YfyApiException" project="Yfy.Api" file="db2bf654-0e2e-ae2b-53e6-8ae57040bd02">
-          <topic id="M:Yfy.Api.Exception.YfyApiException.ToString" project="Yfy.Api" file="022d6acd-485e-6701-bc23-598ca1fc1918" />
+      <topic id="T:Yfy.Api.Exceptions.UnAuthorizedException" project="Yfy.Api" file="300591e4-5a11-56cb-69cf-a99224f1a0c6">
+        <topic id="Properties.T:Yfy.Api.Exceptions.UnAuthorizedException" project="Yfy.Api" file="91314781-ec93-ef21-bacb-59aa261a764b" />
+        <topic id="Methods.T:Yfy.Api.Exceptions.UnAuthorizedException" project="Yfy.Api" file="e0de943e-0cfd-5bb5-f116-233b19ca0c54">
+          <topic id="M:Yfy.Api.Exceptions.UnAuthorizedException.ToString" project="Yfy.Api" file="6414b94a-0355-7562-cf46-8efe5123fa3c" />
         </topic>
       </topic>
-      <topic id="T:Yfy.Api.Exception.YfyException" project="Yfy.Api" file="60bf5cdd-3871-cc9c-390f-686801223a66">
-        <topic id="Properties.T:Yfy.Api.Exception.YfyException" project="Yfy.Api" file="df53abb4-7cdc-8ecf-ea15-30f379668488">
-          <topic id="P:Yfy.Api.Exception.YfyException.RequestId" project="Yfy.Api" file="cec671fa-2079-f2b2-7c8e-e4dfaf09b34b" />
+      <topic id="T:Yfy.Api.Exceptions.YfyApiException" project="Yfy.Api" file="3152838d-3ba6-f3e8-b71a-63e3d0aa04e3">
+        <topic id="Properties.T:Yfy.Api.Exceptions.YfyApiException" project="Yfy.Api" file="a1ce52ab-9c6f-40be-cb43-9969878ba1a3">
+          <topic id="P:Yfy.Api.Exceptions.YfyApiException.ErrorCode" project="Yfy.Api" file="a204e0ff-8296-69f5-4c0e-59b53d06928b" />
+          <topic id="P:Yfy.Api.Exceptions.YfyApiException.ErrorMsg" project="Yfy.Api" file="864dbc33-6d2b-ea9b-dd4f-086f6c8722ab" />
         </topic>
-        <topic id="Methods.T:Yfy.Api.Exception.YfyException" project="Yfy.Api" file="ea35ae42-4fe8-4357-82e6-03f2d6ca7218">
-          <topic id="M:Yfy.Api.Exception.YfyException.ToString" project="Yfy.Api" file="a1743b5d-da3f-86e5-2a3c-7304ca09b043" />
+        <topic id="Methods.T:Yfy.Api.Exceptions.YfyApiException" project="Yfy.Api" file="5e984562-bcf0-efa0-3687-54322a21de60">
+          <topic id="M:Yfy.Api.Exceptions.YfyApiException.ToString" project="Yfy.Api" file="8974dced-6b85-89eb-3313-24ac1be29376" />
         </topic>
       </topic>
-      <topic id="T:Yfy.Api.Exception.YfyHttpException" project="Yfy.Api" file="9830f268-f5aa-e786-e91a-78abb6fb2b52">
-        <topic id="Properties.T:Yfy.Api.Exception.YfyHttpException" project="Yfy.Api" file="99d7568c-5ca2-fa12-ee12-4f19f6fe3a64">
-          <topic id="P:Yfy.Api.Exception.YfyHttpException.RequestUri" project="Yfy.Api" file="1d4a5194-7e94-767d-1297-193eb6d25d3f" />
-          <topic id="P:Yfy.Api.Exception.YfyHttpException.StatusCode" project="Yfy.Api" file="e6818484-e053-03e1-3e07-cb776f51fb5a" />
+      <topic id="T:Yfy.Api.Exceptions.YfyException" project="Yfy.Api" file="33b92ac1-e3fe-fb5c-5d36-79f52bb10c78">
+        <topic id="Properties.T:Yfy.Api.Exceptions.YfyException" project="Yfy.Api" file="47843c64-c5e0-264e-2634-901634627a6e">
+          <topic id="P:Yfy.Api.Exceptions.YfyException.RequestId" project="Yfy.Api" file="cf68a046-7174-67c3-2b13-0938b339e9d7" />
         </topic>
-        <topic id="Methods.T:Yfy.Api.Exception.YfyHttpException" project="Yfy.Api" file="08347568-5c6b-af03-7f78-b1b173a44a77">
-          <topic id="M:Yfy.Api.Exception.YfyHttpException.ToString" project="Yfy.Api" file="c059e6c5-0e56-253f-cdf2-f3a7590baf99" />
+        <topic id="Methods.T:Yfy.Api.Exceptions.YfyException" project="Yfy.Api" file="8a66b6e5-9c7e-5c00-2621-f293b755db5c">
+          <topic id="M:Yfy.Api.Exceptions.YfyException.ToString" project="Yfy.Api" file="9c571edc-f444-8da7-3a44-1219fff5ef74" />
+        </topic>
+      </topic>
+      <topic id="T:Yfy.Api.Exceptions.YfyHttpException" project="Yfy.Api" file="1ea38ffd-8aa6-5b6f-a964-aa276c1d11f9">
+        <topic id="Properties.T:Yfy.Api.Exceptions.YfyHttpException" project="Yfy.Api" file="f4f27374-97bf-7653-bf29-77c522a87051">
+          <topic id="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri" project="Yfy.Api" file="402e694f-ed6b-09a6-92df-d507ec75d40f" />
+          <topic id="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode" project="Yfy.Api" file="d3959fb3-fcaf-f8e9-e40a-d73538424968" />
+        </topic>
+        <topic id="Methods.T:Yfy.Api.Exceptions.YfyHttpException" project="Yfy.Api" file="69b240de-20cb-86de-d1ff-cbd248cfe1ba">
+          <topic id="M:Yfy.Api.Exceptions.YfyHttpException.ToString" project="Yfy.Api" file="74a61153-0f7c-560d-fe2c-7912c73ae705" />
         </topic>
       </topic>
     </topic>

@@ -100,11 +100,11 @@
             </summary>
       <param name="proxy">代理设置</param>
     </member>
-    <member name="M:Yfy.Api.YfyClient.SetTimeOut(System.Int32)">
+    <member name="M:Yfy.Api.YfyClient.SetTimeout(System.Int32)">
       <summary>
             设置SDK中Http请求的time out
             </summary>
-      <param name="timeOut">time out</param>
+      <param name="timeout">time out</param>
     </member>
     <member name="M:Yfy.Api.YfyClient.SetTokenRegister(Yfy.Api.IYfyTokenRegister)">
       <summary>
@@ -268,6 +268,7 @@
     <member name="P:Yfy.Api.YfyClientHttpConfig.Timeout">
       <summary>
             HttpWebRequest TimeOut
+            默认时间为infinite。可以使用YfyClient中的SetTimeout来改变这个值
             </summary>
     </member>
     <member name="T:Yfy.Api.YfyObject">
@@ -530,12 +531,12 @@
             评论集合
             </summary>
     </member>
-    <member name="T:Yfy.Api.Exception.BadInputException">
+    <member name="T:Yfy.Api.Exceptions.BadInputException">
       <summary>
             请求参数不合法
             </summary>
     </member>
-    <member name="M:Yfy.Api.Exception.BadInputException.ToString">
+    <member name="M:Yfy.Api.Exceptions.BadInputException.ToString">
       <summary>
             返回此异常的通用错误信息
             </summary>
@@ -543,12 +544,12 @@
             通用错误信息的字符串
             </returns>
     </member>
-    <member name="T:Yfy.Api.Exception.BadResponseException">
+    <member name="T:Yfy.Api.Exceptions.BadResponseException">
       <summary>
             Http 402, 403, 409异常
             </summary>
     </member>
-    <member name="M:Yfy.Api.Exception.BadResponseException.ToString">
+    <member name="M:Yfy.Api.Exceptions.BadResponseException.ToString">
       <summary>
             返回此异常的通用错误信息
             </summary>
@@ -556,12 +557,12 @@
             通用错误信息的字符串
             </returns>
     </member>
-    <member name="T:Yfy.Api.Exception.InternalServerException">
+    <member name="T:Yfy.Api.Exceptions.InternalServerException">
       <summary>
             服务器异常
             </summary>
     </member>
-    <member name="M:Yfy.Api.Exception.InternalServerException.ToString">
+    <member name="M:Yfy.Api.Exceptions.InternalServerException.ToString">
       <summary>
             返回此异常的通用错误信息
             </summary>
@@ -569,22 +570,22 @@
             通用错误信息的字符串
             </returns>
     </member>
-    <member name="T:Yfy.Api.Exception.RateLimitException">
+    <member name="T:Yfy.Api.Exceptions.RateLimitException">
       <summary>
             api调用次数达到上限
             </summary>
     </member>
-    <member name="F:Yfy.Api.Exception.RateLimitException.RateLimitStatusCode">
+    <member name="F:Yfy.Api.Exceptions.RateLimitException.RateLimitStatusCode">
       <summary>
             接口调用限制Http状态码常量
             </summary>
     </member>
-    <member name="P:Yfy.Api.Exception.RateLimitException.RetryAfterTime">
+    <member name="P:Yfy.Api.Exceptions.RateLimitException.RetryAfterTime">
       <summary>
             引发该异常之后，在该时间（秒）之后重试
             </summary>
     </member>
-    <member name="M:Yfy.Api.Exception.RateLimitException.ToString">
+    <member name="M:Yfy.Api.Exceptions.RateLimitException.ToString">
       <summary>
             返回此异常的通用错误信息
             </summary>
@@ -592,17 +593,17 @@
             通用错误信息的字符串
             </returns>
     </member>
-    <member name="T:Yfy.Api.Exception.RefreshTokenExpiredException">
+    <member name="T:Yfy.Api.Exceptions.RefreshTokenExpiredException">
       <summary>
             refresh token过期
             </summary>
     </member>
-    <member name="P:Yfy.Api.Exception.RefreshTokenExpiredException.RefreshToken">
+    <member name="P:Yfy.Api.Exceptions.RefreshTokenExpiredException.RefreshToken">
       <summary>
             引发该异常时的refreshtoken值
             </summary>
     </member>
-    <member name="M:Yfy.Api.Exception.RefreshTokenExpiredException.ToString">
+    <member name="M:Yfy.Api.Exceptions.RefreshTokenExpiredException.ToString">
       <summary>
             返回此异常的通用错误信息
             </summary>
@@ -610,12 +611,12 @@
             通用错误信息的字符串
             </returns>
     </member>
-    <member name="T:Yfy.Api.Exception.UnAuthorizedException">
+    <member name="T:Yfy.Api.Exceptions.UnAuthorizedException">
       <summary>
             认证失败
             </summary>
     </member>
-    <member name="M:Yfy.Api.Exception.UnAuthorizedException.ToString">
+    <member name="M:Yfy.Api.Exceptions.UnAuthorizedException.ToString">
       <summary>
             返回此异常的通用错误信息
             </summary>
@@ -623,22 +624,22 @@
             通用错误信息的字符串
             </returns>
     </member>
-    <member name="T:Yfy.Api.Exception.YfyApiException">
+    <member name="T:Yfy.Api.Exceptions.YfyApiException">
       <summary>
             所有亿方云api异常的基类
             </summary>
     </member>
-    <member name="P:Yfy.Api.Exception.YfyApiException.ErrorCode">
+    <member name="P:Yfy.Api.Exceptions.YfyApiException.ErrorCode">
       <summary>
             对应错误中的errors code 字段
             </summary>
     </member>
-    <member name="P:Yfy.Api.Exception.YfyApiException.ErrorMsg">
+    <member name="P:Yfy.Api.Exceptions.YfyApiException.ErrorMsg">
       <summary>
             对应错误中的errors msg 字段
             </summary>
     </member>
-    <member name="M:Yfy.Api.Exception.YfyApiException.ToString">
+    <member name="M:Yfy.Api.Exceptions.YfyApiException.ToString">
       <summary>
             返回此异常的通用错误信息
             </summary>
@@ -646,17 +647,17 @@
             通用错误信息的字符串
             </returns>
     </member>
-    <member name="T:Yfy.Api.Exception.YfyException">
+    <member name="T:Yfy.Api.Exceptions.YfyException">
       <summary>
             亿方云api中所有关于亿方云相关的异常的基类
             </summary>
     </member>
-    <member name="P:Yfy.Api.Exception.YfyException.RequestId">
+    <member name="P:Yfy.Api.Exceptions.YfyException.RequestId">
       <summary>
             引发关于亿方云异常时的requestId
             </summary>
     </member>
-    <member name="M:Yfy.Api.Exception.YfyException.ToString">
+    <member name="M:Yfy.Api.Exceptions.YfyException.ToString">
       <summary>
             返回此异常的通用错误信息
             </summary>
@@ -664,22 +665,22 @@
             通用错误信息的字符串
             </returns>
     </member>
-    <member name="T:Yfy.Api.Exception.YfyHttpException">
+    <member name="T:Yfy.Api.Exceptions.YfyHttpException">
       <summary>
             由http请求引发的异常，是api异常的基类，同时还包括网络异常。
             </summary>
     </member>
-    <member name="P:Yfy.Api.Exception.YfyHttpException.RequestUri">
+    <member name="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri">
       <summary>
             引发异常的请求uri
             </summary>
     </member>
-    <member name="P:Yfy.Api.Exception.YfyHttpException.StatusCode">
+    <member name="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode">
       <summary>
             Http Status Code
             </summary>
     </member>
-    <member name="M:Yfy.Api.Exception.YfyHttpException.ToString">
+    <member name="M:Yfy.Api.Exceptions.YfyHttpException.ToString">
       <summary>
             返回此异常的通用错误信息
             </summary>
