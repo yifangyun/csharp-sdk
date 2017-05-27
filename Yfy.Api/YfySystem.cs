@@ -23,7 +23,7 @@
 
             //Init User Agent
             Assembly assembly = Assembly.GetExecutingAssembly();
-            YfyRequestHandler.UserAgent = string.Format(YfyClientInfo.ClientId + "OfficialFangcloudCSharpSDK/{0}", assembly.GetName().Version.ToString());
+            YfyRequestHandler.UserAgent = string.Format(YfyClientInfo.ClientId + " " + "OfficialFangcloudCSharpSDK/{0}", assembly.GetName().Version.ToString());
 
             //Get Caller ImageRuntimeVersion
             Assembly callerAssemble = Assembly.GetCallingAssembly();
