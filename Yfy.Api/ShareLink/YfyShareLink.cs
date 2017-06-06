@@ -51,6 +51,34 @@
         [JsonProperty("disable_download", DefaultValueHandling = DefaultValueHandling.Ignore)]
         [DefaultValue(false)]
         public bool DisableDownload { get; set; }
+
+        /// <summary>
+        /// 创建时间
+        /// </summary>
+        [JsonProperty("created_at")]
+        [DefaultValue(0)]
+        public int CreatedAt { get; set; }
+
+        /// <summary>
+        /// 最后修改时间
+        /// </summary>
+        [JsonProperty("modified_at")]
+        [DefaultValue(0)]
+        public int ModifiedAt { get; set; }
+
+        /// <summary>
+        /// 该分享链接中内容的总下载次数
+        /// </summary>
+        [JsonProperty("download_count_total")]
+        [DefaultValue(0)]
+        public int DownloadCountTotal { get; set; }
+
+        /// <summary>
+        /// 该分享链接的总共查看次数
+        /// </summary>
+        [JsonProperty("view_count")]
+        [DefaultValue(0)]
+        public int ViewCount { get; set; }
     }
 
     /// <summary>

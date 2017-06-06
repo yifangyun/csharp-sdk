@@ -1,6 +1,7 @@
 ﻿namespace Yfy.Api.Users
 {
     using Newtonsoft.Json;
+    using Yfy.Api.Enterprises;
 
     /// <summary>
     /// mini用户
@@ -28,7 +29,7 @@
         /// <summary>
         /// 用户企业id
         /// </summary>
-        [JsonProperty("enterprise_id")]
-        public long EnterpriseId { get; set; }
+        [JsonProperty("enterprise")]
+        public YfyMiniEnterprise Enterprise { get; set; }
     }
 }

@@ -14,9 +14,9 @@
         [DefaultValue(ItemType.all)]
         public ItemType Type { get; set; }
 
-        [JsonProperty("page_number")]
+        [JsonProperty("page_id")]
         [DefaultValue(0)]
-        public int PageNumber { get; set; }
+        public int PageId { get; set; }
 
         [JsonProperty("search_in_folder")]
         [DefaultValue(0)]
@@ -27,7 +27,7 @@
             this.QueryWords = queryWords;
             this.SearchInFolder = searchInFolder;
             this.Type = type;
-            this.PageNumber = pageNumber;
+            this.PageId = pageNumber;
         }
     }
 }

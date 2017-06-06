@@ -91,6 +91,8 @@
     <Compile Include="Args.cs" />
     <Compile Include="Items\YfyItem.cs" />
     <Compile Include="Exceptions\YfyException.cs" />
+    <Compile Include="Enterprise\YfyMiniEnterprise.cs" />
+    <Compile Include="Utils\Sha1Helper.cs" />
     <Compile Include="YfyObject.cs" />
     <Compile Include="ShareLink\YfyShareLink.cs" />
     <Compile Include="ShareLink\CreateShareLink.cs" />

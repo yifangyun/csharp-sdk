@@ -173,10 +173,11 @@
         /// 获取文件的下载地址
         /// </summary>
         /// <param name="fileId">文件id</param>
+        /// <param name="version">下载版本号</param>
         /// <returns>下载链接，访问该下载链接即可下载文件，下载链接的有效时间为1个小时，且只能被使用一次</returns>
-        public string GetDownloadUrl(long fileId)
+        public string GetDownloadUrl(long fileId, int version = 0)
         {
-            return this._transport.SendRpcRequest<GetArg, DownloadFileUrl>(new GetArg(), UriHelper.DownloadFileUri(fileId)).DownloadUrls[fileId];
+            return this._transport.SendRpcRequest<GetArg, DownloadFileUrl>(new GetArg(), UriHelper.DownloadFileUri(fileId, version)).DownloadUrl;
         }
 
         /// <summary>
@@ -184,11 +185,22 @@
         /// </summary>
         /// <param name="fileId">文件id</param>
         /// <param name="saveFilePath">本地保存的文件路径</param>
+        /// <param name="version">下载版本号</param>
+        /// <param name="checkSha1">是否检查文件sha1值。如果sha1值和服务器不一致，会删除已经下载的文件，返回false</param>
         /// <returns>是否成功</returns>
-        public bool Download(long fileId, string saveFilePath)
+        public bool Download(long fileId, string saveFilePath, int version = 0, bool checkSha1 = false)
         {
-            var downloadUrl = GetDownloadUrl(fileId);
+            var downloadUrl = GetDownloadUrl(fileId, version);
             this._transport.SendDownloadRequest(saveFilePath, new Uri(downloadUrl));
+            if (checkSha1)
+            {
+                var fileInfo = this.Info(fileId);
+                if (Sha1Helper.ComputeSha1(saveFilePath) != fileInfo.Sha1)
+                {
+                    File.Delete(saveFilePath);
+                    return false;
+                }
+            }
             return true;
         }
 

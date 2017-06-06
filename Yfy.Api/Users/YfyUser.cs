@@ -2,6 +2,7 @@
 {
     using Newtonsoft.Json;
     using System.Collections.Generic;
+    using Yfy.Api.Enterprises;
 
     /// <summary>
     /// 通用用户对象
@@ -17,8 +18,8 @@
         /// <summary>
         /// 企业id
         /// </summary>
-        [JsonProperty("enterprise_id")]
-        public long EnterpriseId { get; set; }
+        [JsonProperty("enterprise")]
+        public YfyMiniEnterprise Enterprise { get; set; }
 
         /// <summary>
         /// 姓名
@@ -31,6 +32,12 @@
         /// </summary>
         [JsonProperty("phone")]
         public string Phone { get; set; }
+
+        /// <summary>
+        /// 用户登录名（邮箱或手机）
+        /// </summary>
+        [JsonProperty("login")]
+        public string Login { get; set; }
 
         /// <summary>
         /// 电子邮件

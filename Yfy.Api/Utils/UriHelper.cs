@@ -80,9 +80,9 @@
 
 #region common api list
 
-        public static Uri SearchUri(string queryWords, long searchInFolder = 0, ItemType type = ItemType.all, int pageNumber = 0)
+        public static Uri SearchUri(string queryWords, long searchInFolder = 0, ItemType type = ItemType.all, int pageId = 0)
         {
-            return new Uri(ApiHost + $"api/v2/item/search?query_words={queryWords}&search_in_folder={searchInFolder}&type={type}&page_number={pageNumber}");
+            return new Uri(ApiHost + $"api/v2/item/search?query_words={queryWords}&search_in_folder={searchInFolder}&type={type}&page_id={pageId}");
         }
 
 #endregion
@@ -129,9 +129,11 @@
             return new Uri(ApiHost + $"api/v2/file/{id}/new_version");
         }
 
-        public static Uri DownloadFileUri(long id)
+        public static Uri DownloadFileUri(long id, int version = 0)
         {
-            return new Uri(ApiHost + $"api/v2/file/{id}/download");
+            return new Uri(ApiHost + $"api/v2/file/{id}/download" + (
+                    Convert.ToBoolean(version) ? $"?version={version}" : "")
+                );
         }
 
         public static Uri CopyFileUri(long id)
