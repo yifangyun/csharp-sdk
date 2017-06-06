@@ -1164,6 +1164,7 @@
           <type api="T:Yfy.Api.Users.YfyUser" ref="true" />
           <type api="T:Yfy.Api.Users.YfyMiniUser" ref="true" />
           <type api="T:Yfy.Api.ShareLink.YfyShareLink" ref="true" />
+          <type api="T:Yfy.Api.Enterprises.YfyMiniEnterprise" ref="true" />
           <type api="T:Yfy.Api.Folders.YfyPathFolder" ref="true" />
           <type api="T:Yfy.Api.Items.YfyItem" ref="true" />
           <type api="T:Yfy.Api.Items.YfyItemCollection" ref="true" />
@@ -2608,6 +2609,184 @@
           <argument>
             <type api="T:System.String" ref="true" />
             <value>comments</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </api>
+    <api id="N:Yfy.Api.Enterprises">
+      <apidata name="Yfy.Api.Enterprises" group="namespace" />
+      <elements>
+        <element api="T:Yfy.Api.Enterprises.YfyMiniEnterprise" />
+      </elements>
+    </api>
+    <api id="T:Yfy.Api.Enterprises.YfyMiniEnterprise">
+      <apidata name="YfyMiniEnterprise" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:Yfy.Api.YfyObject" ref="true" />
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:Yfy.Api.Enterprises.YfyMiniEnterprise.#ctor" />
+        <element api="P:Yfy.Api.Enterprises.YfyMiniEnterprise.Id" />
+        <element api="P:Yfy.Api.Enterprises.YfyMiniEnterprise.Name" />
+        <element api="P:Yfy.Api.Enterprises.YfyMiniEnterprise.AdminUserId" />
+        <element api="M:Yfy.Api.YfyObject.ToString" />
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Enterprises" />
+      </containers>
+    </api>
+    <api id="M:Yfy.Api.Enterprises.YfyMiniEnterprise.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Enterprises" />
+        <type api="T:Yfy.Api.Enterprises.YfyMiniEnterprise" ref="true" />
+      </containers>
+    </api>
+    <api id="P:Yfy.Api.Enterprises.YfyMiniEnterprise.AdminUserId">
+      <apidata name="AdminUserId" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_AdminUserId" />
+      <setter name="set_AdminUserId" />
+      <returns>
+        <type api="T:System.Int64" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Enterprises" />
+        <type api="T:Yfy.Api.Enterprises.YfyMiniEnterprise" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:Newtonsoft.Json.JsonPropertyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>admin_user_id</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </api>
+    <api id="P:Yfy.Api.Enterprises.YfyMiniEnterprise.Id">
+      <apidata name="Id" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Id" />
+      <setter name="set_Id" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Enterprises" />
+        <type api="T:Yfy.Api.Enterprises.YfyMiniEnterprise" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:Newtonsoft.Json.JsonPropertyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>id</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </api>
+    <api id="P:Yfy.Api.Enterprises.YfyMiniEnterprise.Name">
+      <apidata name="Name" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Name" />
+      <setter name="set_Name" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Enterprises" />
+        <type api="T:Yfy.Api.Enterprises.YfyMiniEnterprise" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:Newtonsoft.Json.JsonPropertyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>name</value>
           </argument>
         </attribute>
       </attributes>
@@ -5607,8 +5786,8 @@
         <element api="M:Yfy.Api.Files.FileRouter.GetUploadNewVersionUrl(System.Int64,System.String,System.String)" />
         <element api="M:Yfy.Api.Files.FileRouter.UploadNewVersion(System.Int64,System.String,System.IO.Stream,System.String)" />
         <element api="M:Yfy.Api.Files.FileRouter.UploadNewVersion(System.Int64,System.String,System.String,System.String)" />
-        <element api="M:Yfy.Api.Files.FileRouter.GetDownloadUrl(System.Int64)" />
-        <element api="M:Yfy.Api.Files.FileRouter.Download(System.Int64,System.String)" />
+        <element api="M:Yfy.Api.Files.FileRouter.GetDownloadUrl(System.Int64,System.Int32)" />
+        <element api="M:Yfy.Api.Files.FileRouter.Download(System.Int64,System.String,System.Int32,System.Boolean)" />
         <element api="M:Yfy.Api.Files.FileRouter.Copy(System.Int64,System.Int64)" />
         <element api="M:Yfy.Api.Files.FileRouter.ShareLinks(System.Int64,System.Int64,System.Int32)" />
         <element api="M:Yfy.Api.Files.FileRouter.Comments(System.Int64)" />
@@ -5773,7 +5952,7 @@
         <type api="T:Yfy.Api.Files.FileRouter" ref="true" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Files.FileRouter.Download(System.Int64,System.String)">
+    <api id="M:Yfy.Api.Files.FileRouter.Download(System.Int64,System.String,System.Int32,System.Boolean)">
       <apidata name="Download" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
@@ -5783,6 +5962,20 @@
         </parameter>
         <parameter name="saveFilePath">
           <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="version" optional="true">
+          <type api="T:System.Int32" ref="false" />
+          <argument>
+            <type api="T:System.Int32" ref="false" />
+            <value>0</value>
+          </argument>
+        </parameter>
+        <parameter name="checkSha1" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
         </parameter>
       </parameters>
       <returns>
@@ -5794,13 +5987,20 @@
         <type api="T:Yfy.Api.Files.FileRouter" ref="true" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Files.FileRouter.GetDownloadUrl(System.Int64)">
+    <api id="M:Yfy.Api.Files.FileRouter.GetDownloadUrl(System.Int64,System.Int32)">
       <apidata name="GetDownloadUrl" group="member" subgroup="method" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
       <parameters>
         <parameter name="fileId">
           <type api="T:System.Int64" ref="false" />
+        </parameter>
+        <parameter name="version" optional="true">
+          <type api="T:System.Int32" ref="false" />
+          <argument>
+            <type api="T:System.Int32" ref="false" />
+            <value>0</value>
+          </argument>
         </parameter>
       </parameters>
       <returns>
@@ -8562,6 +8762,10 @@
         <element api="P:Yfy.Api.ShareLink.YfyShareLink.PasswordProtected" />
         <element api="P:Yfy.Api.ShareLink.YfyShareLink.DueTime" />
         <element api="P:Yfy.Api.ShareLink.YfyShareLink.DisableDownload" />
+        <element api="P:Yfy.Api.ShareLink.YfyShareLink.CreatedAt" />
+        <element api="P:Yfy.Api.ShareLink.YfyShareLink.ModifiedAt" />
+        <element api="P:Yfy.Api.ShareLink.YfyShareLink.DownloadCountTotal" />
+        <element api="P:Yfy.Api.ShareLink.YfyShareLink.ViewCount" />
         <element api="M:Yfy.Api.YfyObject.ToString" />
         <element api="M:System.Object.Equals(System.Object)">
           <apidata name="Equals" group="member" subgroup="method" />
@@ -8679,6 +8883,38 @@
         </attribute>
       </attributes>
     </api>
+    <api id="P:Yfy.Api.ShareLink.YfyShareLink.CreatedAt">
+      <apidata name="CreatedAt" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_CreatedAt" />
+      <setter name="set_CreatedAt" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.ShareLink" />
+        <type api="T:Yfy.Api.ShareLink.YfyShareLink" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:Newtonsoft.Json.JsonPropertyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>created_at</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.ComponentModel.DefaultValueAttribute" ref="true" />
+          <argument>
+            <type api="T:System.Int32" ref="false" />
+            <value>0</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </api>
     <api id="P:Yfy.Api.ShareLink.YfyShareLink.DisableDownload">
       <apidata name="DisableDownload" group="member" subgroup="property" />
       <memberdata visibility="public" />
@@ -8717,6 +8953,38 @@
         </attribute>
       </attributes>
     </api>
+    <api id="P:Yfy.Api.ShareLink.YfyShareLink.DownloadCountTotal">
+      <apidata name="DownloadCountTotal" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_DownloadCountTotal" />
+      <setter name="set_DownloadCountTotal" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.ShareLink" />
+        <type api="T:Yfy.Api.ShareLink.YfyShareLink" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:Newtonsoft.Json.JsonPropertyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>download_count_total</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.ComponentModel.DefaultValueAttribute" ref="true" />
+          <argument>
+            <type api="T:System.Int32" ref="false" />
+            <value>0</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </api>
     <api id="P:Yfy.Api.ShareLink.YfyShareLink.DueTime">
       <apidata name="DueTime" group="member" subgroup="property" />
       <memberdata visibility="public" />
@@ -8738,6 +9006,38 @@
           <argument>
             <type api="T:System.String" ref="true" />
             <value>due_time</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </api>
+    <api id="P:Yfy.Api.ShareLink.YfyShareLink.ModifiedAt">
+      <apidata name="ModifiedAt" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_ModifiedAt" />
+      <setter name="set_ModifiedAt" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.ShareLink" />
+        <type api="T:Yfy.Api.ShareLink.YfyShareLink" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:Newtonsoft.Json.JsonPropertyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>modified_at</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.ComponentModel.DefaultValueAttribute" ref="true" />
+          <argument>
+            <type api="T:System.Int32" ref="false" />
+            <value>0</value>
           </argument>
         </attribute>
       </attributes>
@@ -8826,6 +9126,38 @@
           <argument>
             <type api="T:System.String" ref="true" />
             <value>unique_name</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </api>
+    <api id="P:Yfy.Api.ShareLink.YfyShareLink.ViewCount">
+      <apidata name="ViewCount" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_ViewCount" />
+      <setter name="set_ViewCount" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.ShareLink" />
+        <type api="T:Yfy.Api.ShareLink.YfyShareLink" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:Newtonsoft.Json.JsonPropertyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>view_count</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.ComponentModel.DefaultValueAttribute" ref="true" />
+          <argument>
+            <type api="T:System.Int32" ref="false" />
+            <value>0</value>
           </argument>
         </attribute>
       </attributes>
@@ -9423,7 +9755,7 @@
         <element api="P:Yfy.Api.Users.YfyMiniUser.Id" />
         <element api="P:Yfy.Api.Users.YfyMiniUser.Name" />
         <element api="P:Yfy.Api.Users.YfyMiniUser.Login" />
-        <element api="P:Yfy.Api.Users.YfyMiniUser.EnterpriseId" />
+        <element api="P:Yfy.Api.Users.YfyMiniUser.Enterprise" />
         <element api="M:Yfy.Api.YfyObject.ToString" />
         <element api="M:System.Object.Equals(System.Object)">
           <apidata name="Equals" group="member" subgroup="method" />
@@ -9507,15 +9839,15 @@
         <type api="T:Yfy.Api.Users.YfyMiniUser" ref="true" />
       </containers>
     </api>
-    <api id="P:Yfy.Api.Users.YfyMiniUser.EnterpriseId">
-      <apidata name="EnterpriseId" group="member" subgroup="property" />
+    <api id="P:Yfy.Api.Users.YfyMiniUser.Enterprise">
+      <apidata name="Enterprise" group="member" subgroup="property" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
       <propertydata get="true" set="true" />
-      <getter name="get_EnterpriseId" />
-      <setter name="set_EnterpriseId" />
+      <getter name="get_Enterprise" />
+      <setter name="set_Enterprise" />
       <returns>
-        <type api="T:System.Int64" ref="false" />
+        <type api="T:Yfy.Api.Enterprises.YfyMiniEnterprise" ref="true" />
       </returns>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
@@ -9527,7 +9859,7 @@
           <type api="T:Newtonsoft.Json.JsonPropertyAttribute" ref="true" />
           <argument>
             <type api="T:System.String" ref="true" />
-            <value>enterprise_id</value>
+            <value>enterprise</value>
           </argument>
         </attribute>
       </attributes>
@@ -9619,9 +9951,10 @@
       <elements>
         <element api="M:Yfy.Api.Users.YfyUser.#ctor" />
         <element api="P:Yfy.Api.Users.YfyUser.Id" />
-        <element api="P:Yfy.Api.Users.YfyUser.EnterpriseId" />
+        <element api="P:Yfy.Api.Users.YfyUser.Enterprise" />
         <element api="P:Yfy.Api.Users.YfyUser.Name" />
         <element api="P:Yfy.Api.Users.YfyUser.Phone" />
+        <element api="P:Yfy.Api.Users.YfyUser.Login" />
         <element api="P:Yfy.Api.Users.YfyUser.Email" />
         <element api="P:Yfy.Api.Users.YfyUser.ProfilePickey" />
         <element api="P:Yfy.Api.Users.YfyUser.IsActive" />
@@ -9735,15 +10068,15 @@
         </attribute>
       </attributes>
     </api>
-    <api id="P:Yfy.Api.Users.YfyUser.EnterpriseId">
-      <apidata name="EnterpriseId" group="member" subgroup="property" />
+    <api id="P:Yfy.Api.Users.YfyUser.Enterprise">
+      <apidata name="Enterprise" group="member" subgroup="property" />
       <memberdata visibility="public" />
       <proceduredata virtual="false" />
       <propertydata get="true" set="true" />
-      <getter name="get_EnterpriseId" />
-      <setter name="set_EnterpriseId" />
+      <getter name="get_Enterprise" />
+      <setter name="set_Enterprise" />
       <returns>
-        <type api="T:System.Int64" ref="false" />
+        <type api="T:Yfy.Api.Enterprises.YfyMiniEnterprise" ref="true" />
       </returns>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
@@ -9755,7 +10088,7 @@
           <type api="T:Newtonsoft.Json.JsonPropertyAttribute" ref="true" />
           <argument>
             <type api="T:System.String" ref="true" />
-            <value>enterprise_id</value>
+            <value>enterprise</value>
           </argument>
         </attribute>
       </attributes>
@@ -9831,6 +10164,31 @@
           <argument>
             <type api="T:System.String" ref="true" />
             <value>active</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </api>
+    <api id="P:Yfy.Api.Users.YfyUser.Login">
+      <apidata name="Login" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Login" />
+      <setter name="set_Login" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Users" />
+        <type api="T:Yfy.Api.Users.YfyUser" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:Newtonsoft.Json.JsonPropertyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>login</value>
           </argument>
         </attribute>
       </attributes>

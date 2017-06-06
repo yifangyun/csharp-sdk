@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="56bdd6bb-a1ee-444c-8cf9-25ffa706e639" Title="命名空间" Url="html/d75eb659-6335-53f6-af7a-81814a21ab7f.htm">
-    <HelpTOCNode Id="62fe13da-e456-4d84-bf95-dd45ce40da19" Title="Yfy.Api" Url="html/3831c617-c22b-2974-fb04-d7c0c2f63028.htm">
-      <HelpTOCNode Id="cb0e23dd-7a68-45a8-b0fd-b697659fdfcf" Title="IYfyTokenRegister 接口" Url="html/b8e5dd7a-6472-c6a2-8a0e-55290761fa71.htm">
-        <HelpTOCNode Id="304ada71-7097-4332-834f-ea1f1d92325e" Title="IYfyTokenRegister 方法" Url="html/22d92acd-145b-b533-939a-e85e877a6e47.htm">
+  <HelpTOCNode Id="59f58eaf-87e7-4420-93a9-17449978d02f" Title="命名空间" Url="html/d75eb659-6335-53f6-af7a-81814a21ab7f.htm">
+    <HelpTOCNode Id="177e3dbb-56fb-40d6-8ff6-25a63f03d730" Title="Yfy.Api" Url="html/3831c617-c22b-2974-fb04-d7c0c2f63028.htm">
+      <HelpTOCNode Id="7682d114-6f9e-41d4-939d-450f11db8deb" Title="IYfyTokenRegister 接口" Url="html/b8e5dd7a-6472-c6a2-8a0e-55290761fa71.htm">
+        <HelpTOCNode Id="ae55522d-9ab4-46c5-9289-1be2a16388c7" Title="IYfyTokenRegister 方法" Url="html/22d92acd-145b-b533-939a-e85e877a6e47.htm">
           <HelpTOCNode Title="RegisterAccessToken 方法 " Url="html/2441d495-ea7e-e940-3268-b29f0ccd4d50.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="36e4d51d-f3f2-4950-bcf3-2ec5359ccca8" Title="YfyClient 类" Url="html/ac36808f-32d5-0ac4-5b1b-dc2e2d597e54.htm">
-        <HelpTOCNode Id="0f9e7df8-e204-44e8-9650-4d77935cb07b" Title="YfyClient 构造函数 " Url="html/82eab4f6-d783-561d-2a25-ac98dba0ca11.htm">
+      <HelpTOCNode Id="e5ca72e4-0f12-41b3-a158-d3bcc7cb3776" Title="YfyClient 类" Url="html/ac36808f-32d5-0ac4-5b1b-dc2e2d597e54.htm">
+        <HelpTOCNode Id="6eb7f01a-faf5-4ed3-b4bd-07e1c2a4ab92" Title="YfyClient 构造函数 " Url="html/82eab4f6-d783-561d-2a25-ac98dba0ca11.htm">
           <HelpTOCNode Title="YfyClient 构造函数 (String)" Url="html/9f32993a-1598-3b94-b39a-aa9fb8b958c7.htm" />
           <HelpTOCNode Title="YfyClient 构造函数 (YfyAuthtoken)" Url="html/830c5e4d-50bc-977f-eb40-a27564541d4c.htm" />
           <HelpTOCNode Title="YfyClient 构造函数 (YfyClientConfig)" Url="html/90b8b6d2-a5b0-a626-0e04-0cc346057c79.htm" />
           <HelpTOCNode Title="YfyClient 构造函数 (String, String)" Url="html/7134b5dd-05ff-733b-9f7c-ea278690b021.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="e35fe212-9515-4f1c-83b5-fc411e6a88b6" Title="YfyClient 属性" Url="html/14587c65-a8f9-f14b-649a-d54fbf0552f2.htm">
+        <HelpTOCNode Id="05e25ab8-18ea-47c7-b604-3f9c7d31c014" Title="YfyClient 属性" Url="html/14587c65-a8f9-f14b-649a-d54fbf0552f2.htm">
           <HelpTOCNode Title="Collab 属性 " Url="html/841a38f5-9611-d457-5e14-38bec8f454fd.htm" />
           <HelpTOCNode Title="Comment 属性 " Url="html/73204b6e-ecc6-f544-dfe7-404701075c49.htm" />
           <HelpTOCNode Title="File 属性 " Url="html/ab289c73-883d-431c-9c90-b23836ba9c33.htm" />
@@ -25,7 +25,7 @@
           <HelpTOCNode Title="Trash 属性 " Url="html/9f80d2e3-1caf-4cd6-7cfb-bf7bd84a9c95.htm" />
           <HelpTOCNode Title="User 属性 " Url="html/aec2e6a7-a287-9960-4c63-38094a6050b9.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="a920397a-cc71-4bb2-8773-0ad8c602678d" Title="YfyClient 方法" Url="html/6fa7a40a-1442-7705-0100-00b7d51a6a66.htm">
+        <HelpTOCNode Id="937c9d80-4a56-40ae-833f-60177442a7b8" Title="YfyClient 方法" Url="html/6fa7a40a-1442-7705-0100-00b7d51a6a66.htm">
           <HelpTOCNode Title="GetOauth2AccessToken 方法 " Url="html/28c30ec4-ac7b-85d1-2e5a-b63fde0edc08.htm" />
           <HelpTOCNode Title="SetMaxRetries 方法 " Url="html/5527522c-8b6d-a46d-b6c7-0f7da4c46599.htm" />
           <HelpTOCNode Title="SetOauth2AccessToken 方法 " Url="html/66bf1500-2b0a-0ad7-7a35-30ec3d809635.htm" />
@@ -35,14 +35,14 @@
           <HelpTOCNode Title="SetTokenRegister 方法 " Url="html/042216d7-5adb-1d2c-2932-3d51c6badd80.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="37a29d1c-ef52-4fe7-9c9c-2f0714c1b7c1" Title="YfyClientConfig 类" Url="html/2c4b2547-58c4-ff0f-524d-968173a6ec03.htm">
-        <HelpTOCNode Id="610abdec-461c-4f11-85fb-cd89eb2ea864" Title="YfyClientConfig 构造函数 " Url="html/52a21a11-4af3-76e7-1def-4828a49941e0.htm">
+      <HelpTOCNode Id="0c1140b2-6041-40ac-90de-c7d29b4eb531" Title="YfyClientConfig 类" Url="html/2c4b2547-58c4-ff0f-524d-968173a6ec03.htm">
+        <HelpTOCNode Id="76c368cc-e79b-424d-a858-4e393239ed26" Title="YfyClientConfig 构造函数 " Url="html/52a21a11-4af3-76e7-1def-4828a49941e0.htm">
           <HelpTOCNode Title="YfyClientConfig 构造函数 (String)" Url="html/d91a5ef7-467e-1f60-e0d5-1657a8cbf993.htm" />
           <HelpTOCNode Title="YfyClientConfig 构造函数 (String, String)" Url="html/51e8aa8c-0ec5-6224-d824-8a5006357283.htm" />
           <HelpTOCNode Title="YfyClientConfig 构造函数 (String, YfyClientHttpConfig)" Url="html/b7a6427b-a9b3-f224-7b9d-3b7a2eae735b.htm" />
           <HelpTOCNode Title="YfyClientConfig 构造函数 (String, String, YfyClientHttpConfig)" Url="html/92446346-59ee-355a-97ad-f82956bd23fe.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="805e5678-984e-442e-bbf3-92cea7e0819e" Title="YfyClientConfig 属性" Url="html/98a923db-5866-d933-d48c-79e582cd4665.htm">
+        <HelpTOCNode Id="37464d96-0f58-46bd-a8a9-c4ba6d883945" Title="YfyClientConfig 属性" Url="html/98a923db-5866-d933-d48c-79e582cd4665.htm">
           <HelpTOCNode Title="HttpConfig 属性 " Url="html/15fc4510-aebf-3082-43a7-fae67ba0263a.htm" />
           <HelpTOCNode Title="Oauth2AccessToken 属性 " Url="html/9c641252-9e37-367a-aaf8-1a4805ef701f.htm" />
           <HelpTOCNode Title="Oauth2RefreshToken 属性 " Url="html/de6eef7f-1f6f-dc88-aeb2-7201e3ec7cdb.htm" />
@@ -50,14 +50,14 @@
         </HelpTOCNode>
         <HelpTOCNode Title="YfyClientConfig 方法" Url="html/3d31dbc6-9c52-11a7-6899-9bbd8e955d1f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2de7c963-a56d-4caf-be2a-906c31e3f67f" Title="YfyClientFactory(Tkey) 类" Url="html/3a38cad9-4dfb-1be3-0ba7-26e705409f3c.htm">
+      <HelpTOCNode Id="40ada595-6e02-4fd7-8a77-7d23999a9468" Title="YfyClientFactory(Tkey) 类" Url="html/3a38cad9-4dfb-1be3-0ba7-26e705409f3c.htm">
         <HelpTOCNode Title="YfyClientFactory(Tkey) 构造函数 " Url="html/52dbab2b-3969-e6bc-5da5-adf729f88ac8.htm" />
-        <HelpTOCNode Id="3665aeb7-c7dd-4591-afbf-eeebfa7c8b74" Title="YfyClientFactory(Tkey) 属性" Url="html/1ca05c0b-663b-c4a6-8397-a18a3bc9171a.htm">
+        <HelpTOCNode Id="82d3d257-335f-4ddd-bb08-bc385e034f04" Title="YfyClientFactory(Tkey) 属性" Url="html/1ca05c0b-663b-c4a6-8397-a18a3bc9171a.htm">
           <HelpTOCNode Title="HttpConfig 属性 " Url="html/82ec6efd-ae89-f893-b2f7-258afa20e60e.htm" />
           <HelpTOCNode Title="MaxCapacity 属性 " Url="html/c2a04b0c-a824-3d12-d3fd-b17c4f24b2f7.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="e8ed0a6e-f610-4750-b17a-1afc98d5e019" Title="YfyClientFactory(Tkey) 方法" Url="html/08204ac9-e158-baa2-554a-a6b307b1c5dc.htm">
-          <HelpTOCNode Id="5f348ec6-70e0-48f0-90e8-e6cef48679ee" Title="AddClient 方法 " Url="html/1b016caa-f09c-2e49-cc1b-01c42fd95dec.htm">
+        <HelpTOCNode Id="c424258d-c598-4815-a22f-d6e4f226e283" Title="YfyClientFactory(Tkey) 方法" Url="html/08204ac9-e158-baa2-554a-a6b307b1c5dc.htm">
+          <HelpTOCNode Id="f2afa193-7e86-4640-89d2-43f0166a230e" Title="AddClient 方法 " Url="html/1b016caa-f09c-2e49-cc1b-01c42fd95dec.htm">
             <HelpTOCNode Title="AddClient 方法 (Tkey, YfyClient)" Url="html/1157932d-7653-14a9-30ed-e4f211caeef3.htm" />
             <HelpTOCNode Title="AddClient 方法 (Tkey, String, String)" Url="html/5263581d-f549-1be6-cb5b-91a425d1159a.htm" />
           </HelpTOCNode>
@@ -65,45 +65,45 @@
           <HelpTOCNode Title="TryGetClient 方法 " Url="html/026afaa4-df9c-ef84-7a25-719d130d0af1.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="4125c06c-5270-4f3c-be8c-d38ed7b40225" Title="YfyClientHttpConfig 类" Url="html/e4c6ffde-c52f-cbd6-eb6d-26ca7c42ffb6.htm">
-        <HelpTOCNode Id="bf521061-f80f-4146-b468-b252574bf68f" Title="YfyClientHttpConfig 构造函数 " Url="html/5ebf0fe7-084a-138b-3da6-33ea8a159fbd.htm">
+      <HelpTOCNode Id="c46a2d2f-5564-4ca5-9889-d98ab5cd1eaa" Title="YfyClientHttpConfig 类" Url="html/e4c6ffde-c52f-cbd6-eb6d-26ca7c42ffb6.htm">
+        <HelpTOCNode Id="780af776-85c1-49ac-8004-6e35dea61d59" Title="YfyClientHttpConfig 构造函数 " Url="html/5ebf0fe7-084a-138b-3da6-33ea8a159fbd.htm">
           <HelpTOCNode Title="YfyClientHttpConfig 构造函数 " Url="html/6ccc183c-d8d7-a70e-0042-7ac70e34fca1.htm" />
           <HelpTOCNode Title="YfyClientHttpConfig 构造函数 (WebProxy)" Url="html/5233c583-834e-2f1b-560b-048cc30f1615.htm" />
           <HelpTOCNode Title="YfyClientHttpConfig 构造函数 (Int32, Int32, WebProxy)" Url="html/6058d306-41f8-b707-95ff-a148fcd7084b.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="5072a01b-dcc0-4d6c-921d-a9d93d5c719b" Title="YfyClientHttpConfig 属性" Url="html/83c35489-90b3-70e6-f3ec-2c80505c8069.htm">
+        <HelpTOCNode Id="89315009-5506-44a3-b5b1-51577a7e80cf" Title="YfyClientHttpConfig 属性" Url="html/83c35489-90b3-70e6-f3ec-2c80505c8069.htm">
           <HelpTOCNode Title="MaxRetries 属性 " Url="html/26c24dac-eac0-4024-cbb6-81bc5499a827.htm" />
           <HelpTOCNode Title="Proxy 属性 " Url="html/1eb71af3-44c7-d9bc-430a-4f04f085b16d.htm" />
           <HelpTOCNode Title="Timeout 属性 " Url="html/0a854184-0c6a-ef83-5063-62b99c6cf555.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="YfyClientHttpConfig 方法" Url="html/3dbd18ce-0d8a-d0f0-4aab-89f645f1c25f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="af0d6d26-f0a4-4e65-874a-db8a7e22d33c" Title="YfyObject 类" Url="html/0fff0156-8e9d-ac6d-a848-9c8917b30f41.htm">
+      <HelpTOCNode Id="5466f977-737b-4108-ba90-721fb9340aee" Title="YfyObject 类" Url="html/0fff0156-8e9d-ac6d-a848-9c8917b30f41.htm">
         <HelpTOCNode Title="YfyObject 构造函数 " Url="html/29eb8308-1abf-da17-1224-61c62067f075.htm" />
-        <HelpTOCNode Id="3cfb472b-da66-448b-9602-e14a0928cf6d" Title="YfyObject 方法" Url="html/e7b055f2-a8f5-a6d0-cd95-1d7b41562fda.htm">
+        <HelpTOCNode Id="58f55869-8dad-4fe0-b6aa-7f03457e7959" Title="YfyObject 方法" Url="html/e7b055f2-a8f5-a6d0-cd95-1d7b41562fda.htm">
           <HelpTOCNode Title="ToString 方法 " Url="html/21344b9e-beec-7a68-9dfc-7f6d97207b6b.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="2930dece-ae9f-4f15-9541-edac63bbd086" Title="YfySystem 类" Url="html/133607be-3ddb-a37b-27f6-d7cf1d0b7ccb.htm">
+      <HelpTOCNode Id="2c4fde0d-c49b-4150-85d4-532a93b3b32f" Title="YfySystem 类" Url="html/133607be-3ddb-a37b-27f6-d7cf1d0b7ccb.htm">
         <HelpTOCNode Title="YfySystem 构造函数 " Url="html/4e809075-68ae-5d67-9540-75829b6c9074.htm" />
-        <HelpTOCNode Id="a98085dd-0b51-490d-ae5c-0afcb1e0e283" Title="YfySystem 方法" Url="html/699bbba6-fe70-635b-b724-626c3795f501.htm">
+        <HelpTOCNode Id="277273bb-c763-445d-a51b-be21a36a0b96" Title="YfySystem 方法" Url="html/699bbba6-fe70-635b-b724-626c3795f501.htm">
           <HelpTOCNode Title="Init 方法 " Url="html/d6ffb8e6-429f-c7a5-cd90-0aca64d5b943.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c49c67f1-29de-456d-b3e7-a22355746b71" Title="Yfy.Api.Collab" Url="html/b313d45b-9808-7787-dcb7-fc352e444f05.htm">
+    <HelpTOCNode Id="c657306f-70bc-4586-b3c0-207ff02a39c4" Title="Yfy.Api.Collab" Url="html/b313d45b-9808-7787-dcb7-fc352e444f05.htm">
       <HelpTOCNode Title="CollabRole 枚举" Url="html/e7057c3c-5613-4b51-3f1a-fa8608160bd6.htm" />
-      <HelpTOCNode Id="0497cc5c-e5b3-4c7b-9fc3-0ff21af10f94" Title="CollabRouter 类" Url="html/6dfda7de-2cca-0fc6-a0bd-89fcb8e8be91.htm">
-        <HelpTOCNode Id="eafd1f74-53a8-4b32-adf2-21275e8a6b51" Title="CollabRouter 方法" Url="html/51789751-5555-5d59-2780-c5af38e1885a.htm">
+      <HelpTOCNode Id="fd4caf95-9800-4908-9cfb-85911ec1fdb3" Title="CollabRouter 类" Url="html/6dfda7de-2cca-0fc6-a0bd-89fcb8e8be91.htm">
+        <HelpTOCNode Id="34d0646b-c0ec-4df0-9b24-2a3a8cd70e20" Title="CollabRouter 方法" Url="html/51789751-5555-5d59-2780-c5af38e1885a.htm">
           <HelpTOCNode Title="Delete 方法 " Url="html/554a517d-22a8-d6bc-e31f-84d9a5d15585.htm" />
           <HelpTOCNode Title="Info 方法 " Url="html/494237ce-7a1f-3769-a0a5-9e167bbd5dca.htm" />
           <HelpTOCNode Title="Invite 方法 " Url="html/5c99a3e1-a978-520a-f247-d1a09455671e.htm" />
           <HelpTOCNode Title="Update 方法 " Url="html/1af45a13-966b-0b07-1f70-2220d08a4c09.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="85406de8-3c48-4a26-b629-b4e8a64a2946" Title="YfyCollab 类" Url="html/dc515bc1-9112-6c9c-294a-d770e6640332.htm">
+      <HelpTOCNode Id="f3965b46-71d4-42b6-91a4-258b3dcbc6aa" Title="YfyCollab 类" Url="html/dc515bc1-9112-6c9c-294a-d770e6640332.htm">
         <HelpTOCNode Title="YfyCollab 构造函数 " Url="html/f84fc929-8918-9fd6-9809-c16d3dd87b11.htm" />
-        <HelpTOCNode Id="ec5c8aeb-c555-40f1-af6d-478d7576184e" Title="YfyCollab 属性" Url="html/746d0bda-7830-a9d3-306f-6713fc860470.htm">
+        <HelpTOCNode Id="8a2843ab-fbe0-4080-a8f1-f5dddaf05b80" Title="YfyCollab 属性" Url="html/746d0bda-7830-a9d3-306f-6713fc860470.htm">
           <HelpTOCNode Title="Id 属性 " Url="html/3f2f2ecd-7c3f-3522-3945-17f81f4ec889.htm" />
           <HelpTOCNode Title="IsAccepted 属性 " Url="html/b8a7aee0-5032-140c-0bab-b6f76718ec41.htm" />
           <HelpTOCNode Title="Role 属性 " Url="html/41a5271d-8866-02c0-20c2-8b72fce98545.htm" />
@@ -111,25 +111,25 @@
         </HelpTOCNode>
         <HelpTOCNode Title="YfyCollab 方法" Url="html/2daf858d-aeba-20bb-2e9e-ed43a42728c8.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="235e6cee-3442-4ae7-97b4-1a589e835f73" Title="YfyCollabCollection 类" Url="html/4a840736-c101-1c2f-4e69-885c8fb6f6be.htm">
+      <HelpTOCNode Id="9ac15e29-0e15-4820-a1da-1bf6f5a74bfd" Title="YfyCollabCollection 类" Url="html/4a840736-c101-1c2f-4e69-885c8fb6f6be.htm">
         <HelpTOCNode Title="YfyCollabCollection 构造函数 " Url="html/56892863-eca9-7114-e838-7833f6a6e6e8.htm" />
-        <HelpTOCNode Id="41e2db0f-fd93-441e-b38b-b15f9bb347ac" Title="YfyCollabCollection 属性" Url="html/c3483e53-b1e4-9b4b-55fa-25b52cfd6620.htm">
+        <HelpTOCNode Id="488a8f38-738d-431b-88c1-04f214d72aa8" Title="YfyCollabCollection 属性" Url="html/c3483e53-b1e4-9b4b-55fa-25b52cfd6620.htm">
           <HelpTOCNode Title="Collabs 属性 " Url="html/e646158c-f528-0a45-4864-f5700a9fe3aa.htm" />
           <HelpTOCNode Title="FinalRole 属性 " Url="html/f914659c-4f88-6a0b-e8e3-a929e9c92101.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="YfyCollabCollection 方法" Url="html/c83f5f19-5c4b-2d86-0289-4c66ec56b252.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="fa54783e-d46b-46a8-8ccc-f8ec8e526280" Title="Yfy.Api.Comment" Url="html/e9e43253-b30f-1aa3-c6b5-87e80f95523c.htm">
-      <HelpTOCNode Id="a65befd7-0be7-4cf3-957c-84a27e4c68d2" Title="CommentRouter 类" Url="html/85d626d8-484f-9abf-4dbd-0f91893b2154.htm">
-        <HelpTOCNode Id="a469d43f-2ffb-4685-85c4-223451becd73" Title="CommentRouter 方法" Url="html/46301f09-b9a7-357e-642d-c58419ffe1b5.htm">
+    <HelpTOCNode Id="dfdd0fa7-e8f8-40ab-9403-ea5ba4e7e8d2" Title="Yfy.Api.Comment" Url="html/e9e43253-b30f-1aa3-c6b5-87e80f95523c.htm">
+      <HelpTOCNode Id="c78a68ed-6379-4a33-84c1-c65e835af2ba" Title="CommentRouter 类" Url="html/85d626d8-484f-9abf-4dbd-0f91893b2154.htm">
+        <HelpTOCNode Id="7ea1565f-1256-48dd-a9e4-4aaf8dea85d1" Title="CommentRouter 方法" Url="html/46301f09-b9a7-357e-642d-c58419ffe1b5.htm">
           <HelpTOCNode Title="Create 方法 " Url="html/acb53fab-0111-fd4e-7709-a11b336be6d9.htm" />
           <HelpTOCNode Title="Delete 方法 " Url="html/abb9cdde-202b-2462-104a-1c98d06f15e4.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="05bb8e70-843a-4755-b53f-023267daf691" Title="YfyComment 类" Url="html/d41cf340-e074-4fad-256b-594c23402d85.htm">
+      <HelpTOCNode Id="a599f51a-73ce-4aec-bc2a-d8699a990827" Title="YfyComment 类" Url="html/d41cf340-e074-4fad-256b-594c23402d85.htm">
         <HelpTOCNode Title="YfyComment 构造函数 " Url="html/5b1476dd-b306-20a7-ad54-4a02159f04ed.htm" />
-        <HelpTOCNode Id="18b2c141-3e3f-4416-9bd9-13184cb74c8c" Title="YfyComment 属性" Url="html/7d2929a7-c554-8274-d7b6-bb847fd144d8.htm">
+        <HelpTOCNode Id="9c7161c0-4893-4db5-80ef-f4f2f0319b2e" Title="YfyComment 属性" Url="html/7d2929a7-c554-8274-d7b6-bb847fd144d8.htm">
           <HelpTOCNode Title="Content 属性 " Url="html/c9d2a52b-9eea-09d4-978e-e683f2dff16f.htm" />
           <HelpTOCNode Title="CreatedAt 属性 " Url="html/21c03998-e289-e136-b654-687c34fa65f7.htm" />
           <HelpTOCNode Title="FileId 属性 " Url="html/2a40e9be-1a78-a6fa-6e5b-8e3b7678d4a1.htm" />
@@ -138,94 +138,105 @@
         </HelpTOCNode>
         <HelpTOCNode Title="YfyComment 方法" Url="html/d4c1b13d-cb9f-44bb-bee2-1f8a5cab91c4.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="770bf5b0-aeba-40cd-b120-c7a32f114e8e" Title="YfyCommentCollection 类" Url="html/01b5cfa7-c586-5258-8718-436bb9bc5e14.htm">
+      <HelpTOCNode Id="488ad3cc-7aca-4b08-943a-811cd02944ce" Title="YfyCommentCollection 类" Url="html/01b5cfa7-c586-5258-8718-436bb9bc5e14.htm">
         <HelpTOCNode Title="YfyCommentCollection 构造函数 " Url="html/45d5df26-7840-c4ba-b240-7d1431af8102.htm" />
-        <HelpTOCNode Id="a3ab0bec-3a7e-4ef7-a286-b9637dd6dae6" Title="YfyCommentCollection 属性" Url="html/6673714d-66a2-6c7b-d820-7d8882ac6c64.htm">
+        <HelpTOCNode Id="92df9565-ae9d-4211-912e-df488afd06ed" Title="YfyCommentCollection 属性" Url="html/6673714d-66a2-6c7b-d820-7d8882ac6c64.htm">
           <HelpTOCNode Title="Comments 属性 " Url="html/46be1937-dd8c-a788-365e-cb8ae2b5c8e3.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="YfyCommentCollection 方法" Url="html/9893e818-65ee-bd71-a7af-46cd48afb81f.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="90b7de88-dc07-43a9-b712-1330e08b0809" Title="Yfy.Api.Exceptions" Url="html/0957bac8-b44a-27af-eab1-6a3232f83a27.htm">
-      <HelpTOCNode Id="5893fb36-2ba8-4c5f-a9ae-632180831049" Title="BadInputException 类" Url="html/6861c285-89f3-405b-5ae0-f28ea471f609.htm">
+    <HelpTOCNode Id="f6d0beb0-d90d-4d41-8eab-93636ac9659b" Title="Yfy.Api.Enterprises" Url="html/ddf4e887-9cf3-076e-ca56-ccc8cdcb4572.htm">
+      <HelpTOCNode Id="924c5be9-a218-4238-add9-249a6fa8c190" Title="YfyMiniEnterprise 类" Url="html/19f5d652-138d-5167-e01b-17c137ce5c4b.htm">
+        <HelpTOCNode Title="YfyMiniEnterprise 构造函数 " Url="html/55962fa1-2709-5296-0736-0cbcb584324c.htm" />
+        <HelpTOCNode Id="624ac9a9-e861-4690-bdf9-d103fbdb5aa3" Title="YfyMiniEnterprise 属性" Url="html/358d56ac-83ab-2a09-fbf1-dfa0214d2531.htm">
+          <HelpTOCNode Title="AdminUserId 属性 " Url="html/e7147905-0c93-2097-44bf-63c03ce32f34.htm" />
+          <HelpTOCNode Title="Id 属性 " Url="html/26f317db-fc1e-ee92-541b-dffdc335a2eb.htm" />
+          <HelpTOCNode Title="Name 属性 " Url="html/dfabbbb7-529a-89d9-6b30-d9d2cd5f2eed.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="YfyMiniEnterprise 方法" Url="html/7491b8ea-19d8-b3c8-607b-a18bfc7f723b.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bc9be719-e222-4f21-af66-12f1019c0459" Title="Yfy.Api.Exceptions" Url="html/0957bac8-b44a-27af-eab1-6a3232f83a27.htm">
+      <HelpTOCNode Id="9516b2e5-4277-40a4-9f26-c6cb918fedf3" Title="BadInputException 类" Url="html/6861c285-89f3-405b-5ae0-f28ea471f609.htm">
         <HelpTOCNode Title="BadInputException 属性" Url="html/b299a5d8-169b-9db4-2c5c-9c5a5efb19b4.htm" />
-        <HelpTOCNode Id="0a75624a-0359-493e-87e2-7932d38dc4dd" Title="BadInputException 方法" Url="html/cc6af66c-1f8e-e62e-087f-a5dd59fdaf96.htm">
+        <HelpTOCNode Id="21670426-9a15-4442-921d-482905a10e96" Title="BadInputException 方法" Url="html/cc6af66c-1f8e-e62e-087f-a5dd59fdaf96.htm">
           <HelpTOCNode Title="ToString 方法 " Url="html/0c7150ef-6f44-51dc-7616-a6cfeedeb593.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="832b3067-591a-49b0-829a-1e3ae5964bcf" Title="BadResponseException 类" Url="html/23aacb60-20ca-22e1-ca5d-df45184753ec.htm">
+      <HelpTOCNode Id="1e641473-8eca-4885-950c-0f05e50fb92b" Title="BadResponseException 类" Url="html/23aacb60-20ca-22e1-ca5d-df45184753ec.htm">
         <HelpTOCNode Title="BadResponseException 属性" Url="html/a6f85681-5d0d-6dd5-c8ce-d8a4d4ea8ab7.htm" />
-        <HelpTOCNode Id="b683cd8d-10a5-4abb-a929-25061cf6d1b5" Title="BadResponseException 方法" Url="html/eff46ab5-8cde-853d-016f-5d2db1859f09.htm">
+        <HelpTOCNode Id="bfc3f682-c975-460f-8151-05131832ddbd" Title="BadResponseException 方法" Url="html/eff46ab5-8cde-853d-016f-5d2db1859f09.htm">
           <HelpTOCNode Title="ToString 方法 " Url="html/61ba150f-4622-3b36-2303-e14e01ceb0dd.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="565ca77a-4c06-4183-9219-1bcaf9a92746" Title="InternalServerException 类" Url="html/013d6003-52d4-e3bb-c282-e3aca5b547f6.htm">
+      <HelpTOCNode Id="4ffb0730-1d7a-4121-9145-d7080113bba6" Title="InternalServerException 类" Url="html/013d6003-52d4-e3bb-c282-e3aca5b547f6.htm">
         <HelpTOCNode Title="InternalServerException 属性" Url="html/9336b822-48eb-7dec-c1fc-9f9a2922e784.htm" />
-        <HelpTOCNode Id="b8f281fc-b527-4d69-bbc4-b390cb931f0f" Title="InternalServerException 方法" Url="html/8f19bb08-7369-42c8-c83b-0b8b84badf4d.htm">
+        <HelpTOCNode Id="2ce8e21a-e375-4258-ab07-e8c5d0933faf" Title="InternalServerException 方法" Url="html/8f19bb08-7369-42c8-c83b-0b8b84badf4d.htm">
           <HelpTOCNode Title="ToString 方法 " Url="html/8226e46e-1c2c-2e07-9fa2-42c24c47d121.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="c94f6770-6064-43c1-a659-af47b558b528" Title="RateLimitException 类" Url="html/a7fd2b5b-d459-f80a-a1a4-4d5635a97da0.htm">
-        <HelpTOCNode Id="a70523a6-d5d2-4d94-b5ba-049525eb7d75" Title="RateLimitException 属性" Url="html/ba9989be-d1bc-8cbf-5926-0c9171fe652b.htm">
+      <HelpTOCNode Id="1eee8c1c-3d76-4aa2-8f0f-f53342a98be9" Title="RateLimitException 类" Url="html/a7fd2b5b-d459-f80a-a1a4-4d5635a97da0.htm">
+        <HelpTOCNode Id="1e9d6158-0f79-4199-8ba2-e23dcadc7df9" Title="RateLimitException 属性" Url="html/ba9989be-d1bc-8cbf-5926-0c9171fe652b.htm">
           <HelpTOCNode Title="RetryAfterTime 属性 " Url="html/d04c8644-0331-70bf-bf2c-554d3fc2e421.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="9e823050-5b41-4eea-a495-dc1a2b48e3fa" Title="RateLimitException 方法" Url="html/5ab37772-0439-90c7-a0a6-85c015d72d16.htm">
+        <HelpTOCNode Id="551c134b-6665-4b66-a73d-806104661f91" Title="RateLimitException 方法" Url="html/5ab37772-0439-90c7-a0a6-85c015d72d16.htm">
           <HelpTOCNode Title="ToString 方法 " Url="html/75e36563-1ea3-448c-3e54-c675cce20abc.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="ff1ab29b-85aa-4999-a30b-3e5833a9d31e" Title="RateLimitException 字段" Url="html/044e3bb6-37d8-281d-124c-f4eb2478bfa5.htm">
+        <HelpTOCNode Id="624e4de0-ad3f-48cc-b964-c4a31c903a8a" Title="RateLimitException 字段" Url="html/044e3bb6-37d8-281d-124c-f4eb2478bfa5.htm">
           <HelpTOCNode Title="RateLimitStatusCode 字段" Url="html/2a7ad323-ffdb-a6fe-4b3f-f77f3736cf66.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="7bd1cb44-a487-4d89-97a4-96e655fcc0fa" Title="RefreshTokenExpiredException 类" Url="html/72917611-38ec-9ea9-01f5-434b19e68e92.htm">
-        <HelpTOCNode Id="c146c247-bfe1-42a4-925f-7962a75c9ab3" Title="RefreshTokenExpiredException 属性" Url="html/9a63c22f-7a16-7198-cdc1-cb4bdf86443e.htm">
+      <HelpTOCNode Id="9f68cfed-3605-46eb-b524-f91d4b5fc3a5" Title="RefreshTokenExpiredException 类" Url="html/72917611-38ec-9ea9-01f5-434b19e68e92.htm">
+        <HelpTOCNode Id="0ec3bdc6-c854-4836-886b-4ff80e649253" Title="RefreshTokenExpiredException 属性" Url="html/9a63c22f-7a16-7198-cdc1-cb4bdf86443e.htm">
           <HelpTOCNode Title="RefreshToken 属性 " Url="html/e1a4a1d6-4e8d-7627-473b-93f397d65d82.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="8f5a112c-5cac-41f2-adda-1df8af57fe3a" Title="RefreshTokenExpiredException 方法" Url="html/3bbaf984-16b5-f1ed-fe2a-e45349986551.htm">
+        <HelpTOCNode Id="e96bc1d1-86f1-473c-8eee-667c33ad99c3" Title="RefreshTokenExpiredException 方法" Url="html/3bbaf984-16b5-f1ed-fe2a-e45349986551.htm">
           <HelpTOCNode Title="ToString 方法 " Url="html/897fdc6f-05d0-0d28-1704-b6b3a13d9e39.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="03951e75-4664-47bf-a6f3-248efea9db85" Title="UnAuthorizedException 类" Url="html/300591e4-5a11-56cb-69cf-a99224f1a0c6.htm">
+      <HelpTOCNode Id="74497895-a4a8-4131-be64-ee95268ae1d4" Title="UnAuthorizedException 类" Url="html/300591e4-5a11-56cb-69cf-a99224f1a0c6.htm">
         <HelpTOCNode Title="UnAuthorizedException 属性" Url="html/91314781-ec93-ef21-bacb-59aa261a764b.htm" />
-        <HelpTOCNode Id="f6cf5a17-7c34-4dcc-98fd-e417cc39bcd0" Title="UnAuthorizedException 方法" Url="html/e0de943e-0cfd-5bb5-f116-233b19ca0c54.htm">
+        <HelpTOCNode Id="884e491f-21af-46da-b9d3-290f6c12f97d" Title="UnAuthorizedException 方法" Url="html/e0de943e-0cfd-5bb5-f116-233b19ca0c54.htm">
           <HelpTOCNode Title="ToString 方法 " Url="html/6414b94a-0355-7562-cf46-8efe5123fa3c.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="53b2c4ea-2be0-42bb-a259-1530a7aaf53e" Title="YfyApiException 类" Url="html/3152838d-3ba6-f3e8-b71a-63e3d0aa04e3.htm">
-        <HelpTOCNode Id="57713e1c-9ab1-4f1e-90f3-2be454e7d9d7" Title="YfyApiException 属性" Url="html/a1ce52ab-9c6f-40be-cb43-9969878ba1a3.htm">
+      <HelpTOCNode Id="593a6c9a-6d62-454d-b082-cbdd577f4879" Title="YfyApiException 类" Url="html/3152838d-3ba6-f3e8-b71a-63e3d0aa04e3.htm">
+        <HelpTOCNode Id="26c84cb8-f9c5-412c-8b9c-ce07588b5af1" Title="YfyApiException 属性" Url="html/a1ce52ab-9c6f-40be-cb43-9969878ba1a3.htm">
           <HelpTOCNode Title="ErrorCode 属性 " Url="html/a204e0ff-8296-69f5-4c0e-59b53d06928b.htm" />
           <HelpTOCNode Title="ErrorMsg 属性 " Url="html/864dbc33-6d2b-ea9b-dd4f-086f6c8722ab.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="dd54da0c-e002-4860-b298-1f6a861667e4" Title="YfyApiException 方法" Url="html/5e984562-bcf0-efa0-3687-54322a21de60.htm">
+        <HelpTOCNode Id="a1ccb416-941d-45cd-a2ad-007fb3df46c3" Title="YfyApiException 方法" Url="html/5e984562-bcf0-efa0-3687-54322a21de60.htm">
           <HelpTOCNode Title="ToString 方法 " Url="html/8974dced-6b85-89eb-3313-24ac1be29376.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="2e613068-11ca-450d-a6eb-0ac713045fd7" Title="YfyException 类" Url="html/33b92ac1-e3fe-fb5c-5d36-79f52bb10c78.htm">
-        <HelpTOCNode Id="72c8e30e-d72a-48e1-9b49-956bc4a46c52" Title="YfyException 属性" Url="html/47843c64-c5e0-264e-2634-901634627a6e.htm">
+      <HelpTOCNode Id="aa4577fc-af34-4ea2-b870-f36b36289532" Title="YfyException 类" Url="html/33b92ac1-e3fe-fb5c-5d36-79f52bb10c78.htm">
+        <HelpTOCNode Id="4632f8a3-1bc0-4e42-81ae-7cb2c5fedc61" Title="YfyException 属性" Url="html/47843c64-c5e0-264e-2634-901634627a6e.htm">
           <HelpTOCNode Title="RequestId 属性 " Url="html/cf68a046-7174-67c3-2b13-0938b339e9d7.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="66b60bdb-9b59-4262-a727-0a9895e085a3" Title="YfyException 方法" Url="html/8a66b6e5-9c7e-5c00-2621-f293b755db5c.htm">
+        <HelpTOCNode Id="6ff629cc-1b1f-4edc-8c6e-b04aaeb05348" Title="YfyException 方法" Url="html/8a66b6e5-9c7e-5c00-2621-f293b755db5c.htm">
           <HelpTOCNode Title="ToString 方法 " Url="html/9c571edc-f444-8da7-3a44-1219fff5ef74.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="641c6886-ee6a-47a1-ae29-2225489c38af" Title="YfyHttpException 类" Url="html/1ea38ffd-8aa6-5b6f-a964-aa276c1d11f9.htm">
-        <HelpTOCNode Id="981b01ac-0a3d-4081-bec6-5277c528cef9" Title="YfyHttpException 属性" Url="html/f4f27374-97bf-7653-bf29-77c522a87051.htm">
+      <HelpTOCNode Id="6d9621d3-781f-424f-9760-f60a14d49e2a" Title="YfyHttpException 类" Url="html/1ea38ffd-8aa6-5b6f-a964-aa276c1d11f9.htm">
+        <HelpTOCNode Id="0d46045f-698c-43e9-b2ad-28c7d4f4d73c" Title="YfyHttpException 属性" Url="html/f4f27374-97bf-7653-bf29-77c522a87051.htm">
           <HelpTOCNode Title="RequestUri 属性 " Url="html/402e694f-ed6b-09a6-92df-d507ec75d40f.htm" />
           <HelpTOCNode Title="StatusCode 属性 " Url="html/d3959fb3-fcaf-f8e9-e40a-d73538424968.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="b27559ae-2e3a-4fa9-be1d-58b45c967492" Title="YfyHttpException 方法" Url="html/69b240de-20cb-86de-d1ff-cbd248cfe1ba.htm">
+        <HelpTOCNode Id="c3e6228a-5ec7-449d-8d25-f55bc21cbf97" Title="YfyHttpException 方法" Url="html/69b240de-20cb-86de-d1ff-cbd248cfe1ba.htm">
           <HelpTOCNode Title="ToString 方法 " Url="html/74a61153-0f7c-560d-fe2c-7912c73ae705.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="cdd12e15-0da8-4cc9-a59a-fe5acc15392e" Title="Yfy.Api.Files" Url="html/bd5dd6b5-0376-1e0a-0e9d-bdfe21f9b777.htm">
-      <HelpTOCNode Id="06df2da6-8240-49e2-bc6d-6d52472c31f0" Title="FileRouter 类" Url="html/3e16ab30-f5ab-9d7c-1bc0-c2e3b003d345.htm">
-        <HelpTOCNode Id="26f51366-6fb5-484c-9911-c4002849aa92" Title="FileRouter 方法" Url="html/405faaea-9d1a-1fc4-80fb-1622121d8840.htm">
+    <HelpTOCNode Id="27cde7b8-9e09-4e9e-a961-cbb96a79743a" Title="Yfy.Api.Files" Url="html/bd5dd6b5-0376-1e0a-0e9d-bdfe21f9b777.htm">
+      <HelpTOCNode Id="b4318533-1d6a-4814-9e97-57caf0a57264" Title="FileRouter 类" Url="html/3e16ab30-f5ab-9d7c-1bc0-c2e3b003d345.htm">
+        <HelpTOCNode Id="88f5f744-0e59-42bc-8513-8227f5f742e1" Title="FileRouter 方法" Url="html/405faaea-9d1a-1fc4-80fb-1622121d8840.htm">
           <HelpTOCNode Title="Comments 方法 " Url="html/ef83f6e7-5d39-54ba-088a-821490fda1e0.htm" />
           <HelpTOCNode Title="Copy 方法 " Url="html/9e3faa3e-eb97-7f54-d581-19678377ba89.htm" />
           <HelpTOCNode Title="Delete 方法 " Url="html/a8761aee-d19c-f924-da87-290f74d93e61.htm" />
           <HelpTOCNode Title="DeleteFromTrash 方法 " Url="html/614f396b-30b4-6af6-c93b-553c9e3199b1.htm" />
-          <HelpTOCNode Title="Download 方法 " Url="html/4267eedb-e266-33ca-d60e-ebfbcb938e4d.htm" />
-          <HelpTOCNode Title="GetDownloadUrl 方法 " Url="html/3ad7e595-fa52-ef20-6b4a-9c8ca13ee321.htm" />
+          <HelpTOCNode Title="Download 方法 " Url="html/58dde814-8a27-65d0-e446-278273f39d85.htm" />
+          <HelpTOCNode Title="GetDownloadUrl 方法 " Url="html/1a724e41-8980-f0ba-2cc1-89cc8c877d4c.htm" />
           <HelpTOCNode Title="GetUploadNewVersionUrl 方法 " Url="html/88167a70-3128-896d-1318-6eb0944faa88.htm" />
           <HelpTOCNode Title="GetUploadUrl 方法 " Url="html/783f909a-4314-bc6d-fafd-2dbf80d695c3.htm" />
           <HelpTOCNode Title="Info 方法 " Url="html/979abaf7-b832-6dee-ae00-77052034fbfd.htm" />
@@ -233,11 +244,11 @@
           <HelpTOCNode Title="RestoreFromTrash 方法 " Url="html/fb6aa5ef-c3d1-94cb-0d79-ff8a35fde181.htm" />
           <HelpTOCNode Title="ShareLinks 方法 " Url="html/4ecc78d4-0666-1299-9135-736546ec98fc.htm" />
           <HelpTOCNode Title="Update 方法 " Url="html/ac69e1a3-ede3-01e8-81d1-141973aef57c.htm" />
-          <HelpTOCNode Id="abb635ed-38d0-4fbc-a493-ae6668ca8024" Title="Upload 方法 " Url="html/efae6517-5bd5-0870-cb9c-2fc7878cda82.htm">
+          <HelpTOCNode Id="8ee22b5b-4500-41de-b844-77c23519af55" Title="Upload 方法 " Url="html/efae6517-5bd5-0870-cb9c-2fc7878cda82.htm">
             <HelpTOCNode Title="Upload 方法 (Int64, String, Stream)" Url="html/a1f8b7e1-12d5-1aef-2227-75f98725ecbe.htm" />
             <HelpTOCNode Title="Upload 方法 (Int64, String, String)" Url="html/9a875b8b-f586-ed21-ae91-21d4ca71ae8b.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="35d99dbe-1ec9-45d1-905e-69ee05906456" Title="UploadNewVersion 方法 " Url="html/f07800c4-6d00-41cd-8398-950f075d5ea1.htm">
+          <HelpTOCNode Id="30ad6888-10f1-407e-8d12-4e177a5e7b09" Title="UploadNewVersion 方法 " Url="html/f07800c4-6d00-41cd-8398-950f075d5ea1.htm">
             <HelpTOCNode Title="UploadNewVersion 方法 (Int64, String, Stream, String)" Url="html/ae0a4c2e-cb6d-8e0a-d7c7-a5dde670ef64.htm" />
             <HelpTOCNode Title="UploadNewVersion 方法 (Int64, String, String, String)" Url="html/c918c59e-a79d-1a53-afa4-d6bac6a0d471.htm" />
           </HelpTOCNode>
@@ -245,9 +256,9 @@
       </HelpTOCNode>
       <HelpTOCNode Title="PreviewType 枚举" Url="html/7d6d8923-4e13-06f1-9039-0e7466c4e34b.htm" />
       <HelpTOCNode Title="UploadType 枚举" Url="html/29987194-5b99-9b78-1382-f4b6aeec93b9.htm" />
-      <HelpTOCNode Id="75c3fbaa-3a1b-4bd8-9384-b5d4043ca59d" Title="YfyFile 类" Url="html/1ceba6f4-5a4d-edd5-5ac8-4fefe21f4faa.htm">
+      <HelpTOCNode Id="98551195-c290-4c74-8ecd-db9a4c15e980" Title="YfyFile 类" Url="html/1ceba6f4-5a4d-edd5-5ac8-4fefe21f4faa.htm">
         <HelpTOCNode Title="YfyFile 构造函数 " Url="html/0a56a7b8-9984-a035-4e45-b286dcf22722.htm" />
-        <HelpTOCNode Id="3ad8e0a3-37bb-41cf-969b-4666f65e6e6d" Title="YfyFile 属性" Url="html/ae400d92-f3ed-50fc-94f8-82640dd32a01.htm">
+        <HelpTOCNode Id="d5cefce5-b5ef-4ef4-8bd4-4201fdd868b5" Title="YfyFile 属性" Url="html/ae400d92-f3ed-50fc-94f8-82640dd32a01.htm">
           <HelpTOCNode Title="CommentsCount 属性 " Url="html/b425dcfc-32d5-9319-065c-c203ec76f0fa.htm" />
           <HelpTOCNode Title="ExtensionCategory 属性 " Url="html/0ace6782-f21c-f6cc-0736-1230b11bf88c.htm" />
           <HelpTOCNode Title="Sha1 属性 " Url="html/ec884e14-256b-9d96-f451-ce563bcf554a.htm" />
@@ -255,9 +266,9 @@
         <HelpTOCNode Title="YfyFile 方法" Url="html/07016399-409c-0bd0-165c-aae64d31249a.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="651b1d8f-2ee4-449b-9be6-d162e12efcb6" Title="Yfy.Api.Folders" Url="html/c4bf2f40-fc67-6e5a-7ae3-6673324d1db2.htm">
-      <HelpTOCNode Id="bffbc7f7-13f5-45b9-91e4-0d63dba7ebfe" Title="FolderRouter 类" Url="html/2966eca1-21e6-af72-68f0-a5a2ddd24e1d.htm">
-        <HelpTOCNode Id="04318a48-681f-41d5-b01c-1a9bf65cca41" Title="FolderRouter 方法" Url="html/cc0448c8-fcff-9d62-fe07-4adbae0a8aed.htm">
+    <HelpTOCNode Id="ec665dcb-3526-418a-a749-63f79ac742ce" Title="Yfy.Api.Folders" Url="html/c4bf2f40-fc67-6e5a-7ae3-6673324d1db2.htm">
+      <HelpTOCNode Id="c2131ee5-314d-462c-ac35-62348aaf828c" Title="FolderRouter 类" Url="html/2966eca1-21e6-af72-68f0-a5a2ddd24e1d.htm">
+        <HelpTOCNode Id="9b3da87c-aa6e-4a7e-9cbb-557fc0a3b994" Title="FolderRouter 方法" Url="html/cc0448c8-fcff-9d62-fe07-4adbae0a8aed.htm">
           <HelpTOCNode Title="Collabs 方法 " Url="html/b089f8da-4e7a-a3c3-51ab-4a0359321685.htm" />
           <HelpTOCNode Title="Create 方法 " Url="html/e5b54dba-800a-3659-1535-f1ae10b0e155.htm" />
           <HelpTOCNode Title="Delete 方法 " Url="html/4678da7f-135b-f4c1-a583-da371d1c6430.htm" />
@@ -270,17 +281,17 @@
           <HelpTOCNode Title="Update 方法 " Url="html/16725363-fd24-d1e3-60ea-92d1152c15a6.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="fdfb6ed4-634b-4929-932b-af3a53acce92" Title="YfyFolder 类" Url="html/1389d7ac-bc5f-9ad7-4d14-52f91e578f63.htm">
+      <HelpTOCNode Id="045c847f-7836-4be2-8058-ceb61ce99c94" Title="YfyFolder 类" Url="html/1389d7ac-bc5f-9ad7-4d14-52f91e578f63.htm">
         <HelpTOCNode Title="YfyFolder 构造函数 " Url="html/14d20044-15d4-a3ea-ddee-cc73d73b18c3.htm" />
-        <HelpTOCNode Id="866580af-f91e-46f9-a92f-d9c1c615daab" Title="YfyFolder 属性" Url="html/77afa90a-328f-1d79-0a7e-d8e0598828f3.htm">
+        <HelpTOCNode Id="59aeb96f-bcec-4899-8daa-6a5cbe7e8d73" Title="YfyFolder 属性" Url="html/77afa90a-328f-1d79-0a7e-d8e0598828f3.htm">
           <HelpTOCNode Title="FolderType 属性 " Url="html/e275d1f0-259d-73ec-0392-afc0f40fa12d.htm" />
           <HelpTOCNode Title="ItemCount 属性 " Url="html/aacc18cc-02b2-6e8e-e2c6-b100ce5b8e7f.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="YfyFolder 方法" Url="html/24694ada-1476-fec0-6472-4f35c5f50525.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="1645b2dd-7269-4ec5-81c6-4d7003e2fa77" Title="YfyPathFolder 类" Url="html/aeb2de74-a88f-522c-66a4-ebb6a754c026.htm">
+      <HelpTOCNode Id="8eb0923e-d44e-45c3-829e-23857d91e645" Title="YfyPathFolder 类" Url="html/aeb2de74-a88f-522c-66a4-ebb6a754c026.htm">
         <HelpTOCNode Title="YfyPathFolder 构造函数 " Url="html/2f5f4139-1022-46fa-0315-7900b29835de.htm" />
-        <HelpTOCNode Id="5cc7fe62-7ceb-4bf7-84f6-0c56a4250e73" Title="YfyPathFolder 属性" Url="html/137045bf-c1cd-13b6-4fe3-fe0613f32189.htm">
+        <HelpTOCNode Id="a669655f-2374-4c30-ac46-05827bffe338" Title="YfyPathFolder 属性" Url="html/137045bf-c1cd-13b6-4fe3-fe0613f32189.htm">
           <HelpTOCNode Title="Id 属性 " Url="html/4df9a7f0-a8eb-b39c-01ae-877cfac1ca96.htm" />
           <HelpTOCNode Title="Name 属性 " Url="html/8b2291c0-3183-eade-60d8-691ef717acf3.htm" />
           <HelpTOCNode Title="Type 属性 " Url="html/4d64aa9c-2bbc-465b-5841-7e0602abda7b.htm" />
@@ -288,16 +299,16 @@
         <HelpTOCNode Title="YfyPathFolder 方法" Url="html/81659465-86bc-b2c4-736f-4385e593785b.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="100460f7-a686-4d2d-a147-b5b3a2458441" Title="Yfy.Api.Items" Url="html/0fca64c0-4ab5-e021-39c5-60598ba494ff.htm">
-      <HelpTOCNode Id="4ed46e4f-d8c5-4aa7-ac00-2c3701babb56" Title="ItemRouter 类" Url="html/9d65243a-b21e-851d-ed99-5705d543e6d1.htm">
-        <HelpTOCNode Id="40e36356-c0f8-4ec0-84ab-e92ed912bfb4" Title="ItemRouter 方法" Url="html/619153bf-2fb8-14b4-f005-9228c19c20e6.htm">
+    <HelpTOCNode Id="526f8884-d58d-4b2b-a46f-41237631af5c" Title="Yfy.Api.Items" Url="html/0fca64c0-4ab5-e021-39c5-60598ba494ff.htm">
+      <HelpTOCNode Id="ded9d21e-7fba-4354-bf2a-6b741c44aa05" Title="ItemRouter 类" Url="html/9d65243a-b21e-851d-ed99-5705d543e6d1.htm">
+        <HelpTOCNode Id="fa56501a-0127-49e0-a726-2221e1671b22" Title="ItemRouter 方法" Url="html/619153bf-2fb8-14b4-f005-9228c19c20e6.htm">
           <HelpTOCNode Title="Search 方法 " Url="html/d862acf5-b8e0-fad6-46cb-6e0be28261e9.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="ItemType 枚举" Url="html/19e06de6-80a4-27e7-767b-67f6ab80f949.htm" />
-      <HelpTOCNode Id="47c993dd-214d-4636-a54a-025031570ea5" Title="YfyItem 类" Url="html/a50abe02-2715-bf03-f46b-e4b1a34209aa.htm">
+      <HelpTOCNode Id="a4296e81-eda3-40bf-8120-697b34af3696" Title="YfyItem 类" Url="html/a50abe02-2715-bf03-f46b-e4b1a34209aa.htm">
         <HelpTOCNode Title="YfyItem 构造函数 " Url="html/75176787-0e71-3035-c5ee-63317c78eb00.htm" />
-        <HelpTOCNode Id="46c773aa-2bb8-43b7-aa5f-1d296b2f30ee" Title="YfyItem 属性" Url="html/d1defa40-d177-d7f5-983a-700e5d48e532.htm">
+        <HelpTOCNode Id="916c8347-6125-4bd5-b985-981d07d81686" Title="YfyItem 属性" Url="html/d1defa40-d177-d7f5-983a-700e5d48e532.htm">
           <HelpTOCNode Title="CreatedAt 属性 " Url="html/3e061113-06c2-3e54-5b15-970c215e275c.htm" />
           <HelpTOCNode Title="Description 属性 " Url="html/4b1be1d7-7571-de72-1207-487a2c97b39d.htm" />
           <HelpTOCNode Title="Id 属性 " Url="html/0c43f478-05e5-0eb6-ba70-15a738e1b73a.htm" />
@@ -312,9 +323,9 @@
         </HelpTOCNode>
         <HelpTOCNode Title="YfyItem 方法" Url="html/d6f2efc1-ad33-49e4-8c04-0e2a99d50dbd.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="033f7c84-76f4-48bd-8dc3-06d3d47d0488" Title="YfyItemCollection 类" Url="html/e9575833-5ad2-5ad7-27c6-925b7463ff76.htm">
+      <HelpTOCNode Id="2272eb0d-9925-4c48-a190-6f002aa4d602" Title="YfyItemCollection 类" Url="html/e9575833-5ad2-5ad7-27c6-925b7463ff76.htm">
         <HelpTOCNode Title="YfyItemCollection 构造函数 " Url="html/367aeef5-1981-33be-0262-d328085e2ffa.htm" />
-        <HelpTOCNode Id="51adc508-c115-4ad3-bef6-237d07a491fb" Title="YfyItemCollection 属性" Url="html/a6f1309e-4fd1-cc57-e0f7-4a8e0ecbf036.htm">
+        <HelpTOCNode Id="e60022e7-5605-48b7-92d5-00acdca0d91e" Title="YfyItemCollection 属性" Url="html/a6f1309e-4fd1-cc57-e0f7-4a8e0ecbf036.htm">
           <HelpTOCNode Title="Files 属性 " Url="html/ba4d5ec1-a643-a973-e6fb-85505002ee40.htm" />
           <HelpTOCNode Title="Folders 属性 " Url="html/12a612f8-e749-9bf6-bbf2-b3f8a367ec19.htm" />
           <HelpTOCNode Title="PageCapacity 属性 " Url="html/67fd8511-2978-cb94-1257-a9e3acf42bba.htm" />
@@ -324,9 +335,9 @@
         <HelpTOCNode Title="YfyItemCollection 方法" Url="html/c36b5a8a-5d6e-3ace-088e-b9338a440df7.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="4bb6db5e-87ee-4f1a-9d44-1777e3e5e89d" Title="Yfy.Api.Oauth" Url="html/9935efbf-edd8-2371-aa4e-c0a8e6b5e462.htm">
-      <HelpTOCNode Id="85314bc4-164c-44e0-80f9-3cfaf419b957" Title="OAuthHelper 类" Url="html/922a7325-001c-9651-8dca-55440820a7ce.htm">
-        <HelpTOCNode Id="d0a7ca96-b245-43fc-bf4d-43fbd2480deb" Title="OAuthHelper 方法" Url="html/6face9ea-6229-603a-7889-ebc9ba4c35b5.htm">
+    <HelpTOCNode Id="ba50e540-dc43-41e3-9700-423ee4a8db35" Title="Yfy.Api.Oauth" Url="html/9935efbf-edd8-2371-aa4e-c0a8e6b5e462.htm">
+      <HelpTOCNode Id="4e5076f6-6569-4b7c-a95c-616efb8fbedb" Title="OAuthHelper 类" Url="html/922a7325-001c-9651-8dca-55440820a7ce.htm">
+        <HelpTOCNode Id="71374ed2-9939-49b6-b552-f94882a4bbe8" Title="OAuthHelper 方法" Url="html/6face9ea-6229-603a-7889-ebc9ba4c35b5.htm">
           <HelpTOCNode Title="GetAuthorizeUrl 方法 " Url="html/8d643b08-90f6-6e6c-f25e-14192a02977d.htm" />
           <HelpTOCNode Title="GetBasicAuthrization 方法 " Url="html/2f6105fd-0c16-d1e4-f432-40db535a65a3.htm" />
           <HelpTOCNode Title="GetOAuthTokenByCode 方法 " Url="html/e904b304-3a34-381a-4da7-fde9ae1a99ac.htm" />
@@ -336,9 +347,9 @@
           <HelpTOCNode Title="RevokeOAuthToken 方法 " Url="html/657ac910-fcc1-f7a5-7515-a4b833bed508.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="e9aa511e-5f1f-428c-8258-68680994d023" Title="YfyAuthtoken 类" Url="html/532883aa-1a8b-6bef-ae00-dad39fab2ec8.htm">
+      <HelpTOCNode Id="432e0b3c-9da1-48a9-bf22-6171333fbb27" Title="YfyAuthtoken 类" Url="html/532883aa-1a8b-6bef-ae00-dad39fab2ec8.htm">
         <HelpTOCNode Title="YfyAuthtoken 构造函数 " Url="html/e88cc4ea-5efe-c6b0-7274-23fbbf529202.htm" />
-        <HelpTOCNode Id="ee4958d0-f283-449e-9d5a-18d233bf10bd" Title="YfyAuthtoken 属性" Url="html/cea1d9e5-2e41-45ff-35a1-08f4c7e257c2.htm">
+        <HelpTOCNode Id="cfe2d8f8-abd9-40be-8801-b5d001b5e69e" Title="YfyAuthtoken 属性" Url="html/cea1d9e5-2e41-45ff-35a1-08f4c7e257c2.htm">
           <HelpTOCNode Title="AccessToken 属性 " Url="html/d27ba594-5477-ac57-c942-fe6761c35be1.htm" />
           <HelpTOCNode Title="ExpiresIn 属性 " Url="html/5eded599-4213-4c77-fb22-e55250865a1b.htm" />
           <HelpTOCNode Title="RefreshToken 属性 " Url="html/38b7a46a-cdbd-7349-0f9b-9cc51af449b3.htm" />
@@ -348,31 +359,35 @@
         <HelpTOCNode Title="YfyAuthtoken 方法" Url="html/c5bea4b6-a33d-d17e-74b5-ea34665cf9e2.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="9611a28a-11e2-4570-9e6a-84ebb9aac67c" Title="Yfy.Api.ShareLink" Url="html/01869519-a102-4e5f-999a-c9e700154325.htm">
+    <HelpTOCNode Id="b1fd03b0-ac78-447b-9797-c67983d5452d" Title="Yfy.Api.ShareLink" Url="html/01869519-a102-4e5f-999a-c9e700154325.htm">
       <HelpTOCNode Title="ShareLinkAccess 枚举" Url="html/47d1ba03-4844-56c8-660f-dcb77c0883fa.htm" />
-      <HelpTOCNode Id="ed743c40-0b53-49b4-bf7f-60f82f3f9d7a" Title="ShareLinkRouter 类" Url="html/719abc37-c786-7b3a-63bc-65b1e06e7c96.htm">
-        <HelpTOCNode Id="e013e3d9-f095-4d6d-ac39-00f64df44b79" Title="ShareLinkRouter 方法" Url="html/d17dcd43-1eb0-dbf0-e3c1-fdb2c41045a4.htm">
+      <HelpTOCNode Id="ddcd6c81-efb6-4fde-8812-9722bf688258" Title="ShareLinkRouter 类" Url="html/719abc37-c786-7b3a-63bc-65b1e06e7c96.htm">
+        <HelpTOCNode Id="04ce135d-1d96-413a-b375-10cd5e68e0ad" Title="ShareLinkRouter 方法" Url="html/d17dcd43-1eb0-dbf0-e3c1-fdb2c41045a4.htm">
           <HelpTOCNode Title="Create 方法 " Url="html/c662a0d4-6193-2a3e-3869-caa8e4b9fcc7.htm" />
           <HelpTOCNode Title="Info 方法 " Url="html/2ee97f06-bfa7-f673-46bf-9384abff80d8.htm" />
           <HelpTOCNode Title="Revoke 方法 " Url="html/9281f0af-6593-28e1-6543-472ba8febdc2.htm" />
           <HelpTOCNode Title="Update 方法 " Url="html/29ba7fcb-c4a4-84a8-bceb-dcb9c92a8d2f.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="76c56818-d0ec-4ede-b410-ed18c30379fc" Title="YfyShareLink 类" Url="html/5e4fc477-9408-5ccc-c330-139da595298b.htm">
+      <HelpTOCNode Id="4380ed81-06bf-4995-9d19-e3550e01a9e7" Title="YfyShareLink 类" Url="html/5e4fc477-9408-5ccc-c330-139da595298b.htm">
         <HelpTOCNode Title="YfyShareLink 构造函数 " Url="html/d644e171-ca68-9cd8-c06b-bc86d5b71f4e.htm" />
-        <HelpTOCNode Id="0de98bd0-e7a7-4974-8ded-c19f9261d112" Title="YfyShareLink 属性" Url="html/79511bb8-8fcb-f0bc-ee6a-c1de15ac6ad8.htm">
+        <HelpTOCNode Id="a8721a70-9572-4588-b921-4a56fdf5c9dc" Title="YfyShareLink 属性" Url="html/79511bb8-8fcb-f0bc-ee6a-c1de15ac6ad8.htm">
           <HelpTOCNode Title="Access 属性 " Url="html/92b51177-7d9b-0f44-667c-b141370266ff.htm" />
+          <HelpTOCNode Title="CreatedAt 属性 " Url="html/61a807d2-a2a4-f3bc-d703-a9262d075a77.htm" />
           <HelpTOCNode Title="DisableDownload 属性 " Url="html/4b26408b-ae2b-8c02-098f-6394c3109518.htm" />
+          <HelpTOCNode Title="DownloadCountTotal 属性 " Url="html/b4043209-5333-3b21-98bd-95d5b7095fea.htm" />
           <HelpTOCNode Title="DueTime 属性 " Url="html/ea49c575-b476-14af-cff9-caf0958e3c55.htm" />
+          <HelpTOCNode Title="ModifiedAt 属性 " Url="html/71c56712-c7f4-f33b-f789-d8f1218578ec.htm" />
           <HelpTOCNode Title="PasswordProtected 属性 " Url="html/3a3c9b4d-e3a5-a894-f968-4251a08da2d3.htm" />
           <HelpTOCNode Title="ShareLinkUrl 属性 " Url="html/d15534c7-0a37-1bb6-f8c9-281df2955ab2.htm" />
           <HelpTOCNode Title="UniqueName 属性 " Url="html/7fc92078-251f-82ba-5332-abd5fd5a97e1.htm" />
+          <HelpTOCNode Title="ViewCount 属性 " Url="html/322b59e2-6b28-46cf-2b29-8f149abe0cc9.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="YfyShareLink 方法" Url="html/bf70daae-dd31-3843-a28c-2045cdec757f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c4e13fd2-53de-44af-b4de-7ae39a66a934" Title="YfyShareLinkCollection 类" Url="html/6adbaa31-9efa-afaa-771f-db7c8d76f709.htm">
+      <HelpTOCNode Id="45595b9c-fb8d-4139-b8f5-7b81318c6765" Title="YfyShareLinkCollection 类" Url="html/6adbaa31-9efa-afaa-771f-db7c8d76f709.htm">
         <HelpTOCNode Title="YfyShareLinkCollection 构造函数 " Url="html/e490a836-c5d5-ef1c-607c-7a9d5ac36a4b.htm" />
-        <HelpTOCNode Id="321bd13d-c721-4c9d-bcd8-dac7d41b8551" Title="YfyShareLinkCollection 属性" Url="html/fe6ff148-6230-a2a5-ddd2-cf5d733cdb5c.htm">
+        <HelpTOCNode Id="f00bb807-c2db-4f71-9bb5-3e5663f1c2b9" Title="YfyShareLinkCollection 属性" Url="html/fe6ff148-6230-a2a5-ddd2-cf5d733cdb5c.htm">
           <HelpTOCNode Title="PageCapacity 属性 " Url="html/42dff8c5-7f5c-50ef-eb74-d626e9056abd.htm" />
           <HelpTOCNode Title="PageCount 属性 " Url="html/17a788bf-94d9-abc5-b3f8-65a202950a02.htm" />
           <HelpTOCNode Title="PageId 属性 " Url="html/37f3bd9c-f762-5c5a-5dc1-1fca3d3c1ef5.htm" />
@@ -382,41 +397,42 @@
         <HelpTOCNode Title="YfyShareLinkCollection 方法" Url="html/10c577a8-74ed-882a-d4a3-e1422cddd3c7.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="dfacc161-f14e-415c-9e0d-ab9862fd5924" Title="Yfy.Api.Trash" Url="html/ee477547-4da3-bcae-dcc4-237c2a1b5638.htm">
-      <HelpTOCNode Id="5110ac3a-1367-4e1d-9d7a-c868982c3a27" Title="TrashRouter 类" Url="html/a288f162-cf61-7877-8783-6993237f3977.htm">
-        <HelpTOCNode Id="4a961eab-5fad-4902-b564-8226307e54e7" Title="TrashRouter 方法" Url="html/53dd835e-0e69-8b39-9d7e-a48b5cb1d2f6.htm">
+    <HelpTOCNode Id="d6a6df01-a31e-4d9b-a366-c3f93021887d" Title="Yfy.Api.Trash" Url="html/ee477547-4da3-bcae-dcc4-237c2a1b5638.htm">
+      <HelpTOCNode Id="a935633c-fdad-4f32-a978-f81db24348ba" Title="TrashRouter 类" Url="html/a288f162-cf61-7877-8783-6993237f3977.htm">
+        <HelpTOCNode Id="11e3bc2a-92e4-4f50-963f-1e8e2b56ae78" Title="TrashRouter 方法" Url="html/53dd835e-0e69-8b39-9d7e-a48b5cb1d2f6.htm">
           <HelpTOCNode Title="ClearTrash 方法 " Url="html/2e106a44-0ef9-222a-7e64-4fe1ab2275eb.htm" />
           <HelpTOCNode Title="RestoreAllFromTrash 方法 " Url="html/ab4ec31d-816b-8f31-8882-8096afaafdb3.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="5ce4b7a9-94b1-4b8f-a038-d03e59d6d355" Title="Yfy.Api.Users" Url="html/c52d192f-2055-57d1-fd9c-83fe5553fcb1.htm">
-      <HelpTOCNode Id="623ee307-ee41-4567-aeab-c9e770687742" Title="UserRouter 类" Url="html/1c3f75f4-0cb9-27f6-6877-9470756f7e87.htm">
-        <HelpTOCNode Id="79e55fe2-51ff-4dab-8e86-c2201d6b0893" Title="UserRouter 方法" Url="html/0f6f9839-b803-0965-e534-dd848053362d.htm">
+    <HelpTOCNode Id="933aedc7-99ae-4b6e-a0a6-d15a1da5bb71" Title="Yfy.Api.Users" Url="html/c52d192f-2055-57d1-fd9c-83fe5553fcb1.htm">
+      <HelpTOCNode Id="f4de7e59-2bba-4e97-9da3-969b83f0056c" Title="UserRouter 类" Url="html/1c3f75f4-0cb9-27f6-6877-9470756f7e87.htm">
+        <HelpTOCNode Id="790cf32c-9a10-4a4d-bfcb-3933e6ff511b" Title="UserRouter 方法" Url="html/0f6f9839-b803-0965-e534-dd848053362d.htm">
           <HelpTOCNode Title="Info 方法 " Url="html/7d2e25c7-a33b-053e-912a-3629ad0fca03.htm" />
           <HelpTOCNode Title="ProfilePicDownload 方法 " Url="html/ca070303-8aa0-23ff-a06f-83032a4d74c5.htm" />
           <HelpTOCNode Title="Search 方法 " Url="html/f1e8f88b-9781-4b30-6709-7505bb6e7fb2.htm" />
           <HelpTOCNode Title="Update 方法 " Url="html/b459d5c4-0d9f-59df-1679-2bf6f9a82ba3.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="caed4ef8-e624-4455-b391-91374c0a5fe4" Title="YfyMiniUser 类" Url="html/f62b340d-5767-9d12-d1b7-fb5342633ffc.htm">
+      <HelpTOCNode Id="b05263e9-8c04-49d7-aa64-226f344afe1d" Title="YfyMiniUser 类" Url="html/f62b340d-5767-9d12-d1b7-fb5342633ffc.htm">
         <HelpTOCNode Title="YfyMiniUser 构造函数 " Url="html/fcb1a55e-152b-2e57-9ce5-cfe26af11157.htm" />
-        <HelpTOCNode Id="3aaf3126-67b0-40fb-9ac5-e46f1661a2c1" Title="YfyMiniUser 属性" Url="html/1fa2b8a2-85a3-f8ec-ba19-502863c51588.htm">
-          <HelpTOCNode Title="EnterpriseId 属性 " Url="html/818b0e07-7ee8-5f7a-3fb5-c94814561c8b.htm" />
+        <HelpTOCNode Id="d737e85b-57fc-4fc0-9333-89a0f3f74ce4" Title="YfyMiniUser 属性" Url="html/1fa2b8a2-85a3-f8ec-ba19-502863c51588.htm">
+          <HelpTOCNode Title="Enterprise 属性 " Url="html/1abed747-e34e-7a07-8470-1be38435164e.htm" />
           <HelpTOCNode Title="Id 属性 " Url="html/ec936a67-847c-e3b0-00f7-2d554df1f7dc.htm" />
           <HelpTOCNode Title="Login 属性 " Url="html/1dd92548-8e04-d914-527c-8aedff8f8b5e.htm" />
           <HelpTOCNode Title="Name 属性 " Url="html/f4412001-d296-147e-5c39-5454cfb2ecab.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="YfyMiniUser 方法" Url="html/299885fc-29f9-8844-18cd-86f52a032285.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="6680a555-c5d8-4c33-9f0e-87acfe7d001b" Title="YfyUser 类" Url="html/7e3b5746-1127-9778-c1bb-703771e40241.htm">
+      <HelpTOCNode Id="74befa19-269c-4777-8736-a21151dd3c1f" Title="YfyUser 类" Url="html/7e3b5746-1127-9778-c1bb-703771e40241.htm">
         <HelpTOCNode Title="YfyUser 构造函数 " Url="html/60256627-5431-db04-c68a-5a58c4efa060.htm" />
-        <HelpTOCNode Id="2894f1b5-77a9-4a03-aaf8-61b1c4e9b5cf" Title="YfyUser 属性" Url="html/aa8f61b0-f380-6f2a-c1c1-25607de8004f.htm">
+        <HelpTOCNode Id="0d04d7da-da2a-4964-80a8-a629661034e7" Title="YfyUser 属性" Url="html/aa8f61b0-f380-6f2a-c1c1-25607de8004f.htm">
           <HelpTOCNode Title="Email 属性 " Url="html/9256f816-eb0f-3254-dbb3-136dbf7c9b5f.htm" />
-          <HelpTOCNode Title="EnterpriseId 属性 " Url="html/18753872-849e-11ac-eabf-afc29fd66cb9.htm" />
+          <HelpTOCNode Title="Enterprise 属性 " Url="html/710cc0d8-4003-9262-3056-32ecdefcf5a5.htm" />
           <HelpTOCNode Title="FullNamePinyin 属性 " Url="html/50cfa40c-fa7e-7be8-f581-0c41cddc575a.htm" />
           <HelpTOCNode Title="Id 属性 " Url="html/9e31e7be-467a-3fe0-d816-42c7ee04e7e7.htm" />
           <HelpTOCNode Title="IsActive 属性 " Url="html/d10c7c42-1b6f-c89c-1eac-5812a5e67697.htm" />
+          <HelpTOCNode Title="Login 属性 " Url="html/c38fe28d-ddd8-51bd-47ab-e811cc3e2f2f.htm" />
           <HelpTOCNode Title="Name 属性 " Url="html/8d4cb2ca-d3c7-64d3-0228-0610f014e3c6.htm" />
           <HelpTOCNode Title="Phone 属性 " Url="html/9e924803-bff9-0f74-c6ac-fdbcc4ae53c9.htm" />
           <HelpTOCNode Title="PinyinFirstLetters 属性 " Url="html/62334dab-cc5a-ec30-2b9b-9c9d8223d66a.htm" />
@@ -424,9 +440,9 @@
         </HelpTOCNode>
         <HelpTOCNode Title="YfyUser 方法" Url="html/d38d70c9-b249-619a-ec03-5a09409bda07.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="fa591aa0-ba00-415d-88b2-66d0787e4878" Title="YfyUserCollection 类" Url="html/64b6bc45-05fe-94a6-48b5-e5aa6e6a1b5c.htm">
+      <HelpTOCNode Id="e2fd0744-09a7-442f-a8c3-c42bdf0d7606" Title="YfyUserCollection 类" Url="html/64b6bc45-05fe-94a6-48b5-e5aa6e6a1b5c.htm">
         <HelpTOCNode Title="YfyUserCollection 构造函数 " Url="html/d4d13fa8-3e4c-570c-52e8-bb6b013c0305.htm" />
-        <HelpTOCNode Id="be53df16-8a0a-4e34-90f0-812c360a3029" Title="YfyUserCollection 属性" Url="html/5a760af8-d824-7faa-53ea-a3d61da384f8.htm">
+        <HelpTOCNode Id="52b3f866-3547-4815-ba6e-3c665d1735ca" Title="YfyUserCollection 属性" Url="html/5a760af8-d824-7faa-53ea-a3d61da384f8.htm">
           <HelpTOCNode Title="PageCapacity 属性 " Url="html/b5479ee2-1c98-1032-6ac7-3da55ae39b16.htm" />
           <HelpTOCNode Title="PageCount 属性 " Url="html/d38bd7f9-8dbc-1210-a81d-e25f5d10b18b.htm" />
           <HelpTOCNode Title="PageId 属性 " Url="html/77dbff31-7661-4552-a28a-d2aaefebe0f5.htm" />

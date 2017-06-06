@@ -109,6 +109,14 @@
   <topic id="Properties.T:Yfy.Api.Comment.YfyCommentCollection" type="API" />
   <topic id="M:Yfy.Api.Comment.YfyCommentCollection.#ctor" type="API" />
   <topic id="P:Yfy.Api.Comment.YfyCommentCollection.Comments" type="API" />
+  <topic id="N:Yfy.Api.Enterprises" type="API" />
+  <topic id="T:Yfy.Api.Enterprises.YfyMiniEnterprise" type="API" />
+  <topic id="Methods.T:Yfy.Api.Enterprises.YfyMiniEnterprise" type="API" />
+  <topic id="Properties.T:Yfy.Api.Enterprises.YfyMiniEnterprise" type="API" />
+  <topic id="M:Yfy.Api.Enterprises.YfyMiniEnterprise.#ctor" type="API" />
+  <topic id="P:Yfy.Api.Enterprises.YfyMiniEnterprise.AdminUserId" type="API" />
+  <topic id="P:Yfy.Api.Enterprises.YfyMiniEnterprise.Id" type="API" />
+  <topic id="P:Yfy.Api.Enterprises.YfyMiniEnterprise.Name" type="API" />
   <topic id="N:Yfy.Api.Exceptions" type="API" />
   <topic id="T:Yfy.Api.Exceptions.BadInputException" type="API" />
   <topic id="Methods.T:Yfy.Api.Exceptions.BadInputException" type="API" />
@@ -164,8 +172,8 @@
   <topic id="M:Yfy.Api.Files.FileRouter.Copy(System.Int64,System.Int64)" type="API" />
   <topic id="M:Yfy.Api.Files.FileRouter.Delete(System.Int64)" type="API" />
   <topic id="M:Yfy.Api.Files.FileRouter.DeleteFromTrash(System.Int64)" type="API" />
-  <topic id="M:Yfy.Api.Files.FileRouter.Download(System.Int64,System.String)" type="API" />
-  <topic id="M:Yfy.Api.Files.FileRouter.GetDownloadUrl(System.Int64)" type="API" />
+  <topic id="M:Yfy.Api.Files.FileRouter.Download(System.Int64,System.String,System.Int32,System.Boolean)" type="API" />
+  <topic id="M:Yfy.Api.Files.FileRouter.GetDownloadUrl(System.Int64,System.Int32)" type="API" />
   <topic id="M:Yfy.Api.Files.FileRouter.GetUploadNewVersionUrl(System.Int64,System.String,System.String)" type="API" />
   <topic id="M:Yfy.Api.Files.FileRouter.GetUploadUrl(System.Int64,System.String)" type="API" />
   <topic id="M:Yfy.Api.Files.FileRouter.Info(System.Int64)" type="API" />
@@ -273,11 +281,15 @@
   <topic id="Properties.T:Yfy.Api.ShareLink.YfyShareLink" type="API" />
   <topic id="M:Yfy.Api.ShareLink.YfyShareLink.#ctor" type="API" />
   <topic id="P:Yfy.Api.ShareLink.YfyShareLink.Access" type="API" />
+  <topic id="P:Yfy.Api.ShareLink.YfyShareLink.CreatedAt" type="API" />
   <topic id="P:Yfy.Api.ShareLink.YfyShareLink.DisableDownload" type="API" />
+  <topic id="P:Yfy.Api.ShareLink.YfyShareLink.DownloadCountTotal" type="API" />
   <topic id="P:Yfy.Api.ShareLink.YfyShareLink.DueTime" type="API" />
+  <topic id="P:Yfy.Api.ShareLink.YfyShareLink.ModifiedAt" type="API" />
   <topic id="P:Yfy.Api.ShareLink.YfyShareLink.PasswordProtected" type="API" />
   <topic id="P:Yfy.Api.ShareLink.YfyShareLink.ShareLinkUrl" type="API" />
   <topic id="P:Yfy.Api.ShareLink.YfyShareLink.UniqueName" type="API" />
+  <topic id="P:Yfy.Api.ShareLink.YfyShareLink.ViewCount" type="API" />
   <topic id="T:Yfy.Api.ShareLink.YfyShareLinkCollection" type="API" />
   <topic id="Methods.T:Yfy.Api.ShareLink.YfyShareLinkCollection" type="API" />
   <topic id="Properties.T:Yfy.Api.ShareLink.YfyShareLinkCollection" type="API" />
@@ -303,7 +315,7 @@
   <topic id="Methods.T:Yfy.Api.Users.YfyMiniUser" type="API" />
   <topic id="Properties.T:Yfy.Api.Users.YfyMiniUser" type="API" />
   <topic id="M:Yfy.Api.Users.YfyMiniUser.#ctor" type="API" />
-  <topic id="P:Yfy.Api.Users.YfyMiniUser.EnterpriseId" type="API" />
+  <topic id="P:Yfy.Api.Users.YfyMiniUser.Enterprise" type="API" />
   <topic id="P:Yfy.Api.Users.YfyMiniUser.Id" type="API" />
   <topic id="P:Yfy.Api.Users.YfyMiniUser.Login" type="API" />
   <topic id="P:Yfy.Api.Users.YfyMiniUser.Name" type="API" />
@@ -312,10 +324,11 @@
   <topic id="Properties.T:Yfy.Api.Users.YfyUser" type="API" />
   <topic id="M:Yfy.Api.Users.YfyUser.#ctor" type="API" />
   <topic id="P:Yfy.Api.Users.YfyUser.Email" type="API" />
-  <topic id="P:Yfy.Api.Users.YfyUser.EnterpriseId" type="API" />
+  <topic id="P:Yfy.Api.Users.YfyUser.Enterprise" type="API" />
   <topic id="P:Yfy.Api.Users.YfyUser.FullNamePinyin" type="API" />
   <topic id="P:Yfy.Api.Users.YfyUser.Id" type="API" />
   <topic id="P:Yfy.Api.Users.YfyUser.IsActive" type="API" />
+  <topic id="P:Yfy.Api.Users.YfyUser.Login" type="API" />
   <topic id="P:Yfy.Api.Users.YfyUser.Name" type="API" />
   <topic id="P:Yfy.Api.Users.YfyUser.Phone" type="API" />
   <topic id="P:Yfy.Api.Users.YfyUser.PinyinFirstLetters" type="API" />

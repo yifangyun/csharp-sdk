@@ -3,6 +3,7 @@
   <HelpKINode Title="Access 属性" Url="html/92b51177-7d9b-0f44-667c-b141370266ff.htm" />
   <HelpKINode Title="AccessToken 属性" Url="html/d27ba594-5477-ac57-c942-fe6761c35be1.htm" />
   <HelpKINode Title="AddClient 方法" Url="html/1b016caa-f09c-2e49-cc1b-01c42fd95dec.htm" />
+  <HelpKINode Title="AdminUserId 属性" Url="html/e7147905-0c93-2097-44bf-63c03ce32f34.htm" />
   <HelpKINode Title="all 枚举成员" Url="html/19e06de6-80a4-27e7-767b-67f6ab80f949.htm" />
   <HelpKINode Title="api 枚举成员" Url="html/29987194-5b99-9b78-1382-f4b6aeec93b9.htm" />
   <HelpKINode Title="BadInputException 类">
@@ -56,6 +57,7 @@
   <HelpKINode Title="CreatedAt 属性">
     <HelpKINode Title="YfyComment.CreatedAt 属性 " Url="html/21c03998-e289-e136-b654-687c34fa65f7.htm" />
     <HelpKINode Title="YfyItem.CreatedAt 属性 " Url="html/3e061113-06c2-3e54-5b15-970c215e275c.htm" />
+    <HelpKINode Title="YfyShareLink.CreatedAt 属性 " Url="html/61a807d2-a2a4-f3bc-d703-a9262d075a77.htm" />
   </HelpKINode>
   <HelpKINode Title="Delete 方法">
     <HelpKINode Title="CollabRouter.Delete 方法 " Url="html/554a517d-22a8-d6bc-e31f-84d9a5d15585.htm" />
@@ -69,13 +71,14 @@
   </HelpKINode>
   <HelpKINode Title="Description 属性" Url="html/4b1be1d7-7571-de72-1207-487a2c97b39d.htm" />
   <HelpKINode Title="DisableDownload 属性" Url="html/4b26408b-ae2b-8c02-098f-6394c3109518.htm" />
-  <HelpKINode Title="Download 方法" Url="html/4267eedb-e266-33ca-d60e-ebfbcb938e4d.htm" />
+  <HelpKINode Title="Download 方法" Url="html/58dde814-8a27-65d0-e446-278273f39d85.htm" />
+  <HelpKINode Title="DownloadCountTotal 属性" Url="html/b4043209-5333-3b21-98bd-95d5b7095fea.htm" />
   <HelpKINode Title="DueTime 属性" Url="html/ea49c575-b476-14af-cff9-caf0958e3c55.htm" />
   <HelpKINode Title="editor 枚举成员" Url="html/e7057c3c-5613-4b51-3f1a-fa8608160bd6.htm" />
   <HelpKINode Title="Email 属性" Url="html/9256f816-eb0f-3254-dbb3-136dbf7c9b5f.htm" />
-  <HelpKINode Title="EnterpriseId 属性">
-    <HelpKINode Title="YfyMiniUser.EnterpriseId 属性 " Url="html/818b0e07-7ee8-5f7a-3fb5-c94814561c8b.htm" />
-    <HelpKINode Title="YfyUser.EnterpriseId 属性 " Url="html/18753872-849e-11ac-eabf-afc29fd66cb9.htm" />
+  <HelpKINode Title="Enterprise 属性">
+    <HelpKINode Title="YfyMiniUser.Enterprise 属性 " Url="html/1abed747-e34e-7a07-8470-1be38435164e.htm" />
+    <HelpKINode Title="YfyUser.Enterprise 属性 " Url="html/710cc0d8-4003-9262-3056-32ecdefcf5a5.htm" />
   </HelpKINode>
   <HelpKINode Title="ErrorCode 属性" Url="html/a204e0ff-8296-69f5-4c0e-59b53d06928b.htm" />
   <HelpKINode Title="ErrorMsg 属性" Url="html/864dbc33-6d2b-ea9b-dd4f-086f6c8722ab.htm" />
@@ -93,8 +96,8 @@
   <HelpKINode Title="FileRouter.Copy 方法" Url="html/9e3faa3e-eb97-7f54-d581-19678377ba89.htm" />
   <HelpKINode Title="FileRouter.Delete 方法" Url="html/a8761aee-d19c-f924-da87-290f74d93e61.htm" />
   <HelpKINode Title="FileRouter.DeleteFromTrash 方法" Url="html/614f396b-30b4-6af6-c93b-553c9e3199b1.htm" />
-  <HelpKINode Title="FileRouter.Download 方法" Url="html/4267eedb-e266-33ca-d60e-ebfbcb938e4d.htm" />
-  <HelpKINode Title="FileRouter.GetDownloadUrl 方法" Url="html/3ad7e595-fa52-ef20-6b4a-9c8ca13ee321.htm" />
+  <HelpKINode Title="FileRouter.Download 方法" Url="html/58dde814-8a27-65d0-e446-278273f39d85.htm" />
+  <HelpKINode Title="FileRouter.GetDownloadUrl 方法" Url="html/1a724e41-8980-f0ba-2cc1-89cc8c877d4c.htm" />
   <HelpKINode Title="FileRouter.GetUploadNewVersionUrl 方法" Url="html/88167a70-3128-896d-1318-6eb0944faa88.htm" />
   <HelpKINode Title="FileRouter.GetUploadUrl 方法" Url="html/783f909a-4314-bc6d-fafd-2dbf80d695c3.htm" />
   <HelpKINode Title="FileRouter.Info 方法" Url="html/979abaf7-b832-6dee-ae00-77052034fbfd.htm" />
@@ -129,7 +132,7 @@
   <HelpKINode Title="GetAuthorizeUrl 方法" Url="html/8d643b08-90f6-6e6c-f25e-14192a02977d.htm" />
   <HelpKINode Title="GetBasicAuthrization 方法" Url="html/2f6105fd-0c16-d1e4-f432-40db535a65a3.htm" />
   <HelpKINode Title="GetChildren 方法" Url="html/43c0229b-df00-780b-e441-9fd515209b0a.htm" />
-  <HelpKINode Title="GetDownloadUrl 方法" Url="html/3ad7e595-fa52-ef20-6b4a-9c8ca13ee321.htm" />
+  <HelpKINode Title="GetDownloadUrl 方法" Url="html/1a724e41-8980-f0ba-2cc1-89cc8c877d4c.htm" />
   <HelpKINode Title="GetOauth2AccessToken 方法" Url="html/28c30ec4-ac7b-85d1-2e5a-b63fde0edc08.htm" />
   <HelpKINode Title="GetOAuthTokenByCode 方法" Url="html/e904b304-3a34-381a-4da7-fde9ae1a99ac.htm" />
   <HelpKINode Title="GetOAuthTokenByPassword 方法" Url="html/b64bb4d4-54ca-bb23-03f9-a838d4ad534f.htm" />
@@ -144,6 +147,7 @@
     <HelpKINode Title="YfyCollab.Id 属性 " Url="html/3f2f2ecd-7c3f-3522-3945-17f81f4ec889.htm" />
     <HelpKINode Title="YfyComment.Id 属性 " Url="html/177dd654-706f-8a2d-2d27-cb7c132793c8.htm" />
     <HelpKINode Title="YfyItem.Id 属性 " Url="html/0c43f478-05e5-0eb6-ba70-15a738e1b73a.htm" />
+    <HelpKINode Title="YfyMiniEnterprise.Id 属性 " Url="html/26f317db-fc1e-ee92-541b-dffdc335a2eb.htm" />
     <HelpKINode Title="YfyMiniUser.Id 属性 " Url="html/ec936a67-847c-e3b0-00f7-2d554df1f7dc.htm" />
     <HelpKINode Title="YfyPathFolder.Id 属性 " Url="html/4df9a7f0-a8eb-b39c-01ae-877cfac1ca96.htm" />
     <HelpKINode Title="YfyUser.Id 属性 " Url="html/9e31e7be-467a-3fe0-d816-42c7ee04e7e7.htm" />
@@ -182,18 +186,25 @@
     <HelpKINode Title="方法" Url="html/22d92acd-145b-b533-939a-e85e877a6e47.htm" />
   </HelpKINode>
   <HelpKINode Title="IYfyTokenRegister.RegisterAccessToken 方法" Url="html/2441d495-ea7e-e940-3268-b29f0ccd4d50.htm" />
-  <HelpKINode Title="Login 属性" Url="html/1dd92548-8e04-d914-527c-8aedff8f8b5e.htm" />
+  <HelpKINode Title="Login 属性">
+    <HelpKINode Title="YfyMiniUser.Login 属性 " Url="html/1dd92548-8e04-d914-527c-8aedff8f8b5e.htm" />
+    <HelpKINode Title="YfyUser.Login 属性 " Url="html/c38fe28d-ddd8-51bd-47ab-e811cc3e2f2f.htm" />
+  </HelpKINode>
   <HelpKINode Title="low_quality 枚举成员" Url="html/7d6d8923-4e13-06f1-9039-0e7466c4e34b.htm" />
   <HelpKINode Title="MaxCapacity 属性" Url="html/c2a04b0c-a824-3d12-d3fd-b17c4f24b2f7.htm" />
   <HelpKINode Title="MaxRetries 属性" Url="html/26c24dac-eac0-4024-cbb6-81bc5499a827.htm" />
   <HelpKINode Title="medium_quality 枚举成员" Url="html/7d6d8923-4e13-06f1-9039-0e7466c4e34b.htm" />
-  <HelpKINode Title="ModifiedAt 属性" Url="html/ef0fb618-35cf-4778-60c4-a361b58ba5a5.htm" />
+  <HelpKINode Title="ModifiedAt 属性">
+    <HelpKINode Title="YfyItem.ModifiedAt 属性 " Url="html/ef0fb618-35cf-4778-60c4-a361b58ba5a5.htm" />
+    <HelpKINode Title="YfyShareLink.ModifiedAt 属性 " Url="html/71c56712-c7f4-f33b-f789-d8f1218578ec.htm" />
+  </HelpKINode>
   <HelpKINode Title="Move 方法">
     <HelpKINode Title="FileRouter.Move 方法 " Url="html/1ca66078-e0e2-2827-7136-6ac6a53fed0f.htm" />
     <HelpKINode Title="FolderRouter.Move 方法 " Url="html/cd03a159-bc3e-4a65-2371-da2eafc19c2b.htm" />
   </HelpKINode>
   <HelpKINode Title="Name 属性">
     <HelpKINode Title="YfyItem.Name 属性 " Url="html/aaec3f12-a88b-2ff4-e287-fd0193ea009c.htm" />
+    <HelpKINode Title="YfyMiniEnterprise.Name 属性 " Url="html/dfabbbb7-529a-89d9-6b30-d9d2cd5f2eed.htm" />
     <HelpKINode Title="YfyMiniUser.Name 属性 " Url="html/f4412001-d296-147e-5c39-5454cfb2ecab.htm" />
     <HelpKINode Title="YfyPathFolder.Name 属性 " Url="html/8b2291c0-3183-eade-60d8-691ef717acf3.htm" />
     <HelpKINode Title="YfyUser.Name 属性 " Url="html/8d4cb2ca-d3c7-64d3-0228-0610f014e3c6.htm" />
@@ -377,6 +388,7 @@
   <HelpKINode Title="UserRouter.Search 方法" Url="html/f1e8f88b-9781-4b30-6709-7505bb6e7fb2.htm" />
   <HelpKINode Title="UserRouter.Update 方法" Url="html/b459d5c4-0d9f-59df-1679-2bf6f9a82ba3.htm" />
   <HelpKINode Title="Users 属性" Url="html/cef43fce-244a-8fee-fb36-03cd498ac345.htm" />
+  <HelpKINode Title="ViewCount 属性" Url="html/322b59e2-6b28-46cf-2b29-8f149abe0cc9.htm" />
   <HelpKINode Title="viewer 枚举成员" Url="html/e7057c3c-5613-4b51-3f1a-fa8608160bd6.htm" />
   <HelpKINode Title="viewer_uploader 枚举成员" Url="html/e7057c3c-5613-4b51-3f1a-fa8608160bd6.htm" />
   <HelpKINode Title="Yfy.Api 命名空间" Url="html/3831c617-c22b-2974-fb04-d7c0c2f63028.htm" />
@@ -389,6 +401,8 @@
   <HelpKINode Title="Yfy.Api.Comment.CommentRouter 类" Url="html/85d626d8-484f-9abf-4dbd-0f91893b2154.htm" />
   <HelpKINode Title="Yfy.Api.Comment.YfyComment 类" Url="html/d41cf340-e074-4fad-256b-594c23402d85.htm" />
   <HelpKINode Title="Yfy.Api.Comment.YfyCommentCollection 类" Url="html/01b5cfa7-c586-5258-8718-436bb9bc5e14.htm" />
+  <HelpKINode Title="Yfy.Api.Enterprises 命名空间" Url="html/ddf4e887-9cf3-076e-ca56-ccc8cdcb4572.htm" />
+  <HelpKINode Title="Yfy.Api.Enterprises.YfyMiniEnterprise 类" Url="html/19f5d652-138d-5167-e01b-17c137ce5c4b.htm" />
   <HelpKINode Title="Yfy.Api.Exceptions 命名空间" Url="html/0957bac8-b44a-27af-eab1-6a3232f83a27.htm" />
   <HelpKINode Title="Yfy.Api.Exceptions.BadInputException 类" Url="html/6861c285-89f3-405b-5ae0-f28ea471f609.htm" />
   <HelpKINode Title="Yfy.Api.Exceptions.BadResponseException 类" Url="html/23aacb60-20ca-22e1-ca5d-df45184753ec.htm" />
@@ -644,6 +658,17 @@
   <HelpKINode Title="YfyItemCollection.PageId 属性" Url="html/65aaa369-0332-01c9-fdb4-1b4bec8b99b4.htm" />
   <HelpKINode Title="YfyItemCollection.TotalCount 属性" Url="html/7d74fd8a-99cb-80da-777c-5c863f1e340d.htm" />
   <HelpKINode Title="YfyItemCollection.YfyItemCollection 构造函数" Url="html/367aeef5-1981-33be-0262-d328085e2ffa.htm" />
+  <HelpKINode Title="YfyMiniEnterprise 类">
+    <HelpKINode Title="YfyMiniEnterprise 类" Url="html/19f5d652-138d-5167-e01b-17c137ce5c4b.htm" />
+    <HelpKINode Title="关于 YfyMiniEnterprise 类" Url="html/19f5d652-138d-5167-e01b-17c137ce5c4b.htm" />
+    <HelpKINode Title="属性" Url="html/358d56ac-83ab-2a09-fbf1-dfa0214d2531.htm" />
+    <HelpKINode Title="方法" Url="html/7491b8ea-19d8-b3c8-607b-a18bfc7f723b.htm" />
+    <HelpKINode Title="构造函数" Url="html/55962fa1-2709-5296-0736-0cbcb584324c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="YfyMiniEnterprise.AdminUserId 属性" Url="html/e7147905-0c93-2097-44bf-63c03ce32f34.htm" />
+  <HelpKINode Title="YfyMiniEnterprise.Id 属性" Url="html/26f317db-fc1e-ee92-541b-dffdc335a2eb.htm" />
+  <HelpKINode Title="YfyMiniEnterprise.Name 属性" Url="html/dfabbbb7-529a-89d9-6b30-d9d2cd5f2eed.htm" />
+  <HelpKINode Title="YfyMiniEnterprise.YfyMiniEnterprise 构造函数" Url="html/55962fa1-2709-5296-0736-0cbcb584324c.htm" />
   <HelpKINode Title="YfyMiniUser 类">
     <HelpKINode Title="YfyMiniUser 类" Url="html/f62b340d-5767-9d12-d1b7-fb5342633ffc.htm" />
     <HelpKINode Title="关于 YfyMiniUser 类" Url="html/f62b340d-5767-9d12-d1b7-fb5342633ffc.htm" />
@@ -651,7 +676,7 @@
     <HelpKINode Title="方法" Url="html/299885fc-29f9-8844-18cd-86f52a032285.htm" />
     <HelpKINode Title="构造函数" Url="html/fcb1a55e-152b-2e57-9ce5-cfe26af11157.htm" />
   </HelpKINode>
-  <HelpKINode Title="YfyMiniUser.EnterpriseId 属性" Url="html/818b0e07-7ee8-5f7a-3fb5-c94814561c8b.htm" />
+  <HelpKINode Title="YfyMiniUser.Enterprise 属性" Url="html/1abed747-e34e-7a07-8470-1be38435164e.htm" />
   <HelpKINode Title="YfyMiniUser.Id 属性" Url="html/ec936a67-847c-e3b0-00f7-2d554df1f7dc.htm" />
   <HelpKINode Title="YfyMiniUser.Login 属性" Url="html/1dd92548-8e04-d914-527c-8aedff8f8b5e.htm" />
   <HelpKINode Title="YfyMiniUser.Name 属性" Url="html/f4412001-d296-147e-5c39-5454cfb2ecab.htm" />
@@ -683,11 +708,15 @@
     <HelpKINode Title="构造函数" Url="html/d644e171-ca68-9cd8-c06b-bc86d5b71f4e.htm" />
   </HelpKINode>
   <HelpKINode Title="YfyShareLink.Access 属性" Url="html/92b51177-7d9b-0f44-667c-b141370266ff.htm" />
+  <HelpKINode Title="YfyShareLink.CreatedAt 属性" Url="html/61a807d2-a2a4-f3bc-d703-a9262d075a77.htm" />
   <HelpKINode Title="YfyShareLink.DisableDownload 属性" Url="html/4b26408b-ae2b-8c02-098f-6394c3109518.htm" />
+  <HelpKINode Title="YfyShareLink.DownloadCountTotal 属性" Url="html/b4043209-5333-3b21-98bd-95d5b7095fea.htm" />
   <HelpKINode Title="YfyShareLink.DueTime 属性" Url="html/ea49c575-b476-14af-cff9-caf0958e3c55.htm" />
+  <HelpKINode Title="YfyShareLink.ModifiedAt 属性" Url="html/71c56712-c7f4-f33b-f789-d8f1218578ec.htm" />
   <HelpKINode Title="YfyShareLink.PasswordProtected 属性" Url="html/3a3c9b4d-e3a5-a894-f968-4251a08da2d3.htm" />
   <HelpKINode Title="YfyShareLink.ShareLinkUrl 属性" Url="html/d15534c7-0a37-1bb6-f8c9-281df2955ab2.htm" />
   <HelpKINode Title="YfyShareLink.UniqueName 属性" Url="html/7fc92078-251f-82ba-5332-abd5fd5a97e1.htm" />
+  <HelpKINode Title="YfyShareLink.ViewCount 属性" Url="html/322b59e2-6b28-46cf-2b29-8f149abe0cc9.htm" />
   <HelpKINode Title="YfyShareLink.YfyShareLink 构造函数" Url="html/d644e171-ca68-9cd8-c06b-bc86d5b71f4e.htm" />
   <HelpKINode Title="YfyShareLinkCollection 类">
     <HelpKINode Title="YfyShareLinkCollection 类" Url="html/6adbaa31-9efa-afaa-771f-db7c8d76f709.htm" />
@@ -718,10 +747,11 @@
     <HelpKINode Title="构造函数" Url="html/60256627-5431-db04-c68a-5a58c4efa060.htm" />
   </HelpKINode>
   <HelpKINode Title="YfyUser.Email 属性" Url="html/9256f816-eb0f-3254-dbb3-136dbf7c9b5f.htm" />
-  <HelpKINode Title="YfyUser.EnterpriseId 属性" Url="html/18753872-849e-11ac-eabf-afc29fd66cb9.htm" />
+  <HelpKINode Title="YfyUser.Enterprise 属性" Url="html/710cc0d8-4003-9262-3056-32ecdefcf5a5.htm" />
   <HelpKINode Title="YfyUser.FullNamePinyin 属性" Url="html/50cfa40c-fa7e-7be8-f581-0c41cddc575a.htm" />
   <HelpKINode Title="YfyUser.Id 属性" Url="html/9e31e7be-467a-3fe0-d816-42c7ee04e7e7.htm" />
   <HelpKINode Title="YfyUser.IsActive 属性" Url="html/d10c7c42-1b6f-c89c-1eac-5812a5e67697.htm" />
+  <HelpKINode Title="YfyUser.Login 属性" Url="html/c38fe28d-ddd8-51bd-47ab-e811cc3e2f2f.htm" />
   <HelpKINode Title="YfyUser.Name 属性" Url="html/8d4cb2ca-d3c7-64d3-0228-0610f014e3c6.htm" />
   <HelpKINode Title="YfyUser.Phone 属性" Url="html/9e924803-bff9-0f74-c6ac-fdbcc4ae53c9.htm" />
   <HelpKINode Title="YfyUser.PinyinFirstLetters 属性" Url="html/62334dab-cc5a-ec30-2b9b-9c9d8223d66a.htm" />

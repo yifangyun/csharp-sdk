@@ -763,19 +763,22 @@
       <param name="newVersionFilePath">待上传的文件本地路径</param>
       <returns>通用文件对象</returns>
     </member>
-    <member name="M:Yfy.Api.Files.FileRouter.GetDownloadUrl(System.Int64)">
+    <member name="M:Yfy.Api.Files.FileRouter.GetDownloadUrl(System.Int64,System.Int32)">
       <summary>
             获取文件的下载地址
             </summary>
       <param name="fileId">文件id</param>
+      <param name="version">下载版本号</param>
       <returns>下载链接，访问该下载链接即可下载文件，下载链接的有效时间为1个小时，且只能被使用一次</returns>
     </member>
-    <member name="M:Yfy.Api.Files.FileRouter.Download(System.Int64,System.String)">
+    <member name="M:Yfy.Api.Files.FileRouter.Download(System.Int64,System.String,System.Int32,System.Boolean)">
       <summary>
             文件下载
             </summary>
       <param name="fileId">文件id</param>
       <param name="saveFilePath">本地保存的文件路径</param>
+      <param name="version">下载版本号</param>
+      <param name="checkSha1">是否检查文件sha1值。如果sha1值和服务器不一致，会删除已经下载的文件，返回false</param>
       <returns>是否成功</returns>
     </member>
     <member name="M:Yfy.Api.Files.FileRouter.Copy(System.Int64,System.Int64)">
@@ -930,6 +933,26 @@
             Post 请求空参数对象
             </summary>
     </member>
+    <member name="T:Yfy.Api.Enterprises.YfyMiniEnterprise">
+      <summary>
+            通用亿方云简单企业
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Enterprises.YfyMiniEnterprise.Id">
+      <summary>
+            企业id
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Enterprises.YfyMiniEnterprise.Name">
+      <summary>
+            企业名称
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Enterprises.YfyMiniEnterprise.AdminUserId">
+      <summary>
+            企业管理员id
+            </summary>
+    </member>
     <member name="T:Yfy.Api.YfyObject">
       <summary>
             亿方云通用对象基类
@@ -974,6 +997,26 @@
     <member name="P:Yfy.Api.ShareLink.YfyShareLink.DisableDownload">
       <summary>
             是否禁止下载
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.ShareLink.YfyShareLink.CreatedAt">
+      <summary>
+            创建时间
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.ShareLink.YfyShareLink.ModifiedAt">
+      <summary>
+            最后修改时间
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.ShareLink.YfyShareLink.DownloadCountTotal">
+      <summary>
+            该分享链接中内容的总下载次数
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.ShareLink.YfyShareLink.ViewCount">
+      <summary>
+            该分享链接的总共查看次数
             </summary>
     </member>
     <member name="T:Yfy.Api.ShareLink.YfyShareLinkCollection">
@@ -1094,7 +1137,7 @@
             用户id
             </summary>
     </member>
-    <member name="P:Yfy.Api.Users.YfyUser.EnterpriseId">
+    <member name="P:Yfy.Api.Users.YfyUser.Enterprise">
       <summary>
             企业id
             </summary>
@@ -1107,6 +1150,11 @@
     <member name="P:Yfy.Api.Users.YfyUser.Phone">
       <summary>
             手机号
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Users.YfyUser.Login">
+      <summary>
+            用户登录名（邮箱或手机）
             </summary>
     </member>
     <member name="P:Yfy.Api.Users.YfyUser.Email">
@@ -1215,7 +1263,7 @@
             用户登录方式
             </summary>
     </member>
-    <member name="P:Yfy.Api.Users.YfyMiniUser.EnterpriseId">
+    <member name="P:Yfy.Api.Users.YfyMiniUser.Enterprise">
       <summary>
             用户企业id
             </summary>
@@ -1490,7 +1538,7 @@
       <param name="redirectUri">亿方云上申请的客户端重定向Uri</param>
     </member>
     <member name="R:Project_Documentation">
-      <summary>亿方云开放平台C#SDK Api 文档  2.2.0</summary>
+      <summary>亿方云开放平台C#SDK Api 文档  2.2.1</summary>
     </member>
     <member name="N:Yfy.Api">
       <summary>亿方云命名空间</summary>
@@ -1500,6 +1548,9 @@
     </member>
     <member name="N:Yfy.Api.Comment">
       <summary>评论命名空间</summary>
+    </member>
+    <member name="N:Yfy.Api.Enterprises">
+      <summary>亿方云企业命名空间</summary>
     </member>
     <member name="N:Yfy.Api.Exceptions">
       <summary>亿方云异常命名空间</summary>

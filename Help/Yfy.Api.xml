@@ -531,6 +531,35 @@
             评论集合
             </summary>
     </member>
+    <member name="T:Yfy.Api.Enterprises.YfyMiniEnterprise">
+      <summary>
+            通用亿方云简单企业
+            </summary>
+    </member>
+    <member name="M:Yfy.Api.Enterprises.YfyMiniEnterprise.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>Yfy.Api.Enterprises.YfyMiniEnterprise</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:Yfy.Api.Enterprises.YfyMiniEnterprise.AdminUserId">
+      <summary>
+            企业管理员id
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Enterprises.YfyMiniEnterprise.Id">
+      <summary>
+            企业id
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Enterprises.YfyMiniEnterprise.Name">
+      <summary>
+            企业名称
+            </summary>
+    </member>
     <member name="T:Yfy.Api.Exceptions.BadInputException">
       <summary>
             请求参数不合法
@@ -722,19 +751,22 @@
       <param name="fileId">文件id</param>
       <returns>是否成功</returns>
     </member>
-    <member name="M:Yfy.Api.Files.FileRouter.Download(System.Int64,System.String)">
+    <member name="M:Yfy.Api.Files.FileRouter.Download(System.Int64,System.String,System.Int32,System.Boolean)">
       <summary>
             文件下载
             </summary>
       <param name="fileId">文件id</param>
       <param name="saveFilePath">本地保存的文件路径</param>
+      <param name="version">下载版本号</param>
+      <param name="checkSha1">是否检查文件sha1值。如果sha1值和服务器不一致，会删除已经下载的文件，返回false</param>
       <returns>是否成功</returns>
     </member>
-    <member name="M:Yfy.Api.Files.FileRouter.GetDownloadUrl(System.Int64)">
+    <member name="M:Yfy.Api.Files.FileRouter.GetDownloadUrl(System.Int64,System.Int32)">
       <summary>
             获取文件的下载地址
             </summary>
       <param name="fileId">文件id</param>
+      <param name="version">下载版本号</param>
       <returns>下载链接，访问该下载链接即可下载文件，下载链接的有效时间为1个小时，且只能被使用一次</returns>
     </member>
     <member name="M:Yfy.Api.Files.FileRouter.GetUploadNewVersionUrl(System.Int64,System.String,System.String)">
@@ -1361,14 +1393,29 @@
             分享链接权限（公开和企业）
             </summary>
     </member>
+    <member name="P:Yfy.Api.ShareLink.YfyShareLink.CreatedAt">
+      <summary>
+            创建时间
+            </summary>
+    </member>
     <member name="P:Yfy.Api.ShareLink.YfyShareLink.DisableDownload">
       <summary>
             是否禁止下载
             </summary>
     </member>
+    <member name="P:Yfy.Api.ShareLink.YfyShareLink.DownloadCountTotal">
+      <summary>
+            该分享链接中内容的总下载次数
+            </summary>
+    </member>
     <member name="P:Yfy.Api.ShareLink.YfyShareLink.DueTime">
       <summary>
             过期时间（yyyy-MM-dd）
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.ShareLink.YfyShareLink.ModifiedAt">
+      <summary>
+            最后修改时间
             </summary>
     </member>
     <member name="P:Yfy.Api.ShareLink.YfyShareLink.PasswordProtected">
@@ -1384,6 +1431,11 @@
     <member name="P:Yfy.Api.ShareLink.YfyShareLink.UniqueName">
       <summary>
             分享标识符
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.ShareLink.YfyShareLink.ViewCount">
+      <summary>
+            该分享链接的总共查看次数
             </summary>
     </member>
     <member name="T:Yfy.Api.ShareLink.YfyShareLinkCollection">
@@ -1494,7 +1546,7 @@
         </markup>
       </summary>
     </member>
-    <member name="P:Yfy.Api.Users.YfyMiniUser.EnterpriseId">
+    <member name="P:Yfy.Api.Users.YfyMiniUser.Enterprise">
       <summary>
             用户企业id
             </summary>
@@ -1533,7 +1585,7 @@
             电子邮件
             </summary>
     </member>
-    <member name="P:Yfy.Api.Users.YfyUser.EnterpriseId">
+    <member name="P:Yfy.Api.Users.YfyUser.Enterprise">
       <summary>
             企业id
             </summary>
@@ -1551,6 +1603,11 @@
     <member name="P:Yfy.Api.Users.YfyUser.IsActive">
       <summary>
             是否激活
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Users.YfyUser.Login">
+      <summary>
+            用户登录名（邮箱或手机）
             </summary>
     </member>
     <member name="P:Yfy.Api.Users.YfyUser.Name">
