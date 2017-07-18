@@ -4,7 +4,10 @@
   <HelpKINode Title="AccessToken 属性" Url="html/d27ba594-5477-ac57-c942-fe6761c35be1.htm" />
   <HelpKINode Title="AddClient 方法" Url="html/1b016caa-f09c-2e49-cc1b-01c42fd95dec.htm" />
   <HelpKINode Title="AdminUserId 属性" Url="html/e7147905-0c93-2097-44bf-63c03ce32f34.htm" />
-  <HelpKINode Title="all 枚举成员" Url="html/19e06de6-80a4-27e7-767b-67f6ab80f949.htm" />
+  <HelpKINode Title="all 枚举成员">
+    <HelpKINode Title="ItemType 枚举" Url="html/19e06de6-80a4-27e7-767b-67f6ab80f949.htm" />
+    <HelpKINode Title="QueryFilter 枚举" Url="html/ac8ce0f2-7907-c725-0caf-36dff55df045.htm" />
+  </HelpKINode>
   <HelpKINode Title="api 枚举成员" Url="html/29987194-5b99-9b78-1382-f4b6aeec93b9.htm" />
   <HelpKINode Title="BadInputException 类">
     <HelpKINode Title="BadInputException 类" Url="html/6861c285-89f3-405b-5ae0-f28ea471f609.htm" />
@@ -47,6 +50,7 @@
   <HelpKINode Title="CommentsCount 属性" Url="html/b425dcfc-32d5-9319-065c-c203ec76f0fa.htm" />
   <HelpKINode Title="Company 枚举成员" Url="html/47d1ba03-4844-56c8-660f-dcb77c0883fa.htm" />
   <HelpKINode Title="Content 属性" Url="html/c9d2a52b-9eea-09d4-978e-e683f2dff16f.htm" />
+  <HelpKINode Title="content 枚举成员" Url="html/ac8ce0f2-7907-c725-0caf-36dff55df045.htm" />
   <HelpKINode Title="coowner 枚举成员" Url="html/e7057c3c-5613-4b51-3f1a-fa8608160bd6.htm" />
   <HelpKINode Title="Copy 方法" Url="html/9e3faa3e-eb97-7f54-d581-19678377ba89.htm" />
   <HelpKINode Title="Create 方法">
@@ -108,6 +112,7 @@
   <HelpKINode Title="FileRouter.Upload 方法" Url="html/efae6517-5bd5-0870-cb9c-2fc7878cda82.htm" />
   <HelpKINode Title="FileRouter.UploadNewVersion 方法" Url="html/f07800c4-6d00-41cd-8398-950f075d5ea1.htm" />
   <HelpKINode Title="Files 属性" Url="html/ba4d5ec1-a643-a973-e6fb-85505002ee40.htm" />
+  <HelpKINode Title="file_name 枚举成员" Url="html/ac8ce0f2-7907-c725-0caf-36dff55df045.htm" />
   <HelpKINode Title="FinalRole 属性" Url="html/f914659c-4f88-6a0b-e8e3-a929e9c92101.htm" />
   <HelpKINode Title="Folder 属性" Url="html/5fba0f88-39f3-b45a-1d1a-5847cc94b298.htm" />
   <HelpKINode Title="folder 枚举成员" Url="html/19e06de6-80a4-27e7-767b-67f6ab80f949.htm" />
@@ -178,7 +183,7 @@
     <HelpKINode Title="关于 ItemRouter 类" Url="html/9d65243a-b21e-851d-ed99-5705d543e6d1.htm" />
     <HelpKINode Title="方法" Url="html/619153bf-2fb8-14b4-f005-9228c19c20e6.htm" />
   </HelpKINode>
-  <HelpKINode Title="ItemRouter.Search 方法" Url="html/d862acf5-b8e0-fad6-46cb-6e0be28261e9.htm" />
+  <HelpKINode Title="ItemRouter.Search 方法" Url="html/2950390e-d764-1ca5-5dc7-eb8fdcc7b965.htm" />
   <HelpKINode Title="ItemType 枚举" Url="html/19e06de6-80a4-27e7-767b-67f6ab80f949.htm" />
   <HelpKINode Title="IYfyTokenRegister 接口">
     <HelpKINode Title="IYfyTokenRegister 接口" Url="html/b8e5dd7a-6472-c6a2-8a0e-55290761fa71.htm" />
@@ -252,6 +257,7 @@
   <HelpKINode Title="ProfilePickey 属性" Url="html/14fdfaf6-7981-6418-2484-6391bfbbe72f.htm" />
   <HelpKINode Title="Proxy 属性" Url="html/1eb71af3-44c7-d9bc-430a-4f04f085b16d.htm" />
   <HelpKINode Title="Public 枚举成员" Url="html/47d1ba03-4844-56c8-660f-dcb77c0883fa.htm" />
+  <HelpKINode Title="QueryFilter 枚举" Url="html/ac8ce0f2-7907-c725-0caf-36dff55df045.htm" />
   <HelpKINode Title="RateLimitException 类">
     <HelpKINode Title="RateLimitException 类" Url="html/a7fd2b5b-d459-f80a-a1a4-4d5635a97da0.htm" />
     <HelpKINode Title="关于 RateLimitException 类" Url="html/a7fd2b5b-d459-f80a-a1a4-4d5635a97da0.htm" />
@@ -291,7 +297,7 @@
   <HelpKINode Title="Role 属性" Url="html/41a5271d-8866-02c0-20c2-8b72fce98545.htm" />
   <HelpKINode Title="Scope 属性" Url="html/d166b4d2-08da-1c40-a8fe-c7dd2eb7124b.htm" />
   <HelpKINode Title="Search 方法">
-    <HelpKINode Title="ItemRouter.Search 方法 " Url="html/d862acf5-b8e0-fad6-46cb-6e0be28261e9.htm" />
+    <HelpKINode Title="ItemRouter.Search 方法 " Url="html/2950390e-d764-1ca5-5dc7-eb8fdcc7b965.htm" />
     <HelpKINode Title="UserRouter.Search 方法 " Url="html/f1e8f88b-9781-4b30-6709-7505bb6e7fb2.htm" />
   </HelpKINode>
   <HelpKINode Title="SequenceId 属性" Url="html/e5dcbc77-9df8-a010-cf4f-570033bf4bdf.htm" />
@@ -425,6 +431,7 @@
   <HelpKINode Title="Yfy.Api.Items 命名空间" Url="html/0fca64c0-4ab5-e021-39c5-60598ba494ff.htm" />
   <HelpKINode Title="Yfy.Api.Items.ItemRouter 类" Url="html/9d65243a-b21e-851d-ed99-5705d543e6d1.htm" />
   <HelpKINode Title="Yfy.Api.Items.ItemType 枚举" Url="html/19e06de6-80a4-27e7-767b-67f6ab80f949.htm" />
+  <HelpKINode Title="Yfy.Api.Items.QueryFilter 枚举" Url="html/ac8ce0f2-7907-c725-0caf-36dff55df045.htm" />
   <HelpKINode Title="Yfy.Api.Items.YfyItem 类" Url="html/a50abe02-2715-bf03-f46b-e4b1a34209aa.htm" />
   <HelpKINode Title="Yfy.Api.Items.YfyItemCollection 类" Url="html/e9575833-5ad2-5ad7-27c6-925b7463ff76.htm" />
   <HelpKINode Title="Yfy.Api.IYfyTokenRegister 接口" Url="html/b8e5dd7a-6472-c6a2-8a0e-55290761fa71.htm" />

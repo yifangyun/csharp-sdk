@@ -223,8 +223,9 @@
   <topic id="N:Yfy.Api.Items" type="API" />
   <topic id="T:Yfy.Api.Items.ItemRouter" type="API" />
   <topic id="Methods.T:Yfy.Api.Items.ItemRouter" type="API" />
-  <topic id="M:Yfy.Api.Items.ItemRouter.Search(System.String,System.Int64,Yfy.Api.Items.ItemType,System.Int32)" type="API" />
+  <topic id="M:Yfy.Api.Items.ItemRouter.Search(System.String,System.Int64,Yfy.Api.Items.ItemType,System.Int32,Yfy.Api.Items.QueryFilter)" type="API" />
   <topic id="T:Yfy.Api.Items.ItemType" type="API" />
+  <topic id="T:Yfy.Api.Items.QueryFilter" type="API" />
   <topic id="T:Yfy.Api.Items.YfyItem" type="API" />
   <topic id="Methods.T:Yfy.Api.Items.YfyItem" type="API" />
   <topic id="Properties.T:Yfy.Api.Items.YfyItem" type="API" />

@@ -12645,6 +12645,7 @@
         <element api="T:Yfy.Api.Items.YfyItem" />
         <element api="T:Yfy.Api.Items.YfyItemCollection" />
         <element api="T:Yfy.Api.Items.ItemType" />
+        <element api="T:Yfy.Api.Items.QueryFilter" />
       </elements>
     </api>
     <api id="T:Yfy.Api.Items.ItemRouter">
@@ -12737,7 +12738,7 @@
             <type api="T:System.Object" ref="true" />
           </containers>
         </element>
-        <element api="M:Yfy.Api.Items.ItemRouter.Search(System.String,System.Int64,Yfy.Api.Items.ItemType,System.Int32)" />
+        <element api="M:Yfy.Api.Items.ItemRouter.Search(System.String,System.Int64,Yfy.Api.Items.ItemType,System.Int32,Yfy.Api.Items.QueryFilter)" />
       </elements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary">
@@ -12831,7 +12832,7 @@
             <type api="T:System.Object" ref="true" />
           </containers>
         </element>
-        <element api="M:Yfy.Api.Items.ItemRouter.Search(System.String,System.Int64,Yfy.Api.Items.ItemType,System.Int32)" />
+        <element api="M:Yfy.Api.Items.ItemRouter.Search(System.String,System.Int64,Yfy.Api.Items.ItemType,System.Int32,Yfy.Api.Items.QueryFilter)" />
       </elements>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary">
@@ -12841,7 +12842,7 @@
         <type api="T:Yfy.Api.Items.ItemRouter" />
       </containers>
     </api>
-    <api id="M:Yfy.Api.Items.ItemRouter.Search(System.String,System.Int64,Yfy.Api.Items.ItemType,System.Int32)">
+    <api id="M:Yfy.Api.Items.ItemRouter.Search(System.String,System.Int64,Yfy.Api.Items.ItemType,System.Int32,Yfy.Api.Items.QueryFilter)">
       <topicdata group="api" />
       <apidata name="Search" group="member" subgroup="method" />
       <memberdata visibility="public" />
@@ -12871,6 +12872,15 @@
           <argument>
             <type api="T:System.Int32" ref="false" />
             <value>0</value>
+          </argument>
+        </parameter>
+        <parameter name="queryFilter" optional="true">
+          <type api="T:Yfy.Api.Items.QueryFilter" ref="false" />
+          <argument>
+            <type api="T:Yfy.Api.Items.QueryFilter" ref="false" />
+            <enumValue>
+              <field name="all" />
+            </enumValue>
           </argument>
         </parameter>
       </parameters>
@@ -12954,6 +12964,76 @@
         </library>
         <namespace api="N:Yfy.Api.Items" />
         <type api="T:Yfy.Api.Items.ItemType" ref="false" />
+      </containers>
+    </api>
+    <api id="T:Yfy.Api.Items.QueryFilter">
+      <topicdata group="api" />
+      <apidata name="QueryFilter" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:Yfy.Api.Items.QueryFilter.file_name" />
+        <element api="F:Yfy.Api.Items.QueryFilter.content" />
+        <element api="F:Yfy.Api.Items.QueryFilter.all" />
+      </elements>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="2.2.0" />
+        </library>
+        <namespace api="N:Yfy.Api.Items" />
+      </containers>
+    </api>
+    <api id="F:Yfy.Api.Items.QueryFilter.all">
+      <topicdata group="api" notopic="" />
+      <apidata name="all" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:Yfy.Api.Items.QueryFilter" ref="false" />
+      </returns>
+      <value>2</value>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="2.2.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:Yfy.Api.Items" />
+        <type api="T:Yfy.Api.Items.QueryFilter" ref="false" />
+      </containers>
+    </api>
+    <api id="F:Yfy.Api.Items.QueryFilter.content">
+      <topicdata group="api" notopic="" />
+      <apidata name="content" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:Yfy.Api.Items.QueryFilter" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="2.2.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:Yfy.Api.Items" />
+        <type api="T:Yfy.Api.Items.QueryFilter" ref="false" />
+      </containers>
+    </api>
+    <api id="F:Yfy.Api.Items.QueryFilter.file_name">
+      <topicdata group="api" notopic="" />
+      <apidata name="file_name" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:Yfy.Api.Items.QueryFilter" ref="false" />
+      </returns>
+      <value>0</value>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="2.2.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:Yfy.Api.Items" />
+        <type api="T:Yfy.Api.Items.QueryFilter" ref="false" />
       </containers>
     </api>
     <api id="T:Yfy.Api.Items.YfyItem">
