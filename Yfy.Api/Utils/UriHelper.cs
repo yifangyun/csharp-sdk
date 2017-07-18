@@ -80,9 +80,9 @@
 
 #region common api list
 
-        public static Uri SearchUri(string queryWords, long searchInFolder = 0, ItemType type = ItemType.all, int pageId = 0)
+        public static Uri SearchUri(string queryWords, long searchInFolder = 0, ItemType type = ItemType.all, int pageId = 0, QueryFilter queryFilter = QueryFilter.all)
         {
-            return new Uri(ApiHost + $"api/v2/item/search?query_words={queryWords}&search_in_folder={searchInFolder}&type={type}&page_id={pageId}");
+            return new Uri(ApiHost + $"api/v2/item/search?query_words={queryWords}&search_in_folder={searchInFolder}&type={type}&page_id={pageId}&query_filter={queryFilter}");
         }
 
 #endregion

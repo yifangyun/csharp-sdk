@@ -136,4 +136,25 @@
         /// </summary>
         all,
     }
+
+    /// <summary>
+    /// 文件/文件夹搜索时的搜索选项
+    /// </summary>
+    public enum QueryFilter
+    {
+        /// <summary>
+        /// 文件名
+        /// </summary>
+        file_name,
+
+        /// <summary>
+        /// 文件内容
+        /// </summary>
+        content,
+
+        /// <summary>
+        /// 文件名和文件内容
+        /// </summary>
+        all
+    }
 }

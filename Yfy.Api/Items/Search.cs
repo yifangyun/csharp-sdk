@@ -22,12 +22,17 @@
         [DefaultValue(0)]
         public long SearchInFolder { get; set; }
 
-        public SearchArg(string queryWords, long searchInFolder = 0, ItemType type = ItemType.all, int pageNumber = 0)
+        [JsonProperty("query_filter")]
+        [DefaultValue(QueryFilter.all)]
+        public QueryFilter QueryFilter { get; set; }
+
+        public SearchArg(string queryWords, long searchInFolder = 0, ItemType type = ItemType.all, int pageNumber = 0, QueryFilter queryFilter = QueryFilter.all)
         {
             this.QueryWords = queryWords;
             this.SearchInFolder = searchInFolder;
             this.Type = type;
             this.PageId = pageNumber;
+            this.QueryFilter = queryFilter;
         }
     }
 }
