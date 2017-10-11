@@ -9,7 +9,7 @@
 
         public static string OAuthHost = "https://oauth.fangcloud.com/";
 
-#region OAuth
+        #region OAuth
 
         public static Uri GetOAuthAuthorizeUri(string clientId, string redirectUri, string state)
         {
@@ -41,7 +41,7 @@
 
 #endregion
 
-#region user api list
+        #region user api list
 
         public static Uri GetUserInfoUri(long userId = 0)
         {
@@ -78,7 +78,7 @@
 
 #endregion
 
-#region common api list
+        #region common api list
 
         public static Uri SearchUri(string queryWords, long searchInFolder = 0, ItemType type = ItemType.all, int pageId = 0, QueryFilter queryFilter = QueryFilter.all)
         {
@@ -87,7 +87,7 @@
 
 #endregion
 
-#region file api list
+        #region file api list
 
         public static Uri GetFileInfoUri(long id)
         {
@@ -178,7 +178,7 @@
 
 #endregion
 
-#region folder api list
+        #region folder api list
 
         public static Uri GetFolderInfoUri(long id)
         {
@@ -249,7 +249,7 @@
 
         #endregion
 
-#region trash api list
+        #region trash api list
 
         public static Uri ClearTrashUri()
         {
@@ -263,7 +263,7 @@
 
         #endregion
 
-#region share_link api list
+        #region share_link api list
 
         public static Uri GetShareLinkInfoUri(string uniqueName)
         {
@@ -301,7 +301,6 @@
 
         #endregion
 
-
         #region collab api list
 
         public static Uri InviteCollabUri()
@@ -322,6 +321,15 @@
         public static Uri DeleteCollabUri(long collabId)
         {
             return new Uri(ApiHost + $"api/v2/collab/{collabId}/delete");
+        }
+
+        #endregion
+
+        #region department api list
+
+        public static Uri GetAdminDepartmentUsersUri(long deptId, string queryWords = "", int pageId = 0)
+        {
+            return new Uri(ApiHost + $"api/v2/admin/department/{deptId}/users");
         }
 
         #endregion
