@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.5.15.0" projectFile="C:\Users\ori\Documents\vs\Sandcastle\TestProj.shfbproj" started="7/18/2017 8:52:33 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.5.15.0" projectFile="C:\Users\ori\Documents\vs\Sandcastle\3.0.0.shfbproj" started="10/13/2017 2:01:09 AM">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -7,7 +7,7 @@ Locating components in the following folder(s):
     C:\Users\ori\Documents\vs\Sandcastle
     C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
     C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
-Using framework reflection data for &#39;.NET Framework 3.5&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using framework reflection data for &#39;.NET Framework 4.0&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
 Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
 Loading and initializing plug-ins...
 Lightweight Website Style Version 2017.5.15.0
@@ -28,6 +28,8 @@ Parsing project files
     Found assembly &#39;C:\Users\ori\Documents\vs\csharp-sdk\Yfy.Api\bin\Release\Yfy.Api.dll&#39;
 
 References to include (excluding framework assemblies):
+    BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942
+    jose-jwt, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL
     Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL
 
 Copying XML comments files
@@ -36,16 +38,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (zh-CN, Chinese (Simplified, PRC))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00.0520
+</plugIn>    Last step completed in 00:00:00.0040
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0030
+    Last step completed in 00:00:00.0050
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateRefInfo.proj]
-Build started 7/18/2017 8:52:34 PM.
+Build started 10/13/2017 2:01:10 AM.
 Project &quot;C:\Users\ori\Documents\vs\Sandcastle\Help\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
@@ -54,8 +56,8 @@ GenerateRefInfo:
   Copyright ? 2006-2017, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2016, Eric Woodruff, All Rights Reserved.
   No source code context base path specified.  Source context information is unavailable.
-  Loaded 1 assemblies for reflection and 2 dependency assemblies.
-  Wrote information on 12 namespaces, 47 types, and 228 members
+  Loaded 1 assemblies for reflection and 4 dependency assemblies.
+  Wrote information on 13 namespaces, 52 types, and 249 members
   Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
   XslTransform (v2017.5.15.0)
   Copyright ? 2006-2017, Microsoft Corporation, All Rights Reserved.
@@ -65,13 +67,13 @@ Done Building Project &quot;C:\Users\ori\Documents\vs\Sandcastle\Help\Working\Ge
 
 Build succeeded.
 
-Time Elapsed 00:00:01.01
-    Last step completed in 00:00:01.1681
+Time Elapsed 00:00:01.05
+    Last step completed in 00:00:01.1600
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - TransformManifest.proj]
-Build started 7/18/2017 8:52:36 PM.
+Build started 10/13/2017 2:01:12 AM.
 Project &quot;C:\Users\ori\Documents\vs\Sandcastle\Help\Working\TransformManifest.proj&quot; on node 1 (default targets).
 TransformManifest:
   XslTransform (v2017.5.15.0)
@@ -95,17 +97,17 @@ Done Building Project &quot;C:\Users\ori\Documents\vs\Sandcastle\Help\Working\Tr
 
 Build succeeded.
 
-Time Elapsed 00:00:00.69
-    Last step completed in 00:00:00.7710
+Time Elapsed 00:00:00.75
+    Last step completed in 00:00:00.8170
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0500
+    Last step completed in 00:00:00.0400
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
@@ -114,7 +116,7 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 7/18/2017 8:52:36 PM.
+Build started 10/13/2017 2:01:12 AM.
 Project &quot;C:\Users\ori\Documents\vs\Sandcastle\Help\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 GenerateIntermediateTOC:
   XslTransform (v2017.5.15.0)
@@ -125,14 +127,14 @@ Done Building Project &quot;C:\Users\ori\Documents\vs\Sandcastle\Help\Working\Ge
 
 Build succeeded.
 
-Time Elapsed 00:00:00.14
+Time Elapsed 00:00:00.12
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.2260
+    Last step completed in 00:00:00.2040
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.2170
+    Last step completed in 00:00:00.1790
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -142,12 +144,12 @@ C:\Users\ori\Documents\vs\Sandcastle\Help\Working\sandcastle.config
     Added configuration for &#39;IntelliSense Component&#39; after &#39;Show Missing Documentation Component&#39; (instance 1)
     Replaced configuration for &#39;Syntax Component&#39; (instance 1) with configuration for &#39;Syntax Component&#39;
   No conceptual content.  Removing conceptual content components.
-    Last step completed in 00:00:00.0180
+    Last step completed in 00:00:00.0150
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - BuildTopics.proj]
-Build started 7/18/2017 8:52:37 PM.
+Build started 10/13/2017 2:01:13 AM.
 Project &quot;C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj&quot; on node 1 (default targets).
 BuildTopics:
   BuildAssembler (v2017.5.15.0)
@@ -160,6 +162,7 @@ BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api] Missing shared co
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Collab] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_class&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Collab] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_enumeration&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Comment] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_class&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Department] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_class&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Enterprises] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_class&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Exceptions] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_class&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Files] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_class&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
@@ -168,25 +171,26 @@ BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Folders] Missing s
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Items] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_class&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Items] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_enumeration&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Oauth] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_class&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Oauth] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_enumeration&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Yfy.Api.Oauth.RSAPasswdFinder.GetPassword] Unknown reference link target &#39;M:Org.BouncyCastle.OpenSsl.IPasswordFinder.GetPassword&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.ShareLink] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_class&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.ShareLink] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_enumeration&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Trash] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_class&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
 BuildAssembler : warning : SharedContentComponent: [N:Yfy.Api.Users] Missing shared content item. Tag: &#39;include&#39;; Id:&#39;tableTitle_class&#39;. [C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj]
-  Processed 343 topic(s)
-  17 warning(s)
-  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 6 of 15.
+  Processed 380 topic(s)
+  20 warning(s)
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 7 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
-  SaveComponent: Waiting for the document writer task to finish (99 Website API file(s) remaining)...
 Done Building Project &quot;C:\Users\ori\Documents\vs\Sandcastle\Help\Working\BuildTopics.proj&quot; (default targets).
 
 Build succeeded.
 
-Time Elapsed 00:00:09.44
-    Last step completed in 00:00:09.5319
+Time Elapsed 00:00:04.61
+    Last step completed in 00:00:04.7010
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0030
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -198,11 +202,11 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;2052&#39;, code page &#39;936&#39;, encoding charset &#39;gb2312&#39;.
 
 Processing website files in C:\Users\ori\Documents\vs\Sandcastle\Help\Working\Output\Website
-Processed 343 HTML files
+Processed 380 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to C:\Users\ori\Documents\vs\Sandcastle\Help\Working\WebKI.xml
 Saving website table of contents to C:\Users\ori\Documents\vs\Sandcastle\Help\Working\WebTOC.xml
-    Last step completed in 00:00:01.4120
+    Last step completed in 00:00:00.3530
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -284,29 +288,29 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; C:\Users\ori\Documents\vs\Sandcastle\Help\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; C:\Users\ori\Documents\vs\Sandcastle\Help\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; C:\Users\ori\Documents\vs\Sandcastle\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00.3710
+    Last step completed in 00:00:00.2330
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00.0010
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:01.7531
+</plugIn>    Last step completed in 00:00:02.8530
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 500 files
-Copied 665 files for the website content
-    Last step completed in 00:00:00.6635
+Copied 719 files for the website content
+    Last step completed in 00:00:01.4860
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 7/18/2017 8:52:50 PM.  Total time: 00:00:17.0085
+Build completed successfully at 10/13/2017 2:01:22 AM.  Total time: 00:00:13.0430
 
 </buildStep>
 </shfbBuild>

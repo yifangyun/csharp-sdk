@@ -151,6 +151,7 @@
         <element api="P:Yfy.Api.YfyClient.ShareLink" />
         <element api="P:Yfy.Api.YfyClient.Comment" />
         <element api="P:Yfy.Api.YfyClient.Collab" />
+        <element api="P:Yfy.Api.YfyClient.Department" />
         <element api="M:System.Object.ToString">
           <apidata name="ToString" group="member" subgroup="method" />
           <memberdata visibility="public" />
@@ -319,6 +320,21 @@
       <getter name="get_Comment" />
       <returns>
         <type api="T:Yfy.Api.Comment.CommentRouter" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api" />
+        <type api="T:Yfy.Api.YfyClient" ref="true" />
+      </containers>
+    </api>
+    <api id="P:Yfy.Api.YfyClient.Department">
+      <apidata name="Department" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" />
+      <getter name="get_Department" />
+      <returns>
+        <type api="T:Yfy.Api.Department.DepartmentRouter" ref="true" />
       </returns>
       <containers>
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
@@ -2613,6 +2629,140 @@
         </attribute>
       </attributes>
     </api>
+    <api id="N:Yfy.Api.Department">
+      <apidata name="Yfy.Api.Department" group="namespace" />
+      <elements>
+        <element api="T:Yfy.Api.Department.DepartmentRouter" />
+      </elements>
+    </api>
+    <api id="T:Yfy.Api.Department.DepartmentRouter">
+      <apidata name="DepartmentRouter" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:Yfy.Api.Department.DepartmentRouter.GetDepartmentUsers(System.Int64,System.String,System.Int32)" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Department" />
+      </containers>
+    </api>
+    <api id="M:Yfy.Api.Department.DepartmentRouter.GetDepartmentUsers(System.Int64,System.String,System.Int32)">
+      <apidata name="GetDepartmentUsers" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="deptId">
+          <type api="T:System.Int64" ref="false" />
+        </parameter>
+        <parameter name="queryWords" optional="true">
+          <type api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value />
+          </argument>
+        </parameter>
+        <parameter name="pageId" optional="true">
+          <type api="T:System.Int32" ref="false" />
+          <argument>
+            <type api="T:System.Int32" ref="false" />
+            <value>0</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:Yfy.Api.Users.YfyUserCollection" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Department" />
+        <type api="T:Yfy.Api.Department.DepartmentRouter" ref="true" />
+      </containers>
+    </api>
     <api id="N:Yfy.Api.Enterprises">
       <apidata name="Yfy.Api.Enterprises" group="namespace" />
       <elements>
@@ -2864,6 +3014,11 @@
             <namespace api="N:System" />
             <type api="T:System.Exception" ref="true" />
           </containers>
+          <attributes>
+            <attribute>
+              <type api="T:System.Security.SecurityCriticalAttribute" ref="true" />
+            </attribute>
+          </attributes>
         </element>
         <element api="M:System.Exception.GetType">
           <apidata name="GetType" group="member" subgroup="method" />
@@ -3030,6 +3185,29 @@
           <returns>
             <type api="T:System.Int32" ref="false" />
           </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Exception" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Exception.SerializeObjectState">
+          <apidata name="SerializeObjectState" group="member" subgroup="event" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_SerializeObjectState" />
+          <remover name="remove_SerializeObjectState" />
+          <eventhandler>
+            <type api="T:System.EventHandler`1" ref="true">
+              <specialization>
+                <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+              </specialization>
+            </type>
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+          </eventargs>
           <containers>
             <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
             <namespace api="N:System" />
@@ -3178,6 +3356,11 @@
             <namespace api="N:System" />
             <type api="T:System.Exception" ref="true" />
           </containers>
+          <attributes>
+            <attribute>
+              <type api="T:System.Security.SecurityCriticalAttribute" ref="true" />
+            </attribute>
+          </attributes>
         </element>
         <element api="M:System.Exception.GetType">
           <apidata name="GetType" group="member" subgroup="method" />
@@ -3344,6 +3527,29 @@
           <returns>
             <type api="T:System.Int32" ref="false" />
           </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Exception" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Exception.SerializeObjectState">
+          <apidata name="SerializeObjectState" group="member" subgroup="event" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_SerializeObjectState" />
+          <remover name="remove_SerializeObjectState" />
+          <eventhandler>
+            <type api="T:System.EventHandler`1" ref="true">
+              <specialization>
+                <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+              </specialization>
+            </type>
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+          </eventargs>
           <containers>
             <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
             <namespace api="N:System" />
@@ -3492,6 +3698,11 @@
             <namespace api="N:System" />
             <type api="T:System.Exception" ref="true" />
           </containers>
+          <attributes>
+            <attribute>
+              <type api="T:System.Security.SecurityCriticalAttribute" ref="true" />
+            </attribute>
+          </attributes>
         </element>
         <element api="M:System.Exception.GetType">
           <apidata name="GetType" group="member" subgroup="method" />
@@ -3658,6 +3869,29 @@
           <returns>
             <type api="T:System.Int32" ref="false" />
           </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Exception" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Exception.SerializeObjectState">
+          <apidata name="SerializeObjectState" group="member" subgroup="event" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_SerializeObjectState" />
+          <remover name="remove_SerializeObjectState" />
+          <eventhandler>
+            <type api="T:System.EventHandler`1" ref="true">
+              <specialization>
+                <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+              </specialization>
+            </type>
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+          </eventargs>
           <containers>
             <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
             <namespace api="N:System" />
@@ -3808,6 +4042,11 @@
             <namespace api="N:System" />
             <type api="T:System.Exception" ref="true" />
           </containers>
+          <attributes>
+            <attribute>
+              <type api="T:System.Security.SecurityCriticalAttribute" ref="true" />
+            </attribute>
+          </attributes>
         </element>
         <element api="M:System.Exception.GetType">
           <apidata name="GetType" group="member" subgroup="method" />
@@ -3974,6 +4213,29 @@
           <returns>
             <type api="T:System.Int32" ref="false" />
           </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Exception" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Exception.SerializeObjectState">
+          <apidata name="SerializeObjectState" group="member" subgroup="event" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_SerializeObjectState" />
+          <remover name="remove_SerializeObjectState" />
+          <eventhandler>
+            <type api="T:System.EventHandler`1" ref="true">
+              <specialization>
+                <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+              </specialization>
+            </type>
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+          </eventargs>
           <containers>
             <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
             <namespace api="N:System" />
@@ -4147,6 +4409,11 @@
             <namespace api="N:System" />
             <type api="T:System.Exception" ref="true" />
           </containers>
+          <attributes>
+            <attribute>
+              <type api="T:System.Security.SecurityCriticalAttribute" ref="true" />
+            </attribute>
+          </attributes>
         </element>
         <element api="M:System.Exception.GetType">
           <apidata name="GetType" group="member" subgroup="method" />
@@ -4313,6 +4580,29 @@
           <returns>
             <type api="T:System.Int32" ref="false" />
           </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Exception" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Exception.SerializeObjectState">
+          <apidata name="SerializeObjectState" group="member" subgroup="event" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_SerializeObjectState" />
+          <remover name="remove_SerializeObjectState" />
+          <eventhandler>
+            <type api="T:System.EventHandler`1" ref="true">
+              <specialization>
+                <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+              </specialization>
+            </type>
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+          </eventargs>
           <containers>
             <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
             <namespace api="N:System" />
@@ -4476,6 +4766,11 @@
             <namespace api="N:System" />
             <type api="T:System.Exception" ref="true" />
           </containers>
+          <attributes>
+            <attribute>
+              <type api="T:System.Security.SecurityCriticalAttribute" ref="true" />
+            </attribute>
+          </attributes>
         </element>
         <element api="M:System.Exception.GetType">
           <apidata name="GetType" group="member" subgroup="method" />
@@ -4642,6 +4937,29 @@
           <returns>
             <type api="T:System.Int32" ref="false" />
           </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Exception" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Exception.SerializeObjectState">
+          <apidata name="SerializeObjectState" group="member" subgroup="event" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_SerializeObjectState" />
+          <remover name="remove_SerializeObjectState" />
+          <eventhandler>
+            <type api="T:System.EventHandler`1" ref="true">
+              <specialization>
+                <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+              </specialization>
+            </type>
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+          </eventargs>
           <containers>
             <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
             <namespace api="N:System" />
@@ -4792,6 +5110,11 @@
             <namespace api="N:System" />
             <type api="T:System.Exception" ref="true" />
           </containers>
+          <attributes>
+            <attribute>
+              <type api="T:System.Security.SecurityCriticalAttribute" ref="true" />
+            </attribute>
+          </attributes>
         </element>
         <element api="M:System.Exception.GetType">
           <apidata name="GetType" group="member" subgroup="method" />
@@ -4958,6 +5281,29 @@
           <returns>
             <type api="T:System.Int32" ref="false" />
           </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Exception" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Exception.SerializeObjectState">
+          <apidata name="SerializeObjectState" group="member" subgroup="event" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_SerializeObjectState" />
+          <remover name="remove_SerializeObjectState" />
+          <eventhandler>
+            <type api="T:System.EventHandler`1" ref="true">
+              <specialization>
+                <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+              </specialization>
+            </type>
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+          </eventargs>
           <containers>
             <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
             <namespace api="N:System" />
@@ -5135,6 +5481,11 @@
             <namespace api="N:System" />
             <type api="T:System.Exception" ref="true" />
           </containers>
+          <attributes>
+            <attribute>
+              <type api="T:System.Security.SecurityCriticalAttribute" ref="true" />
+            </attribute>
+          </attributes>
         </element>
         <element api="M:System.Exception.GetType">
           <apidata name="GetType" group="member" subgroup="method" />
@@ -5301,6 +5652,29 @@
           <returns>
             <type api="T:System.Int32" ref="false" />
           </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Exception" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Exception.SerializeObjectState">
+          <apidata name="SerializeObjectState" group="member" subgroup="event" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_SerializeObjectState" />
+          <remover name="remove_SerializeObjectState" />
+          <eventhandler>
+            <type api="T:System.EventHandler`1" ref="true">
+              <specialization>
+                <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+              </specialization>
+            </type>
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+          </eventargs>
           <containers>
             <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
             <namespace api="N:System" />
@@ -5471,6 +5845,11 @@
             <namespace api="N:System" />
             <type api="T:System.Exception" ref="true" />
           </containers>
+          <attributes>
+            <attribute>
+              <type api="T:System.Security.SecurityCriticalAttribute" ref="true" />
+            </attribute>
+          </attributes>
         </element>
         <element api="M:System.Exception.GetType">
           <apidata name="GetType" group="member" subgroup="method" />
@@ -5637,6 +6016,29 @@
           <returns>
             <type api="T:System.Int32" ref="false" />
           </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Exception" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Exception.SerializeObjectState">
+          <apidata name="SerializeObjectState" group="member" subgroup="event" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_SerializeObjectState" />
+          <remover name="remove_SerializeObjectState" />
+          <eventhandler>
+            <type api="T:System.EventHandler`1" ref="true">
+              <specialization>
+                <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+              </specialization>
+            </type>
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.Runtime.Serialization.SafeSerializationEventArgs" ref="true" />
+          </eventargs>
           <containers>
             <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
             <namespace api="N:System" />
@@ -8158,9 +8560,68 @@
     <api id="N:Yfy.Api.Oauth">
       <apidata name="Yfy.Api.Oauth" group="namespace" />
       <elements>
+        <element api="T:Yfy.Api.Oauth.RSAPasswdFinder" />
+        <element api="T:Yfy.Api.Oauth.YfyJwtPayload" />
+        <element api="T:Yfy.Api.Oauth.YfySubType" />
+        <element api="T:Yfy.Api.Oauth.JwtAlgorithms" />
         <element api="T:Yfy.Api.Oauth.YfyAuthtoken" />
         <element api="T:Yfy.Api.Oauth.OAuthHelper" />
       </elements>
+    </api>
+    <api id="T:Yfy.Api.Oauth.JwtAlgorithms">
+      <apidata name="JwtAlgorithms" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:Yfy.Api.Oauth.JwtAlgorithms.RS256" />
+        <element api="F:Yfy.Api.Oauth.JwtAlgorithms.RS384" />
+        <element api="F:Yfy.Api.Oauth.JwtAlgorithms.RS512" />
+      </elements>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+      </containers>
+    </api>
+    <api id="F:Yfy.Api.Oauth.JwtAlgorithms.RS256">
+      <apidata name="RS256" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:Yfy.Api.Oauth.JwtAlgorithms" ref="false" />
+      </returns>
+      <value>0</value>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.JwtAlgorithms" ref="false" />
+      </containers>
+    </api>
+    <api id="F:Yfy.Api.Oauth.JwtAlgorithms.RS384">
+      <apidata name="RS384" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:Yfy.Api.Oauth.JwtAlgorithms" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.JwtAlgorithms" ref="false" />
+      </containers>
+    </api>
+    <api id="F:Yfy.Api.Oauth.JwtAlgorithms.RS512">
+      <apidata name="RS512" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:Yfy.Api.Oauth.JwtAlgorithms" ref="false" />
+      </returns>
+      <value>2</value>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.JwtAlgorithms" ref="false" />
+      </containers>
     </api>
     <api id="T:Yfy.Api.Oauth.OAuthHelper">
       <apidata name="OAuthHelper" group="type" subgroup="class" />
@@ -8176,6 +8637,8 @@
         <element api="M:Yfy.Api.Oauth.OAuthHelper.GetBasicAuthrization" />
         <element api="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByPassword(System.String,System.String)" />
         <element api="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByCode(System.String,System.String)" />
+        <element api="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByJwt(Yfy.Api.Oauth.YfyJwtPayload,System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+        <element api="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByJwt(Yfy.Api.Oauth.YfyJwtPayload,System.String,System.String)" />
         <element api="M:Yfy.Api.Oauth.OAuthHelper.RefreshOAuthToken(System.String)" />
         <element api="M:Yfy.Api.Oauth.OAuthHelper.RevokeOAuthToken(System.String)" />
       </elements>
@@ -8227,6 +8690,51 @@
           <type api="T:System.String" ref="true" />
         </parameter>
         <parameter name="redirectUri">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:Yfy.Api.Oauth.YfyAuthtoken" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.OAuthHelper" ref="true" />
+      </containers>
+    </api>
+    <api id="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByJwt(Yfy.Api.Oauth.YfyJwtPayload,System.Security.Cryptography.X509Certificates.X509Certificate2)">
+      <apidata name="GetOAuthTokenByJwt" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="payload">
+          <type api="T:Yfy.Api.Oauth.YfyJwtPayload" ref="true" />
+        </parameter>
+        <parameter name="cert">
+          <type api="T:System.Security.Cryptography.X509Certificates.X509Certificate2" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:Yfy.Api.Oauth.YfyAuthtoken" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.OAuthHelper" ref="true" />
+      </containers>
+    </api>
+    <api id="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByJwt(Yfy.Api.Oauth.YfyJwtPayload,System.String,System.String)">
+      <apidata name="GetOAuthTokenByJwt" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="payload">
+          <type api="T:Yfy.Api.Oauth.YfyJwtPayload" ref="true" />
+        </parameter>
+        <parameter name="keyPath">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="passwd">
           <type api="T:System.String" ref="true" />
         </parameter>
       </parameters>
@@ -8307,6 +8815,157 @@
         <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
         <namespace api="N:Yfy.Api.Oauth" />
         <type api="T:Yfy.Api.Oauth.OAuthHelper" ref="true" />
+      </containers>
+    </api>
+    <api id="T:Yfy.Api.Oauth.RSAPasswdFinder">
+      <apidata name="RSAPasswdFinder" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <implements>
+        <type api="T:Org.BouncyCastle.OpenSsl.IPasswordFinder" ref="true" />
+      </implements>
+      <elements>
+        <element api="M:Yfy.Api.Oauth.RSAPasswdFinder.#ctor(System.String)" />
+        <element api="M:Yfy.Api.Oauth.RSAPasswdFinder.GetPassword" />
+        <element api="P:Yfy.Api.Oauth.RSAPasswdFinder.Passwd" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+      </containers>
+    </api>
+    <api id="M:Yfy.Api.Oauth.RSAPasswdFinder.#ctor(System.String)">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <parameters>
+        <parameter name="passwd">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.RSAPasswdFinder" ref="true" />
+      </containers>
+    </api>
+    <api id="M:Yfy.Api.Oauth.RSAPasswdFinder.GetPassword">
+      <apidata name="GetPassword" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="true" final="true" />
+      <returns>
+        <arrayOf rank="1">
+          <type api="T:System.Char" ref="false" />
+        </arrayOf>
+      </returns>
+      <implements>
+        <member api="M:Org.BouncyCastle.OpenSsl.IPasswordFinder.GetPassword">
+          <type api="T:Org.BouncyCastle.OpenSsl.IPasswordFinder" ref="true" />
+        </member>
+      </implements>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.RSAPasswdFinder" ref="true" />
+      </containers>
+    </api>
+    <api id="P:Yfy.Api.Oauth.RSAPasswdFinder.Passwd">
+      <apidata name="Passwd" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Passwd" />
+      <setter name="set_Passwd" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.RSAPasswdFinder" ref="true" />
       </containers>
     </api>
     <api id="T:Yfy.Api.Oauth.YfyAuthtoken">
@@ -8532,6 +9191,290 @@
           </argument>
         </attribute>
       </attributes>
+    </api>
+    <api id="T:Yfy.Api.Oauth.YfyJwtPayload">
+      <apidata name="YfyJwtPayload" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:Yfy.Api.Oauth.YfyJwtPayload.#ctor(Yfy.Api.Oauth.YfySubType,System.String,System.Int64,Yfy.Api.Oauth.JwtAlgorithms)" />
+        <element api="P:Yfy.Api.Oauth.YfyJwtPayload.Alg" />
+        <element api="P:Yfy.Api.Oauth.YfyJwtPayload.Kid" />
+        <element api="P:Yfy.Api.Oauth.YfyJwtPayload.SubType" />
+        <element api="P:Yfy.Api.Oauth.YfyJwtPayload.Sub" />
+        <element api="P:Yfy.Api.Oauth.YfyJwtPayload.Exp" />
+        <element api="P:Yfy.Api.Oauth.YfyJwtPayload.Iat" />
+        <element api="P:Yfy.Api.Oauth.YfyJwtPayload.Jti" />
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+      </containers>
+    </api>
+    <api id="M:Yfy.Api.Oauth.YfyJwtPayload.#ctor(Yfy.Api.Oauth.YfySubType,System.String,System.Int64,Yfy.Api.Oauth.JwtAlgorithms)">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <parameters>
+        <parameter name="subType">
+          <type api="T:Yfy.Api.Oauth.YfySubType" ref="false" />
+        </parameter>
+        <parameter name="kid">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="sub">
+          <type api="T:System.Int64" ref="false" />
+        </parameter>
+        <parameter name="alg" optional="true">
+          <type api="T:Yfy.Api.Oauth.JwtAlgorithms" ref="false" />
+          <argument>
+            <type api="T:Yfy.Api.Oauth.JwtAlgorithms" ref="false" />
+            <enumValue>
+              <field name="RS256" />
+            </enumValue>
+          </argument>
+        </parameter>
+      </parameters>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.YfyJwtPayload" ref="true" />
+      </containers>
+    </api>
+    <api id="P:Yfy.Api.Oauth.YfyJwtPayload.Alg">
+      <apidata name="Alg" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Alg" />
+      <setter name="set_Alg" />
+      <returns>
+        <type api="T:Yfy.Api.Oauth.JwtAlgorithms" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.YfyJwtPayload" ref="true" />
+      </containers>
+    </api>
+    <api id="P:Yfy.Api.Oauth.YfyJwtPayload.Exp">
+      <apidata name="Exp" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Exp" />
+      <setter name="set_Exp" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.YfyJwtPayload" ref="true" />
+      </containers>
+    </api>
+    <api id="P:Yfy.Api.Oauth.YfyJwtPayload.Iat">
+      <apidata name="Iat" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Iat" />
+      <setter name="set_Iat" />
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.YfyJwtPayload" ref="true" />
+      </containers>
+    </api>
+    <api id="P:Yfy.Api.Oauth.YfyJwtPayload.Jti">
+      <apidata name="Jti" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Jti" />
+      <setter name="set_Jti" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.YfyJwtPayload" ref="true" />
+      </containers>
+    </api>
+    <api id="P:Yfy.Api.Oauth.YfyJwtPayload.Kid">
+      <apidata name="Kid" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Kid" />
+      <setter name="set_Kid" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.YfyJwtPayload" ref="true" />
+      </containers>
+    </api>
+    <api id="P:Yfy.Api.Oauth.YfyJwtPayload.Sub">
+      <apidata name="Sub" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Sub" />
+      <setter name="set_Sub" />
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.YfyJwtPayload" ref="true" />
+      </containers>
+    </api>
+    <api id="P:Yfy.Api.Oauth.YfyJwtPayload.SubType">
+      <apidata name="SubType" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_SubType" />
+      <setter name="set_SubType" />
+      <returns>
+        <type api="T:Yfy.Api.Oauth.YfySubType" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.YfyJwtPayload" ref="true" />
+      </containers>
+    </api>
+    <api id="T:Yfy.Api.Oauth.YfySubType">
+      <apidata name="YfySubType" group="type" subgroup="enumeration" />
+      <typedata visibility="public" sealed="true" serializable="false" />
+      <elements>
+        <element api="F:Yfy.Api.Oauth.YfySubType.Enterprise" />
+        <element api="F:Yfy.Api.Oauth.YfySubType.User" />
+      </elements>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+      </containers>
+    </api>
+    <api id="F:Yfy.Api.Oauth.YfySubType.Enterprise">
+      <apidata name="Enterprise" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:Yfy.Api.Oauth.YfySubType" ref="false" />
+      </returns>
+      <value>0</value>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.YfySubType" ref="false" />
+      </containers>
+    </api>
+    <api id="F:Yfy.Api.Oauth.YfySubType.User">
+      <apidata name="User" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="true" initonly="false" serialized="true" />
+      <returns>
+        <type api="T:Yfy.Api.Oauth.YfySubType" ref="false" />
+      </returns>
+      <value>1</value>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Oauth" />
+        <type api="T:Yfy.Api.Oauth.YfySubType" ref="false" />
+      </containers>
     </api>
     <api id="N:Yfy.Api.ShareLink">
       <apidata name="Yfy.Api.ShareLink" group="namespace" />
@@ -10369,6 +11312,7 @@
       <elements>
         <element api="M:Yfy.Api.Users.YfyUserCollection.#ctor" />
         <element api="P:Yfy.Api.Users.YfyUserCollection.Users" />
+        <element api="P:Yfy.Api.Users.YfyUserCollection.TotalCount" />
         <element api="P:Yfy.Api.Users.YfyUserCollection.PageId" />
         <element api="P:Yfy.Api.Users.YfyUserCollection.PageCapacity" />
         <element api="P:Yfy.Api.Users.YfyUserCollection.PageCount" />
@@ -10538,6 +11482,31 @@
           <argument>
             <type api="T:System.String" ref="true" />
             <value>page_id</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </api>
+    <api id="P:Yfy.Api.Users.YfyUserCollection.TotalCount">
+      <apidata name="TotalCount" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_TotalCount" />
+      <setter name="set_TotalCount" />
+      <returns>
+        <type api="T:System.Int64" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="Yfy.Api" module="Yfy.Api" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:Yfy.Api.Users" />
+        <type api="T:Yfy.Api.Users.YfyUserCollection" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:Newtonsoft.Json.JsonPropertyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>total_count</value>
           </argument>
         </attribute>
       </attributes>

@@ -6,7 +6,7 @@
   <!-- Task properties -->
   <PropertyGroup>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AddXamlSyntaxData>
     </AddXamlSyntaxData>
     <WorkingFolder>C:\Users\ori\Documents\vs\Sandcastle\Help\Working\</WorkingFolder>
@@ -31,6 +31,12 @@
 		</GenerateDependsOn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>C:\Users\ori\Documents\vs\csharp-sdk\Yfy.Api\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="jose-jwt, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>C:\Users\ori\Documents\vs\csharp-sdk\Yfy.Api\packages\jose-jwt.2.4.0\lib\net40\jose-jwt.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>C:\Users\ori\Documents\vs\csharp-sdk\Yfy.Api\packages\Newtonsoft.Json.9.0.1\lib\net35\Newtonsoft.Json.dll</HintPath>
     </Reference>

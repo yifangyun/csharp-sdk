@@ -14,6 +14,7 @@
   <topic id="M:Yfy.Api.YfyClient.#ctor(Yfy.Api.YfyClientConfig)" type="API" />
   <topic id="P:Yfy.Api.YfyClient.Collab" type="API" />
   <topic id="P:Yfy.Api.YfyClient.Comment" type="API" />
+  <topic id="P:Yfy.Api.YfyClient.Department" type="API" />
   <topic id="P:Yfy.Api.YfyClient.File" type="API" />
   <topic id="P:Yfy.Api.YfyClient.Folder" type="API" />
   <topic id="M:Yfy.Api.YfyClient.GetOauth2AccessToken" type="API" />
@@ -109,6 +110,10 @@
   <topic id="Properties.T:Yfy.Api.Comment.YfyCommentCollection" type="API" />
   <topic id="M:Yfy.Api.Comment.YfyCommentCollection.#ctor" type="API" />
   <topic id="P:Yfy.Api.Comment.YfyCommentCollection.Comments" type="API" />
+  <topic id="N:Yfy.Api.Department" type="API" />
+  <topic id="T:Yfy.Api.Department.DepartmentRouter" type="API" />
+  <topic id="Methods.T:Yfy.Api.Department.DepartmentRouter" type="API" />
+  <topic id="M:Yfy.Api.Department.DepartmentRouter.GetDepartmentUsers(System.Int64,System.String,System.Int32)" type="API" />
   <topic id="N:Yfy.Api.Enterprises" type="API" />
   <topic id="T:Yfy.Api.Enterprises.YfyMiniEnterprise" type="API" />
   <topic id="Methods.T:Yfy.Api.Enterprises.YfyMiniEnterprise" type="API" />
@@ -121,18 +126,22 @@
   <topic id="T:Yfy.Api.Exceptions.BadInputException" type="API" />
   <topic id="Methods.T:Yfy.Api.Exceptions.BadInputException" type="API" />
   <topic id="Properties.T:Yfy.Api.Exceptions.BadInputException" type="API" />
+  <topic id="Events.T:Yfy.Api.Exceptions.BadInputException" type="API" />
   <topic id="M:Yfy.Api.Exceptions.BadInputException.ToString" type="API" />
   <topic id="T:Yfy.Api.Exceptions.BadResponseException" type="API" />
   <topic id="Methods.T:Yfy.Api.Exceptions.BadResponseException" type="API" />
   <topic id="Properties.T:Yfy.Api.Exceptions.BadResponseException" type="API" />
+  <topic id="Events.T:Yfy.Api.Exceptions.BadResponseException" type="API" />
   <topic id="M:Yfy.Api.Exceptions.BadResponseException.ToString" type="API" />
   <topic id="T:Yfy.Api.Exceptions.InternalServerException" type="API" />
   <topic id="Methods.T:Yfy.Api.Exceptions.InternalServerException" type="API" />
   <topic id="Properties.T:Yfy.Api.Exceptions.InternalServerException" type="API" />
+  <topic id="Events.T:Yfy.Api.Exceptions.InternalServerException" type="API" />
   <topic id="M:Yfy.Api.Exceptions.InternalServerException.ToString" type="API" />
   <topic id="T:Yfy.Api.Exceptions.RateLimitException" type="API" />
   <topic id="Methods.T:Yfy.Api.Exceptions.RateLimitException" type="API" />
   <topic id="Properties.T:Yfy.Api.Exceptions.RateLimitException" type="API" />
+  <topic id="Events.T:Yfy.Api.Exceptions.RateLimitException" type="API" />
   <topic id="Fields.T:Yfy.Api.Exceptions.RateLimitException" type="API" />
   <topic id="F:Yfy.Api.Exceptions.RateLimitException.RateLimitStatusCode" type="API" />
   <topic id="P:Yfy.Api.Exceptions.RateLimitException.RetryAfterTime" type="API" />
@@ -140,26 +149,31 @@
   <topic id="T:Yfy.Api.Exceptions.RefreshTokenExpiredException" type="API" />
   <topic id="Methods.T:Yfy.Api.Exceptions.RefreshTokenExpiredException" type="API" />
   <topic id="Properties.T:Yfy.Api.Exceptions.RefreshTokenExpiredException" type="API" />
+  <topic id="Events.T:Yfy.Api.Exceptions.RefreshTokenExpiredException" type="API" />
   <topic id="P:Yfy.Api.Exceptions.RefreshTokenExpiredException.RefreshToken" type="API" />
   <topic id="M:Yfy.Api.Exceptions.RefreshTokenExpiredException.ToString" type="API" />
   <topic id="T:Yfy.Api.Exceptions.UnAuthorizedException" type="API" />
   <topic id="Methods.T:Yfy.Api.Exceptions.UnAuthorizedException" type="API" />
   <topic id="Properties.T:Yfy.Api.Exceptions.UnAuthorizedException" type="API" />
+  <topic id="Events.T:Yfy.Api.Exceptions.UnAuthorizedException" type="API" />
   <topic id="M:Yfy.Api.Exceptions.UnAuthorizedException.ToString" type="API" />
   <topic id="T:Yfy.Api.Exceptions.YfyApiException" type="API" />
   <topic id="Methods.T:Yfy.Api.Exceptions.YfyApiException" type="API" />
   <topic id="Properties.T:Yfy.Api.Exceptions.YfyApiException" type="API" />
+  <topic id="Events.T:Yfy.Api.Exceptions.YfyApiException" type="API" />
   <topic id="P:Yfy.Api.Exceptions.YfyApiException.ErrorCode" type="API" />
   <topic id="P:Yfy.Api.Exceptions.YfyApiException.ErrorMsg" type="API" />
   <topic id="M:Yfy.Api.Exceptions.YfyApiException.ToString" type="API" />
   <topic id="T:Yfy.Api.Exceptions.YfyException" type="API" />
   <topic id="Methods.T:Yfy.Api.Exceptions.YfyException" type="API" />
   <topic id="Properties.T:Yfy.Api.Exceptions.YfyException" type="API" />
+  <topic id="Events.T:Yfy.Api.Exceptions.YfyException" type="API" />
   <topic id="P:Yfy.Api.Exceptions.YfyException.RequestId" type="API" />
   <topic id="M:Yfy.Api.Exceptions.YfyException.ToString" type="API" />
   <topic id="T:Yfy.Api.Exceptions.YfyHttpException" type="API" />
   <topic id="Methods.T:Yfy.Api.Exceptions.YfyHttpException" type="API" />
   <topic id="Properties.T:Yfy.Api.Exceptions.YfyHttpException" type="API" />
+  <topic id="Events.T:Yfy.Api.Exceptions.YfyHttpException" type="API" />
   <topic id="P:Yfy.Api.Exceptions.YfyHttpException.RequestUri" type="API" />
   <topic id="P:Yfy.Api.Exceptions.YfyHttpException.StatusCode" type="API" />
   <topic id="M:Yfy.Api.Exceptions.YfyHttpException.ToString" type="API" />
@@ -251,15 +265,25 @@
   <topic id="P:Yfy.Api.Items.YfyItemCollection.PageId" type="API" />
   <topic id="P:Yfy.Api.Items.YfyItemCollection.TotalCount" type="API" />
   <topic id="N:Yfy.Api.Oauth" type="API" />
+  <topic id="T:Yfy.Api.Oauth.JwtAlgorithms" type="API" />
   <topic id="T:Yfy.Api.Oauth.OAuthHelper" type="API" />
   <topic id="Methods.T:Yfy.Api.Oauth.OAuthHelper" type="API" />
+  <topic id="Overload:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByJwt" type="API" />
   <topic id="M:Yfy.Api.Oauth.OAuthHelper.GetAuthorizeUrl(System.String,System.String)" type="API" />
   <topic id="M:Yfy.Api.Oauth.OAuthHelper.GetBasicAuthrization" type="API" />
   <topic id="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByCode(System.String,System.String)" type="API" />
+  <topic id="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByJwt(Yfy.Api.Oauth.YfyJwtPayload,System.Security.Cryptography.X509Certificates.X509Certificate2)" type="API" />
+  <topic id="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByJwt(Yfy.Api.Oauth.YfyJwtPayload,System.String,System.String)" type="API" />
   <topic id="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByPassword(System.String,System.String)" type="API" />
   <topic id="M:Yfy.Api.Oauth.OAuthHelper.InitState" type="API" />
   <topic id="M:Yfy.Api.Oauth.OAuthHelper.RefreshOAuthToken(System.String)" type="API" />
   <topic id="M:Yfy.Api.Oauth.OAuthHelper.RevokeOAuthToken(System.String)" type="API" />
+  <topic id="T:Yfy.Api.Oauth.RSAPasswdFinder" type="API" />
+  <topic id="Methods.T:Yfy.Api.Oauth.RSAPasswdFinder" type="API" />
+  <topic id="Properties.T:Yfy.Api.Oauth.RSAPasswdFinder" type="API" />
+  <topic id="M:Yfy.Api.Oauth.RSAPasswdFinder.#ctor(System.String)" type="API" />
+  <topic id="M:Yfy.Api.Oauth.RSAPasswdFinder.GetPassword" type="API" />
+  <topic id="P:Yfy.Api.Oauth.RSAPasswdFinder.Passwd" type="API" />
   <topic id="T:Yfy.Api.Oauth.YfyAuthtoken" type="API" />
   <topic id="Methods.T:Yfy.Api.Oauth.YfyAuthtoken" type="API" />
   <topic id="Properties.T:Yfy.Api.Oauth.YfyAuthtoken" type="API" />
@@ -269,6 +293,18 @@
   <topic id="P:Yfy.Api.Oauth.YfyAuthtoken.RefreshToken" type="API" />
   <topic id="P:Yfy.Api.Oauth.YfyAuthtoken.Scope" type="API" />
   <topic id="P:Yfy.Api.Oauth.YfyAuthtoken.TokenType" type="API" />
+  <topic id="T:Yfy.Api.Oauth.YfyJwtPayload" type="API" />
+  <topic id="Methods.T:Yfy.Api.Oauth.YfyJwtPayload" type="API" />
+  <topic id="Properties.T:Yfy.Api.Oauth.YfyJwtPayload" type="API" />
+  <topic id="M:Yfy.Api.Oauth.YfyJwtPayload.#ctor(Yfy.Api.Oauth.YfySubType,System.String,System.Int64,Yfy.Api.Oauth.JwtAlgorithms)" type="API" />
+  <topic id="P:Yfy.Api.Oauth.YfyJwtPayload.Alg" type="API" />
+  <topic id="P:Yfy.Api.Oauth.YfyJwtPayload.Exp" type="API" />
+  <topic id="P:Yfy.Api.Oauth.YfyJwtPayload.Iat" type="API" />
+  <topic id="P:Yfy.Api.Oauth.YfyJwtPayload.Jti" type="API" />
+  <topic id="P:Yfy.Api.Oauth.YfyJwtPayload.Kid" type="API" />
+  <topic id="P:Yfy.Api.Oauth.YfyJwtPayload.Sub" type="API" />
+  <topic id="P:Yfy.Api.Oauth.YfyJwtPayload.SubType" type="API" />
+  <topic id="T:Yfy.Api.Oauth.YfySubType" type="API" />
   <topic id="N:Yfy.Api.ShareLink" type="API" />
   <topic id="T:Yfy.Api.ShareLink.ShareLinkAccess" type="API" />
   <topic id="T:Yfy.Api.ShareLink.ShareLinkRouter" type="API" />
@@ -341,6 +377,7 @@
   <topic id="P:Yfy.Api.Users.YfyUserCollection.PageCapacity" type="API" />
   <topic id="P:Yfy.Api.Users.YfyUserCollection.PageCount" type="API" />
   <topic id="P:Yfy.Api.Users.YfyUserCollection.PageId" type="API" />
+  <topic id="P:Yfy.Api.Users.YfyUserCollection.TotalCount" type="API" />
   <topic id="P:Yfy.Api.Users.YfyUserCollection.Users" type="API" />
   <topic id="R:Project_Documentation" type="API" />
 </topics>

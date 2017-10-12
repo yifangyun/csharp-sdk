@@ -186,6 +186,20 @@
       <param name="commentId">评论id</param>
       <returns>是否成功</returns>
     </member>
+    <member name="T:Yfy.Api.Department.DepartmentRouter">
+      <summary>
+            部门相关api列表
+            </summary>
+    </member>
+    <member name="M:Yfy.Api.Department.DepartmentRouter.GetDepartmentUsers(System.Int64,System.String,System.Int32)">
+      <summary>
+            获取部门成员详细列表
+            </summary>
+      <param name="deptId">部门id</param>
+      <param name="queryWords">部门成员搜索关键字</param>
+      <param name="pageId">页码</param>
+      <returns>通用用户集合</returns>
+    </member>
     <member name="T:Yfy.Api.Exceptions.InternalServerException">
       <summary>
             服务器异常
@@ -379,6 +393,112 @@
             </summary>
       <param name="accessToken">更新成功的AssessToken</param>
     </member>
+    <member name="T:Yfy.Api.Oauth.RSAPasswdFinder">
+      <summary>
+            RSA 密码容器
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Oauth.RSAPasswdFinder.Passwd">
+      <summary>
+            RSA 密钥
+            </summary>
+    </member>
+    <member name="M:Yfy.Api.Oauth.RSAPasswdFinder.#ctor(System.String)">
+      <summary>
+            构造函数
+            </summary>
+      <param name="passwd">RSA私钥密码</param>
+    </member>
+    <member name="M:Yfy.Api.Oauth.RSAPasswdFinder.GetPassword">
+      <summary>
+            获得密码的字符数组
+            </summary>
+      <returns>密码字符数组</returns>
+    </member>
+    <member name="T:Yfy.Api.Oauth.YfyJwtPayload">
+      <summary>
+            亿方云 Jwt Payload 对象
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Oauth.YfyJwtPayload.Alg">
+      <summary>
+            用于生成以及校验签名的算法，只支持RS256, RS384和RS512
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Oauth.YfyJwtPayload.Kid">
+      <summary>
+            公钥的唯一标识
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Oauth.YfyJwtPayload.SubType">
+      <summary>
+            授权对象类型，只能是enterprise或者user
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Oauth.YfyJwtPayload.Sub">
+      <summary>
+            授权对象id，必须是数字
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Oauth.YfyJwtPayload.Exp">
+      <summary>
+            过期时间戳，不能超过iat(若iat不存在则记请求到达服务器时间)60s
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Oauth.YfyJwtPayload.Iat">
+      <summary>
+            jwt生成时的时间戳
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.Oauth.YfyJwtPayload.Jti">
+      <summary>
+            jwt的唯一标识，每个jwt应当都有唯一的jti
+            </summary>
+    </member>
+    <member name="M:Yfy.Api.Oauth.YfyJwtPayload.#ctor(Yfy.Api.Oauth.YfySubType,System.String,System.Int64,Yfy.Api.Oauth.JwtAlgorithms)">
+      <summary>
+            JwtPayload构造函数
+            </summary>
+      <param name="subType">授权对象类型，只能是enterprise或者user</param>
+      <param name="kid">公钥的唯一标识</param>
+      <param name="sub">授权对象id，必须是数字</param>
+      <param name="alg">用于生成以及校验签名的算法，只支持RS256, RS384和RS512</param>
+    </member>
+    <member name="T:Yfy.Api.Oauth.YfySubType">
+      <summary>
+            授权对象类型 枚举
+            </summary>
+    </member>
+    <member name="F:Yfy.Api.Oauth.YfySubType.Enterprise">
+      <summary>
+            授权范围 企业
+            </summary>
+    </member>
+    <member name="F:Yfy.Api.Oauth.YfySubType.User">
+      <summary>
+            授权范围 用户
+            </summary>
+    </member>
+    <member name="T:Yfy.Api.Oauth.JwtAlgorithms">
+      <summary>
+            支持的jwt算法枚举
+            </summary>
+    </member>
+    <member name="F:Yfy.Api.Oauth.JwtAlgorithms.RS256">
+      <summary>
+            RS256
+            </summary>
+    </member>
+    <member name="F:Yfy.Api.Oauth.JwtAlgorithms.RS384">
+      <summary>
+            RS384
+            </summary>
+    </member>
+    <member name="F:Yfy.Api.Oauth.JwtAlgorithms.RS512">
+      <summary>
+            RS512
+            </summary>
+    </member>
     <member name="T:Yfy.Api.Oauth.YfyAuthtoken">
       <summary>
             通用亿方云AuthToken对象
@@ -448,7 +568,24 @@
             </summary>
       <param name="code">oauth服务器返回的code码</param>
       <param name="redirectUri">oauth协议中的重定向url</param>
-      <returns>通用oauthtoken对象</returns>
+      <returns>通用Oauthtoken对象</returns>
+    </member>
+    <member name="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByJwt(Yfy.Api.Oauth.YfyJwtPayload,System.Security.Cryptography.X509Certificates.X509Certificate2)">
+      <summary>
+            通过Jwt获取OauthToken
+            </summary>
+      <param name="payload">Jwt中需要的内容</param>
+      <param name="cert">X509Certificate2 对象, 包含私钥的证书文件</param>
+      <returns>通用Oauthtoken对象</returns>
+    </member>
+    <member name="M:Yfy.Api.Oauth.OAuthHelper.GetOAuthTokenByJwt(Yfy.Api.Oauth.YfyJwtPayload,System.String,System.String)">
+      <summary>
+            通过Jwt获取OauthToken
+            </summary>
+      <param name="payload">Jwt中需要的内容</param>
+      <param name="keyPath">私钥路径。注意,私钥必须是pkcs1格式,不支持pkcs8</param>
+      <param name="passwd">私钥密码</param>
+      <returns>通用Oauthtoken对象</returns>
     </member>
     <member name="M:Yfy.Api.Oauth.OAuthHelper.RefreshOAuthToken(System.String)">
       <summary>
@@ -1213,6 +1350,11 @@
             用户
             </summary>
     </member>
+    <member name="P:Yfy.Api.Users.YfyUserCollection.TotalCount">
+      <summary>
+            总用户数
+            </summary>
+    </member>
     <member name="P:Yfy.Api.Users.YfyUserCollection.PageId">
       <summary>
             页码
@@ -1357,6 +1499,11 @@
     <member name="P:Yfy.Api.YfyClient.Collab">
       <summary>
             协作相关api
+            </summary>
+    </member>
+    <member name="P:Yfy.Api.YfyClient.Department">
+      <summary>
+            部门相关api
             </summary>
     </member>
     <member name="M:Yfy.Api.YfyClient.SetTokenRegister(Yfy.Api.IYfyTokenRegister)">
@@ -1559,7 +1706,7 @@
       <param name="redirectUri">亿方云上申请的客户端重定向Uri</param>
     </member>
     <member name="R:Project_Documentation">
-      <summary>亿方云开放平台C#SDK Api 文档  2.2.4</summary>
+      <summary>亿方云开放平台C#SDK Api 文档  3.0.0</summary>
     </member>
     <member name="N:Yfy.Api">
       <summary>亿方云命名空间</summary>
@@ -1569,6 +1716,9 @@
     </member>
     <member name="N:Yfy.Api.Comment">
       <summary>评论命名空间</summary>
+    </member>
+    <member name="N:Yfy.Api.Department">
+      <summary>部门操作命名空间</summary>
     </member>
     <member name="N:Yfy.Api.Enterprises">
       <summary>亿方云企业命名空间</summary>
