@@ -47,10 +47,10 @@
         /// <summary>
         /// JwtPayload构造函数
         /// </summary>
-        /// <param name="subType"></param>
-        /// <param name="kid"></param>
-        /// <param name="sub"></param>
-        /// <param name="alg"></param>
+        /// <param name="subType">授权对象类型，只能是enterprise或者user</param>
+        /// <param name="kid">公钥的唯一标识</param>
+        /// <param name="sub">授权对象id，必须是数字</param>
+        /// <param name="alg">用于生成以及校验签名的算法，只支持RS256, RS384和RS512</param>
         public YfyJwtPayload(YfySubType subType, string kid, long sub, JwtAlgorithms alg = JwtAlgorithms.RS256)
         {
             this.SubType = subType;

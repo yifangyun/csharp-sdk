@@ -145,7 +145,7 @@
         /// <param name="payload">Jwt中需要的内容</param>
         /// <param name="keyPath">私钥路径。注意,私钥必须是pkcs1格式,不支持pkcs8</param>
         /// <param name="passwd">私钥密码</param>
-        /// <returns></returns>
+        /// <returns>通用Oauthtoken对象</returns>
         public static YfyAuthtoken GetOAuthTokenByJwt(YfyJwtPayload payload, string keyPath, string passwd)
         {
             string pemString = new StreamReader(File.OpenRead(keyPath)).ReadToEnd();
