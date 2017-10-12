@@ -7,6 +7,12 @@
     using Newtonsoft.Json;
     using System.IO;
     using Yfy.Api.Exceptions;
+    using System.Collections.Generic;
+    using System.Security.Cryptography.X509Certificates;
+    using Org.BouncyCastle.Crypto;
+    using Org.BouncyCastle.OpenSsl;
+    using Org.BouncyCastle.Security;
+    using Org.BouncyCastle.Crypto.Parameters;
 
     /// <summary>
     /// Oauth相关的帮助类
@@ -82,10 +88,102 @@
         /// </summary>
         /// <param name="code">oauth服务器返回的code码</param>
         /// <param name="redirectUri">oauth协议中的重定向url</param>
-        /// <returns>通用oauthtoken对象</returns>
+        /// <returns>通用Oauthtoken对象</returns>
         public static YfyAuthtoken GetOAuthTokenByCode(string code, string redirectUri)
         {
             var request = WebRequest.Create(UriHelper.GetOAuthTokenUri(code, redirectUri));
+            request.Method = HttpMethod.Post;
+            request.Headers.Add(HttpRequestHeader.Authorization, OAuthHelper.GetBasicAuthrization());
+
+            try
+            {
+                var response = request.GetResponse() as HttpWebResponse;
+                return JsonConvert.DeserializeObject<YfyAuthtoken>(new StreamReader(response.GetResponseStream(), new UTF8Encoding(false)).ReadToEnd());
+            }
+            catch (WebException we)
+            {
+                throw new YfyHttpException(we);
+            }
+        }
+
+        /// <summary>
+        /// 通过Jwt获取OauthToken
+        /// </summary>
+        /// <param name="payload">Jwt中需要的内容</param>
+        /// <param name="cert">X509Certificate2 对象, 包含私钥的证书文件</param>
+        /// <returns>通用Oauthtoken对象</returns>
+        public static YfyAuthtoken GetOAuthTokenByJwt(YfyJwtPayload payload, X509Certificate2 cert)
+        {
+            RSACryptoServiceProvider privateKey;
+            var rsaCsp = cert.PrivateKey as RSACryptoServiceProvider;
+            if (rsaCsp != null && rsaCsp.CspKeyContainerInfo.ProviderType == 1)
+            {
+                CspParameters csp = new CspParameters();
+
+                csp.ProviderType = 24;
+                csp.KeyContainerName = rsaCsp.CspKeyContainerInfo.KeyContainerName;
+                csp.KeyNumber = (int)rsaCsp.CspKeyContainerInfo.KeyNumber;
+                if (rsaCsp.CspKeyContainerInfo.MachineKeyStore)
+                {
+                    csp.Flags = CspProviderFlags.UseMachineKeyStore;
+                }
+
+                csp.Flags |= CspProviderFlags.UseExistingKey;
+                privateKey = new RSACryptoServiceProvider(csp);
+            }
+            else
+            {
+                throw new ArgumentException(nameof(cert));
+            }
+
+            return _GetOAuthTokenByJwt(payload, privateKey);
+        }
+
+        /// <summary>
+        /// 通过Jwt获取OauthToken
+        /// </summary>
+        /// <param name="payload">Jwt中需要的内容</param>
+        /// <param name="keyPath">私钥路径。注意,私钥必须是pkcs1格式,不支持pkcs8</param>
+        /// <param name="passwd">私钥密码</param>
+        /// <returns></returns>
+        public static YfyAuthtoken GetOAuthTokenByJwt(YfyJwtPayload payload, string keyPath, string passwd)
+        {
+            string pemString = new StreamReader(File.OpenRead(keyPath)).ReadToEnd();
+            AsymmetricCipherKeyPair keyPair;
+
+            using (StreamReader sr = new StreamReader(keyPath))
+            {
+                var passwdProvider = new RSAPasswdFinder(passwd);
+                PemReader pr = new PemReader(sr, passwdProvider);
+                keyPair = (AsymmetricCipherKeyPair)pr.ReadObject();
+            }
+
+            RSAParameters rsaParams = DotNetUtilities.ToRSAParameters((RsaPrivateCrtKeyParameters)keyPair.Private);
+            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
+            rsa.ImportParameters(rsaParams);
+
+            return _GetOAuthTokenByJwt(payload, rsa);
+        }
+
+        private static YfyAuthtoken _GetOAuthTokenByJwt(YfyJwtPayload payload, RSACryptoServiceProvider privateKey)
+        {
+            string alg = Enum.GetName(typeof(JwtAlgorithms), payload.Alg);
+            var jwtPayload = new Dictionary<string, object>() {
+                { "yifangyun_sub_type", Enum.GetName(typeof(YfySubType), payload.SubType).ToLower() },
+                { "sub", payload.Sub },
+                { "exp", payload.Exp },
+                { "iat", payload.Iat },
+                { "jti", payload.Jti }
+            };
+
+            string token = Jose.JWT.Encode(
+                jwtPayload,
+                privateKey,
+                (Jose.JwsAlgorithm)Enum.Parse(typeof(Jose.JwsAlgorithm), alg),
+                new Dictionary<string, object>() { { "kid", payload.Kid } }
+            );
+
+            var request = WebRequest.Create(UriHelper.GetOAuthTokenJwtUri(token));
             request.Method = HttpMethod.Post;
             request.Headers.Add(HttpRequestHeader.Authorization, OAuthHelper.GetBasicAuthrization());
 

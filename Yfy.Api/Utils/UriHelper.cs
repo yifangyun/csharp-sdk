@@ -24,6 +24,12 @@
                 OAuthHost + $"oauth/token?grant_type=authorization_code&code={code}&redirect_uri={redirectUri}");
         }
 
+        public static Uri GetOAuthTokenJwtUri(string assertion)
+        {
+            return new Uri(
+                OAuthHost + $"oauth/token?grant_type=jwt&assertion={assertion}");
+        }
+
         public static Uri GetRefreshTokenUri(string refreshToken)
         {
             return new Uri(OAuthHost + $"oauth/token?grant_type=refresh_token&refresh_token={refreshToken}");

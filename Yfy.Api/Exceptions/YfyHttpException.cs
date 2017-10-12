@@ -1,7 +1,9 @@
 ﻿namespace Yfy.Api.Exceptions
 {
     using System;
+    using System.IO;
     using System.Net;
+    using System.Text;
 
     /// <summary>
     /// 由http请求引发的异常，是api异常的基类，同时还包括网络异常。
@@ -26,7 +28,8 @@
         }
 
         internal YfyHttpException(WebException we)
-            :base("", we.Message, we)
+            :base("", new StreamReader(we.Response.GetResponseStream(), new UTF8Encoding(false))
+                        .ReadToEnd(), we)
         {
         }
 

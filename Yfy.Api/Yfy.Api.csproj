@@ -31,10 +31,10 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>1</WarningLevel>
     <DocumentationFile>bin\Release\Yfy.Api.xml</DocumentationFile>
     <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
-    <LangVersion>6</LangVersion>
+    <LangVersion>7</LangVersion>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
     <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
@@ -45,7 +45,35 @@
     <ApplicationIcon>
     </ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\Yfy.Api.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>6</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <DocumentationFile>bin\Release\Yfy.Api.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <LangVersion>7</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="jose-jwt, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\jose-jwt.2.4.0\lib\net40\jose-jwt.dll</HintPath>
     </Reference>
@@ -68,10 +96,13 @@
     <Compile Include="Comment\CreateComment.cs" />
     <Compile Include="Comment\YfyComment.cs" />
     <Compile Include="Comment\CommentRouter.cs" />
+    <Compile Include="Department\DepartmentRouter.cs" />
     <Compile Include="Exceptions\InternalServerException.cs" />
     <Compile Include="Exceptions\YfyApiException.cs" />
     <Compile Include="IYfyRegister.cs" />
-    <Compile Include="OAuth\YfyAuthtoken.cs" />
+    <Compile Include="Oauth\RSAPasswdFinder.cs" />
+    <Compile Include="Oauth\YfyJwtPayload.cs" />
+    <Compile Include="Oauth\YfyAuthtoken.cs" />
     <Compile Include="Items\ItemRouter.cs" />
     <Compile Include="Items\Search.cs" />
     <Compile Include="Exceptions\BadInputException.cs" />
@@ -108,7 +139,7 @@
     <Compile Include="Trash\RestoreFromTrash.cs" />
     <Compile Include="Trash\TrashRouter.cs" />
     <Compile Include="Users\UpdateUser.cs" />
-    <Compile Include="OAuth\OAuthHelper.cs" />
+    <Compile Include="Oauth\OAuthHelper.cs" />
     <Compile Include="Utils\StreamHelper.cs" />
     <Compile Include="YfyClient.common.cs" />
     <Compile Include="YfyClient.cs" />
@@ -128,6 +159,7 @@
     <Compile Include="YfySystem.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
