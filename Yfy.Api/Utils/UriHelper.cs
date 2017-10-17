@@ -335,7 +335,13 @@
 
         public static Uri GetAdminDepartmentUsersUri(long deptId, string queryWords = "", int pageId = 0)
         {
-            return new Uri(ApiHost + $"api/v2/admin/department/{deptId}/users");
+            var queryString = $"?page_id={pageId}";
+
+            if (queryWords != "")
+            {
+                queryString += $"&query_words={queryWords}";
+            }
+            return new Uri(ApiHost + $"api/v2/admin/department/{deptId}/users" + queryString);
         }
 
         #endregion
