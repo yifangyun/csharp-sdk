@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("YfyApi")]
-[assembly: AssemblyDescription("YfyApi C#SDK Version 3.0.2")]
+[assembly: AssemblyDescription("YfyApi C#SDK Version 3.0.3")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("杭州亿方云网络科技有限公司")]
 [assembly: AssemblyProduct("YfyApi C#SDK")]
@@ -32,6 +32,6 @@ using System.Runtime.InteropServices;
 //可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("3.0.2")]
-[assembly: AssemblyFileVersion("3.0.2")]
-[assembly: AssemblyInformationalVersion("3.0.2")]
+[assembly: AssemblyVersion("3.0.3")]
+[assembly: AssemblyFileVersion("3.0.3")]
+[assembly: AssemblyInformationalVersion("3.0.3")]
