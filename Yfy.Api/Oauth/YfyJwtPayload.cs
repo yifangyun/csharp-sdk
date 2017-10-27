@@ -67,7 +67,7 @@
         {
             return BitConverter.ToString(
                 MD5.Create().ComputeHash(
-                    Encoding.UTF8.GetBytes(DateTime.Now.ToString()))
+                    Encoding.UTF8.GetBytes(DateTime.Now.ToString("o")))
             ).Replace("-", string.Empty).ToLower();
         }
     }
