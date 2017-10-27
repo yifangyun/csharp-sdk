@@ -50,6 +50,12 @@
         public int ModifiedAt { get; set; }
 
         /// <summary>
+        /// 文件夹修改者
+        /// </summary>
+        [JsonProperty("modified_by")]
+        public YfyMiniUser ModifiedBy { get; set; }
+
+        /// <summary>
         /// 文件（文件夹）描述
         /// </summary>
         [JsonProperty("description")]
