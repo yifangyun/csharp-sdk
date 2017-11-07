@@ -18,7 +18,10 @@
         [DefaultValue(UploadType.api)]
         public UploadType UploadType { get; set; }
 
-        public UploadFileArg(long parentId, string name, UploadType uploadType = UploadType.api)
+        [JsonProperty("is_covered")]
+        public bool IsCovered { get; set; }
+
+        public UploadFileArg(long parentId, string name, UploadStrategy strategy = UploadStrategy.Rename, UploadType uploadType = UploadType.api)
         {
             if (string.IsNullOrEmpty(name))
             {
@@ -28,6 +31,7 @@
             this.ParentId = parentId;
             this.UploadType = uploadType;
             this.Name = name;
+            this.IsCovered = strategy == UploadStrategy.Overwrite;
         }
     }
 
@@ -40,6 +44,22 @@
         /// api
         /// </summary>
         api,
+    }
+
+    /// <summary>
+    /// 当文件名冲突时的处理策略
+    /// </summary>
+    public enum UploadStrategy
+    {
+        /// <summary>
+        /// 重命名
+        /// </summary>
+        Rename,
+
+        /// <summary>
+        /// 覆盖
+        /// </summary>
+        Overwrite
     }
 
     internal class UploadFileNewVersionArg
