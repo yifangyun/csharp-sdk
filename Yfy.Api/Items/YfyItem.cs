@@ -161,6 +161,11 @@
         /// <summary>
         /// 文件名和文件内容
         /// </summary>
-        all
+        all,
+
+        /// <summary>
+        /// 文件的创建者
+        /// </summary>
+        creator
     }
 }

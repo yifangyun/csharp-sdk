@@ -92,10 +92,11 @@
         /// </summary>
         /// <param name="parentId">上传至的文件夹id</param>
         /// <param name="name">文件名称，文件名称必须是1到222个字符，并且不能含有/ ? : * \" > \ </param>
+        /// <param name="strategy">文件名冲突时的处理策略</param>
         /// <returns>上传链接，接下来往该链接上传即可上传文件，上传链接的有效时间为1个小时，且只能被使用一次</returns>
-        public string GetUploadUrl(long parentId, string name)
+        public string GetUploadUrl(long parentId, string name, UploadStrategy strategy = UploadStrategy.Rename)
         {
-            var requestArg = new UploadFileArg(parentId, name);
+            var requestArg = new UploadFileArg(parentId, name, strategy);
             return this._transport.SendRpcRequest<UploadFileArg, PreSignatureUploadUrl>(requestArg, UriHelper.UploadNewFileUri()).PresignUrl;
         }
 
@@ -105,10 +106,11 @@
         /// <param name="parentId">上传至的文件夹id</param>
         /// <param name="name">文件名称，文件名称必须是1到222个字符，并且不能含有/ ? : * \" > \</param>
         /// <param name="stream">待上传的文件流</param>
+        /// <param name="strategy">文件名冲突时的处理策略</param>
         /// <returns>通用文件对象</returns>
-        public YfyFile Upload(long parentId, string name, Stream stream)
+        public YfyFile Upload(long parentId, string name, Stream stream, UploadStrategy strategy = UploadStrategy.Rename)
         {
-            var uploadUrl = GetUploadUrl(parentId, name);
+            var uploadUrl = GetUploadUrl(parentId, name, strategy);
             return this._transport.SendUploadRequest<string, YfyFile>(name, new Uri(uploadUrl), stream);
         }
 
@@ -118,11 +120,12 @@
         /// <param name="parentId">上传至的文件夹id</param>
         /// <param name="name">文件名称，文件名称必须是1到222个字符，并且不能含有/ ? : * \" > \</param>
         /// <param name="uploadFilePath">待上传的文件本地路径</param>
+        /// <param name="strategy">文件名冲突时的处理策略</param>
         /// <returns>通用文件对象</returns>
-        public YfyFile Upload(long parentId, string name, string uploadFilePath)
+        public YfyFile Upload(long parentId, string name, string uploadFilePath, UploadStrategy strategy = UploadStrategy.Rename)
         {
             var stream = File.OpenRead(uploadFilePath);
-            var file = this.Upload(parentId, name, stream);
+            var file = this.Upload(parentId, name, stream, strategy);
             stream.Close();
             return file;
         }

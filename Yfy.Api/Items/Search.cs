@@ -2,6 +2,7 @@
 {
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
+    using System;
     using System.ComponentModel;
 
     internal class SearchArg
@@ -26,7 +27,7 @@
         [DefaultValue(QueryFilter.all)]
         public QueryFilter QueryFilter { get; set; }
 
-        public SearchArg(string queryWords, long searchInFolder = 0, ItemType type = ItemType.all, int pageNumber = 0, QueryFilter queryFilter = QueryFilter.all)
+        public SearchArg(string queryWords, long searchInFolder = 0, ItemType type = ItemType.all, int pageNumber = 0, QueryFilter queryFilter = QueryFilter.all, DateTime? begin = null, DateTime? end = null)
         {
             this.QueryWords = queryWords;
             this.SearchInFolder = searchInFolder;

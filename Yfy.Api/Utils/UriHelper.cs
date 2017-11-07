@@ -86,9 +86,20 @@
 
         #region common api list
 
-        public static Uri SearchUri(string queryWords, long searchInFolder = 0, ItemType type = ItemType.all, int pageId = 0, QueryFilter queryFilter = QueryFilter.all)
+        public static Uri SearchUri(string queryWords, long searchInFolder = 0, ItemType type = ItemType.all, int pageId = 0, QueryFilter queryFilter = QueryFilter.all, DateTime? begin = null, DateTime? end = null)
         {
-            return new Uri(ApiHost + $"api/v2/item/search?query_words={queryWords}&search_in_folder={searchInFolder}&type={type}&page_id={pageId}&query_filter={queryFilter}");
+            string datefilter = "";
+            DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1, 0, 0, 0, 0));
+            if (begin != null)
+            {
+                datefilter += (int)((DateTime)begin - startTime).TotalSeconds;
+            }
+            datefilter += ",";
+            if (end != null)
+            {
+                datefilter += (int)((DateTime)end - startTime).TotalSeconds;
+            }
+            return new Uri(ApiHost + $"api/v2/item/search?query_words={queryWords}&search_in_folder={searchInFolder}&type={type}&page_id={pageId}&query_filter={queryFilter}&updated_time_range={datefilter}");
         }
 
 #endregion
