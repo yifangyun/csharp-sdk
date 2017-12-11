@@ -82,6 +82,12 @@
         public List<YfyUser> Users { get; set; }
 
         /// <summary>
+        /// 总用户数
+        /// </summary>
+        [JsonProperty("total_count")]
+        public long TotalCount { get; set; }
+
+        /// <summary>
         /// 页码
         /// </summary>
         [JsonProperty("page_id")]

@@ -10,6 +10,7 @@
     using Yfy.Api.Collab;
     using Yfy.Api.Comment;
     using Yfy.Api.Items;
+    using Yfy.Api.Department;
 
     using Newtonsoft.Json;
 
@@ -55,6 +56,11 @@
         /// </summary>
         public CollabRouter Collab { get; private set; }
 
+        /// <summary>
+        /// 部门相关api
+        /// </summary>
+        public DepartmentRouter Department { get; private set; }
+
         internal void InitRouters(ITransport transport)
         {
             this.User = new UserRouter(transport);
@@ -65,6 +71,7 @@
             this.ShareLink = new ShareLinkRouter(transport);
             this.Comment = new CommentRouter(transport);
             this.Collab = new CollabRouter(transport);
+            this.Department = new DepartmentRouter(transport);
 
             //约定
             //Post请求参数：

@@ -11,7 +11,7 @@
     /// </summary>
     public class CommentRouter
     {
-        private ITransport _transport;
+        private readonly ITransport _transport;
 
         internal CommentRouter(ITransport transport)
         {

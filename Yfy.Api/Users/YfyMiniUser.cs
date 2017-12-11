@@ -1,6 +1,7 @@
 ﻿namespace Yfy.Api.Users
 {
     using Newtonsoft.Json;
+    using System.Collections.Generic;
     using Yfy.Api.Enterprises;
 
     /// <summary>
@@ -31,5 +32,41 @@
         /// </summary>
         [JsonProperty("enterprise")]
         public YfyMiniEnterprise Enterprise { get; set; }
+    }
+
+    /// <summary>
+    /// mini user collection
+    /// </summary>
+    public class YfyMiniUserCollection
+    {
+        /// <summary>
+        /// 用户信息
+        /// </summary>
+        [JsonProperty("users")]
+        public List<YfyMiniUser> Users { get; set; }
+
+        /// <summary>
+        /// 页码
+        /// </summary>
+        [JsonProperty("page_id")]
+        public int PageId { get; set; }
+
+        /// <summary>
+        /// 总用户数
+        /// </summary>
+        [JsonProperty("total_count")]
+        public long TotalCount { get; set; }
+
+        /// <summary>
+        /// 页容量
+        /// </summary>
+        [JsonProperty("page_capacity")]
+        public int PageCapacity { get; set; }
+
+        /// <summary>
+        /// 总页数
+        /// </summary>
+        [JsonProperty("page_count")]
+        public int PageCount { get; set; }
     }
 }

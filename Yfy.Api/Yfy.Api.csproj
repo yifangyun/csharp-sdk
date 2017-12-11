@@ -11,6 +11,8 @@
     <AssemblyName>Yfy.Api</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,6 +51,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -62,6 +65,9 @@
     <Compile Include="Comment\CreateComment.cs" />
     <Compile Include="Comment\YfyComment.cs" />
     <Compile Include="Comment\CommentRouter.cs" />
+    <Compile Include="Department\DepartmentRouter.cs" />
+    <Compile Include="Department\YfyDepartment.cs" />
+    <Compile Include="Department\YfyMiniDepartment.cs" />
     <Compile Include="Exceptions\InternalServerException.cs" />
     <Compile Include="Exceptions\YfyApiException.cs" />
     <Compile Include="IYfyRegister.cs" />
