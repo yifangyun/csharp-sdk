@@ -338,11 +338,6 @@
 
         #region department api list
 
-        public static Uri GetAdminDepartmentUsersUri(long deptId, string queryWords = "", int pageId = 0)
-        {
-            return new Uri(ApiHost + $"api/v2/admin/department/{deptId}/users");
-        }
-
         public static Uri GetDepartmentInfoUri(long deptId)
         {
             return new Uri(ApiHost + $"api/v2/department/{deptId}/info");
