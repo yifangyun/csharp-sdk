@@ -21,7 +21,7 @@ namespace Yfy.Api.Department
         }
 
         /// <summary>
-        /// 获取部门成员详细列表
+        /// admin 获取部门成员详细列表
         /// </summary>
         /// <param name="deptId">部门id</param>
         /// <param name="queryWords">部门成员搜索关键字</param>
@@ -31,5 +31,39 @@ namespace Yfy.Api.Department
         {
             return this._transport.SendRpcRequest<GetArg, YfyUserCollection>(new GetArg(), UriHelper.GetAdminDepartmentUsersUri(deptId, queryWords, pageId));
         }
+
+        /// <summary>
+        /// 获取部门的信息
+        /// </summary>
+        /// <param name="deptId">部门id</param>
+        /// <returns></returns>
+        public YfyDepartment CommonInfo(long deptId)
+        {
+            return this._transport.SendRpcRequest<GetArg, YfyDepartment>(new GetArg(), UriHelper.GetDepartmentInfoUri(deptId));
+        }
+
+        /// <summary>
+        /// 获取部门的子部门列表
+        /// </summary>
+        /// <param name="deptId">部门id</param>
+        /// <param name="permissionFilter">是否过滤权限外的部门, 默认false</param>
+        /// <returns></returns>
+        public YfyMiniDepartmentCollection CommonChildren(long deptId, bool permissionFilter = false)
+        {
+            return this._transport.SendRpcRequest<GetArg, YfyMiniDepartmentCollection>(new GetArg(), UriHelper.GetDepartmentChildren(deptId, permissionFilter));
+        }
+
+        /// <summary>
+        /// 获取部门成员列表
+        /// </summary>
+        /// <param name="deptId">部门id</param>
+        /// <param name="queryWords">部门成员搜索关键字</param>
+        /// <param name="pageId">页码</param>
+        /// <returns></returns>
+        public YfyMiniUserCollection CommonDepartmentUsers(long deptId, string queryWords = "", int pageId = 0)
+        {
+            return this._transport.SendRpcRequest<GetArg, YfyMiniUserCollection>(new GetArg(), UriHelper.GetDepartmentUsersUri(deptId, queryWords, pageId));
+        }
+
     }
 }

@@ -97,6 +97,8 @@
     <Compile Include="Comment\YfyComment.cs" />
     <Compile Include="Comment\CommentRouter.cs" />
     <Compile Include="Department\DepartmentRouter.cs" />
+    <Compile Include="Department\YfyDepartment.cs" />
+    <Compile Include="Department\YfyMiniDepartment.cs" />
     <Compile Include="Exceptions\InternalServerException.cs" />
     <Compile Include="Exceptions\YfyApiException.cs" />
     <Compile Include="IYfyRegister.cs" />

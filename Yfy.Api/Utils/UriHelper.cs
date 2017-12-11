@@ -355,6 +355,29 @@
             return new Uri(ApiHost + $"api/v2/admin/department/{deptId}/users" + queryString);
         }
 
+        public static Uri GetDepartmentInfoUri(long deptId)
+        {
+            return new Uri(ApiHost + $"api/v2/department/{deptId}/info");
+        }
+
+        public static Uri GetDepartmentChildren(long deptId, bool permissionFilter = false)
+        {
+            var queryString = $"?permissionFilter={permissionFilter}";
+
+            return new Uri(ApiHost + $"api/v2/department/{deptId}/children" + queryString);
+        }
+
+        public static Uri GetDepartmentUsersUri(long deptId, string queryWords = "", int pageId = 0)
+        {
+            var queryString = $"?page_id={pageId}";
+
+            if (queryWords != "")
+            {
+                queryString += $"&query_words={queryWords}";
+            }
+            return new Uri(ApiHost + $"api/v2/department/{deptId}/users" + queryString);
+        }
+
         #endregion
     }
 }
