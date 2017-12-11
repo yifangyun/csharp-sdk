@@ -43,30 +43,30 @@
         /// 用户信息
         /// </summary>
         [JsonProperty("users")]
-        public List<YfyMiniUser> users { get; set; }
+        public List<YfyMiniUser> Users { get; set; }
 
         /// <summary>
         /// 页码
         /// </summary>
         [JsonProperty("page_id")]
-        public int pageId { get; set; }
+        public int PageId { get; set; }
 
         /// <summary>
         /// 总用户数
         /// </summary>
         [JsonProperty("total_count")]
-        public long totalCount { get; set; }
+        public long TotalCount { get; set; }
 
         /// <summary>
         /// 页容量
         /// </summary>
         [JsonProperty("page_capacity")]
-        public int pageCapacity { get; set; }
+        public int PageCapacity { get; set; }
 
         /// <summary>
         /// 总页数
         /// </summary>
         [JsonProperty("page_count")]
-        public int pageCount { get; set; }
+        public int PageCount { get; set; }
     }
 }
